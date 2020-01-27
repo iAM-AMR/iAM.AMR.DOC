@@ -31,6 +31,9 @@ extensions = [
     'sphinx.ext.autosectionlabel'
 ]
 
+master_doc = 'index'
+
+
 # -- Extension configuration -------------------------------------------------
 autosectionlabel_prefix_document = True
 
