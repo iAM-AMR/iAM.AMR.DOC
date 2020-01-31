@@ -70,7 +70,7 @@ What is the terminology?
 ~~~~~~~~~~~~~~~~~~~~~~~~
 A **relational database** is a collection of **tables**, linked together by  **relationships**.
 
-A **table** contains data, and consists of rows and columns. The **rows** -- also known as **tuples** or **records** -- are sets of data related to a single object. These sets consist of multiple, named elements of data, organized into **columns** -- also known as **tuples** or **records**.
+A **table** contains data, and consists of rows and columns. The **rows** -- also known as **tuples** or **records** -- are sets of data related to a single object. These sets consist of multiple, named elements of data, organized into **columns** -- also known as **attributes** or **fields**.
 
 A **relationship** defines how we match data between tables. Often, this matching is done via unique **primary key** or **ID**.
 
