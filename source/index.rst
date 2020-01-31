@@ -10,12 +10,20 @@ The iAM.AMR Project Documentation
    /00_main/summary
 
 .. toctree::
+   :caption: Project
+   :maxdepth: 2
+   :numbered:
+
+   /02_project/CEDAR
+
+.. toctree::
    :caption: Reference
    :maxdepth: 2
    :numbered:
 
-   /10_reference/reST_sphinx
+   /10_reference/documentation
    /10_reference/reST
+   /10_reference/math_stats
 
 
 Indices and tables
