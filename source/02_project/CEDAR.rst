@@ -150,7 +150,18 @@ Select **No**. If you select *Yes*, you will have to confirm each table name man
 
 Read CEDAR
 ----------
-
 There are two primary ways to interact with CEDAR: to read reference-level information, and to read factor-level information. Both of these tasks are accomplished via forms, accessible via the Navigation Pane on the left-hand side of the window. 
 
 To access reference-level information, use the *Add or Edit a Reference* form. To access factor-level information, use the *Add or Edit a Factor* form.
+
+Navigating CEDAR
+----------------
+
+Most navigation in CEDAR is accomplished through the *Navigation Pane*, where you can select tables, queries, or forms, and the *Record Navigation Bar*, at the bottom of the screen:
+
+.. figure:: /assets/figures/cedar_navigation.png
+   :align: center
+
+   The Record Navigation Bar is highlighted in red at the bottom of the screen.
+
+You can use the left and right arrows to navigate between records (generally between references), or the right arrow with yellow star to create a new record (generally a new reference). This bar also contains a search feature to quickly find records.
