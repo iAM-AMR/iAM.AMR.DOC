@@ -22,6 +22,7 @@ The iAM.AMR Project Documentation
    :numbered:
 
    /03_activities/literature_extract
+   /03_activities/data_harmonization
 
 .. toctree::
    :caption: Reference
