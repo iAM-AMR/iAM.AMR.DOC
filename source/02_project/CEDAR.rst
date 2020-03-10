@@ -119,7 +119,7 @@ Always access CEDAR by opening the front-end file *CEDAR.accdb*. When you open *
 
    The launch screen of *CEDAR.accdb*.
 
-On the left-hand side, the database objects are organized by type (tables, queries, forms) in the Navigation Bar. 
+On the left-hand side, the database objects are organized by type (tables, queries, forms) in the Navigation Pane. 
 
 Re-link *CEDAR.accdb* and *CEDAR_forest.accdb*
 ++++++++++++++++++++++++++++++++++++++++++++++
@@ -146,3 +146,11 @@ In Access 365, an additional confirmation dialogue is presented:
 Select **No**. If you select *Yes*, you will have to confirm each table name manually (by clicking accept through the subsequent dialogues).
 
 .. tip:: Don't forget that you will need to re-link the database each time the front-end *CEDAR.accdb* is updated, or the files are moved.
+
+
+Read CEDAR
+----------
+
+There are two primary ways to interact with CEDAR: to read reference-level information, and to read factor-level information. Both of these tasks are accomplished via forms, accessible via the Navigation Pane on the left-hand side of the window. 
+
+To access reference-level information, use the *Add or Edit a Reference* form. To access factor-level information, use the *Add or Edit a Factor* form.
