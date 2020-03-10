@@ -17,6 +17,13 @@ The iAM.AMR Project Documentation
    /02_project/CEDAR
 
 .. toctree::
+   :caption: Activities
+   :maxdepth: 2
+   :numbered:
+
+   /03_activities/literature_extract
+
+.. toctree::
    :caption: Reference
    :maxdepth: 2
    :numbered:

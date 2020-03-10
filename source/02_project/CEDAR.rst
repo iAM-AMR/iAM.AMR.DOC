@@ -10,9 +10,9 @@ Introduction
 
 What is a database?
 ~~~~~~~~~~~~~~~~~~~
-A **database** is a structured set of data, organized a way that makes it easy to search for, select, and retrieve specific subsets of information. There is no one defining characteristic that makes a ‘database’ a ‘database’, but one can usually differentiate a database from a simpler application by its formal structure, and rigidly defined data-relationships.
+A **database** is a structured set of data, organized a way that makes it easy to search for, select, and retrieve specific subsets or combinations of information. There is no one defining characteristic that makes a *database* a *database*, but a database is often differentiated from a simpler application by its formal structure, and rigidly defined data-relationships.
 
-.. tip:: We often use the term ‘database’ to refer to the sum of the data, the data structure, and the software used to create, manipulate, and access the database. However, we can more accurately refer to the data and its structure as the database, and the software as the **database management system** or **DBMS**.
+.. tip:: We often use the term *database* to refer to the sum of the data, the data structure, and the software used to create, manipulate, and access the database. However, we can more accurately refer to the data and its structure as the database, and the software as the **database management system** or **DBMS**.
 
 Why use a database?
 ~~~~~~~~~~~~~~~~~~~
@@ -78,13 +78,49 @@ A **form** is a graphical user-interface for entering data into the database.
 
 A **query** is a request we pass to the database to retrieve a specific subset of records and fields, constrained by criteria we specify.
 
-How do we store and access a database?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Generally, databases are separated into two parts: a **front-end** and a **back-end**.  The front-end consists of the user-interface, through which we enter, manipulate, and retrieve data. The back-end consists of the data, organized into tables, and other storage formats.
+How do we store a database?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Generally, databases are separated into two parts: a **front-end** and a **back-end**.  The *front-end* consists of the user-interface, through which we enter, manipulate, and retrieve data. The *back-end* consists of the data itself, organized into tables and other data storage formats.
 
-.. tip:: The front-end and back-end can be thought of as a web browser and website respectively; the distributed front-end retrieves the information and displays it to the user, from the centralized back-end.
+.. tip:: The *front-end* and *back-end* can be thought of as a web browser and website respectively; the distributed front-end is used to retrieve and display information from a centralized back-end.
 
-This configuration allows multiple users to simultaneously access and work with the same, always up-to-date set of information. However, it is important to note that the location of the back-end must be a server accessible to all users. 
+This configuration allows multiple users to simultaneously access and work with the same, always up-to-date set of information. There is no explcit requirement for these parts to be seperate, however combining the files reduces multi-user capability.
+
+
+Access CEDAR
+------------
+
+Locate CEDAR
+~~~~~~~~~~~~
+CEDAR consists of two files:
+
+- the back-end file: *CEDAR_forest.accdb*
+- the front-end file: *CEDAR.accdb*
+
+You will need both to access CEDAR.
+
+Locate the back-end file *CEDAR_forest.accdb*
++++++++++++++++++++++++++++++++++++++++++++++
+If you are accessing CEDAR from the GoC network, locate *CEDAR_forest.accdb* in the CEDAR sub-folder of the iAM.AMR project. 
+
+If you are accessing CEDAR from outside the GoC network, you will need a local of *CEDAR_forest.accdb*. 
+
+Locate the front-end file *CEDAR.accdb*
++++++++++++++++++++++++++++++++++++++++
+You can access the front-end file *CEDAR.accdb* from the `private CEDAR GitHub Repository <https://github.com/chapb/CEDAR>`_. You can request access to the repository by contacting `@chapb <https://github.com/chapb>`_. If you have been granted access, you can accept the invite `here <https://github.com/chapb/CEDAR/invitations>`_.
+
+
+Open CEDAR
+~~~~~~~~~~
+Always access CEDAR by opening the front-end file *CEDAR.accdb*.
+
+Upon opening *CEDAR.accdb*, you will be presented with with a mostly blank screen:
+
+.. figure:: /assets/images/cedar_launch.png
+   :align: center
+
+   The launch screen of *CEDAR.accdb*.
+
 
 
 External Data Sources in CEDAR
