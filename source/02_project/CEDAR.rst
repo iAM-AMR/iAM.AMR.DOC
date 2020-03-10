@@ -112,14 +112,37 @@ You can access the front-end file *CEDAR.accdb* from the `private CEDAR GitHub R
 
 Open CEDAR
 ~~~~~~~~~~
-Always access CEDAR by opening the front-end file *CEDAR.accdb*.
-
-Upon opening *CEDAR.accdb*, you will be presented with with a mostly blank screen:
+Always access CEDAR by opening the front-end file *CEDAR.accdb*. When you open *CEDAR.accdb*, you will be presented with with a mostly blank screen:
 
 .. figure:: /assets/figures/cedar_launch.png
    :align: center
 
    The launch screen of *CEDAR.accdb*.
 
+On the left-hand side, the database objects are organized by type (tables, queries, forms) in the Navigation Bar. 
 
+Re-link *CEDAR.accdb* and *CEDAR_forest.accdb*
+++++++++++++++++++++++++++++++++++++++++++++++
+The first time you open *CEDAR.accdb* (or an updated version of *CEDAR.accdb*), you must **re-link** the front-end and back-end databases. If you forget to re-link the databases, opening a database object like a query or form will result in an error message, similar to the one below:
 
+.. figure:: /assets/figures/cedar_unlink_error.png
+   :align: center
+
+   An example of the error message recieved when opening a database object from an unlinked front-end.
+
+To re-link the files:
+
+#. Locate the *External Data* tab in the ribbon (the top, red menu bar), and select *Linked Table Manager*.
+#. On the right-hand side of the *Linked Table Manager*, use *Select All* to select all tables.
+#. On the right-hand side of the *Linked Table Manager*, select *Relink*, and navigate to *CEDAR_forest.accdb*.
+
+In Access 365, an additional confirmation dialogue is presented:
+
+.. figure:: /assets/figures/cedar_relink_name_confirm.png
+   :align: center
+
+   The name confirmation dialogue box is only displayed in the latest versions of Access.
+
+Select **No**. If you select *Yes*, you will have to confirm each table name manually (by clicking accept through the subsequent dialogues).
+
+.. tip:: Don't forget that you will need to re-link the database each time the front-end *CEDAR.accdb* is updated, or the files are moved.
