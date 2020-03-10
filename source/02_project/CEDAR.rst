@@ -116,7 +116,7 @@ Always access CEDAR by opening the front-end file *CEDAR.accdb*.
 
 Upon opening *CEDAR.accdb*, you will be presented with with a mostly blank screen:
 
-.. figure:: /assets/images/cedar_launch.png
+.. figure:: /assets/figures/cedar_launch.png
    :align: center
 
    The launch screen of *CEDAR.accdb*.
