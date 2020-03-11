@@ -5,7 +5,7 @@ Data Extraction
 
 Overview
 --------
-This section provides instructions for data extraction into CEDAR. If you are not familiar with CEDAR, please see the :ref:`entry on CEDAR <02_project/CEDAR:The CEDAR Database>`.
+This section provides instructions for data extraction into CEDAR. If you are not familiar with CEDAR, please review the :ref:`section on CEDAR <02_project/CEDAR:The CEDAR Database>`.
 
 There are two types of data you will be extracting: reference-level data, which provides context for the outcome, and factor-level data, which describes the outcome itself. These data are entered in a reference-level form, and a factor-level form respectively.
 
@@ -26,15 +26,107 @@ Geographic versions of CEDAR_forest
 To simplify data extraction, two versions of the CEDAR back-end *CEDAR_forest* were created: *CEDAR_forest_east* for access from the GoC network, and *CEDAR_forest_west* for access from outside the GoC network.
 
 
+Common pitfalls
+---------------
 
+There are no factors
+~~~~~~~~~~~~~~~~~~~~
+
+The factors' data are given only in figures
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When a factor can't be extracted
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Somethings missing from the dropdown~
 
 Add or Edit a Reference
 -----------------------
 
 
+
+
 Add or Edit a Factor
 --------------------
 
+Title
+~~~~~
+Create a title to describe the factor in title case. 
+
+The title should be simple, direct, and give no experimental context -- the title should be generic, as to easily identify comparable factors between studies. There are two specific cases recognized: 
+
+- where the factor solely describes antimicrobial use, the title should be recorded in the format "<Antimicrobial> Use", where <Antimicrobial> is the antimicrobial used
+
+- where the factor describes production type (i.e. a comparison between conventional, and organic, ABF, or free-range production), the title should be recorded as "Production Type"
+
+Description
+~~~~~~~~~~~
+Create a description to provide context in sentence case.
+
+The description should include relevant experimental conditions, not captured elsewhere in data extraction. This includes details such as the identity and quantity of antimicrobials administered, duration of exposure, prior antimicrobial use, etc.. 
+
+For example, the factor titled "Chlortetracyline Use" may have a description: "Chlortetracyline, administered in feed (days 17 - 78, 164 - 206), as Aureomycin 100-g at 11 ppm. Isolates cultured on agar amended with 4 μg/ml TET-HCL."
+
+Note that this is a particularly data-rich example -- many factors will not be recorded with that level of detail because it is not reported in the literature.
+
+Host and microbe
+~~~~~~~~~~~~~~~~
+Select a host and microbe from the dropdown menus. Once you select a host, you will be able to select a host sub-type. Likewise, once you select a microbe, you will be able to select a microbe sub-type. 
+
+.. attention:: The sub-type will only be shown correctly if the type used in the last record selected is a parent of the sub-type. For example -- for a reference with two factors -- if the first factor was for cattle, and the second factor for chicken: while the cattle factor is in focus (selected), the cattle sub-type will be shown, but the chicken sub-type will disappear (and vice-versa). This also applies to the microbe and microbe sub-type dropdown, and similarly applies to the AMU field.
+
+Do not be alarmed if the sub-types seem to disappear when extracting from a paper with multiple host or microbe types -- the data are still there, but not visable. You can check the data are still there by selecting the record (by interacting with one of the fields, or clicking in the white-space around the fields).
+
+Location
+~~~~~~~~
+Location (Loc.) refers to the location of the factors' data in the text. This is generally a table or figure. However, if the data are in the body of the text, use page (pg.) and paragraph (para.) numbers to indicate the location. Always use the physical page number if available.  If only the electronic page number is available (the page in the PDF), use the electronic page number (epg.).
+
+Result
+~~~~~~
+Result refers to the format of the factors' data. Data are presented in one of several formats: 
+
+- as contingency tables (counts of AMR+, AMR-, and totals)
+- as rate tables (percentages of AMR+, AMR -, and totals)
+- as relative risks
+- as odds ratios
+
+When multiple data formats are available, we always prefer **contingency tables** (count data), followed by rate tables, and finally odds ratios or relative risk. You only need to extract one format of data for a given factor.
+
+Stage
+~~~~~
+Select both an allocation and observtion production stage:
+
+- The *allocation stage* refers to the production stage at which the exposed and referent groups are effectively established, and where the factor effectuates change.
+
+- The *observation stage* refers to the production stage at which the effects of the factor are observed, and where sampling was performed.
+
+.. tip:: A study which involves the retail sampling of organically- and conventionally-raised chicken products to determine the effect of production type would have an allocation stage of *Farm*, and a observation stage of *Retail*, as the factor effectuates changes on-farm, but these are measured at retail.
+
+AMR
+~~~
+Select the ingredient to which resistance was assayed. As you begin to type, the field will be auto-completed from the list of available ingredients. If you cannot locate the appropriate ingredient, try :ref:`exploring the available ingredients <03_activities/literature_extract:Selecting an Antimicrobial>`.
+
+Exposed and referent groups
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Describe both the exposed and referent groups, in title case.
+
+The exposed and referent groups are allocated as described in the literature (i.e. if the authors use 'wood curl bedding' as the exposure, and 'flax bedding' as the referent, it should be recorded as such). 
+
+If no allocation is provided, the interventionist practice should be used as the exposure, and the default practice should be used as the referent (i.e. 'doing something' is the exposure, 'doing nothing' is the referent). 
+
+The exception to these rules is *Antimicrobial Use*. Where the factor describes antimicrobial use -- regardless of how the authors allocate the exposed and referent groups -- the exposure should always be antimicrobial use, and the referent should always be no use. Additionally, the factor should be recorded in the format "<Antimicrobial> Use" (where <Antimicrobial> is the antimicrobial used), and "No Use".
+
+For example, if a study compares the rates of resistance in broilers administered ceftiofur, the exposure should be recorded as "Ceftiofur Use" and the referent as "No Use".
+
+Result or analysis unit
+~~~~~~~~~~~~~~~~~~~~~~~
+Select the unit of analysis (i.e. the unit allocated to the exposed and referent groups). Generally, this will be at the isolate or sample level, but some analyses are conducted at the flock, herd or farm levels.
+
+AMU
+~~~
+Select the ingredients used as part of the factor. As you begin to type, the field will be auto-completed from the list of available ingredients. Then, select 'Add AMU' to add the ingredient to the list. Likewise, highlight the ingredient and select 'Delete AMU' to remove it from the list.
+
+Refer to the :ref:`selecting an antimicrobial <03_activities/literature_extract:Selecting an Antimicrobial>` section for details on how to extract data for factors including multiple ingredients.
 
 
 Selecting an Antimicrobial
@@ -143,7 +235,7 @@ Sulfisoxazole   sulfafurazole
 Order of ingredients
 ++++++++++++++++++++
 
-- combinations with sulfonamides are almost always specified with the sulfonamide first
+Combinations with sulfonamides are almost always specified with the sulfonamide first
   
   - e.g. *sulfadimidine and trimethoprim*
 

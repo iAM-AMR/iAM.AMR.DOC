@@ -78,3 +78,7 @@ How do I view online images at full-size?
 To view images on the website at full-size, right-click on the image and select *open in new tab* or *open in new window*.
 
 
+Conventions
+-----------
+
+
