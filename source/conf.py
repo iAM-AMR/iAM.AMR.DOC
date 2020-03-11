@@ -59,6 +59,5 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 html_js_files = [
-    'js/custom.js',
     'https://p.trellocdn.com/embed.min.js'
 ]
