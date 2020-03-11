@@ -32,6 +32,7 @@ The iAM.AMR Project Documentation
    /10_reference/documentation
    /10_reference/reST
    /10_reference/math_stats
+   /10_reference/publications
 
 
 Indices and tables
