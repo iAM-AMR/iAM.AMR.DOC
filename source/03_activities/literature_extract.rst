@@ -26,19 +26,28 @@ Geographic versions of CEDAR_forest
 To simplify data extraction, two versions of the CEDAR back-end *CEDAR_forest* were created: *CEDAR_forest_east* for access from the GoC network, and *CEDAR_forest_west* for access from outside the GoC network.
 
 
-Common pitfalls
+Common Concerns
 ---------------
 
-There are no factors
-~~~~~~~~~~~~~~~~~~~~
+What do I do if ...
 
-The factors' data are given only in figures
+... there are no factors to extract?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If there are no factors to extract, indicate this using the notes field, and skip the reference.
+
+... the data are only available in a figure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If factor data are only available in a figure, indicate this using the notes field, and skip the factor.
 
-When a factor can't be extracted
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+... I'm confused about how to extract a factor
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If you're confused about a factor, reach out on Slack for clarification. Additionally, add a note to indicate why the factor was extracted in that way.
 
-Somethings missing from the dropdown~
+... an item I need is missing from a dropdown
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If an item is missing from a dropdown (i.e. a non-free-text field), reach out on Slack. If the decision is made to use an alternative item in the list, add a note to justify this replacement. 
+
+
 
 Add or Edit a Reference
 -----------------------
