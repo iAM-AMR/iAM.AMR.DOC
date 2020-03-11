@@ -31,8 +31,8 @@ Common Concerns
 
 What do I do if ...
 
-... there are no factors to extract?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+... there are no factors to extract
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 If there are no factors to extract, indicate this using the notes field, and skip the reference.
 
 ... the data are only available in a figure
@@ -52,6 +52,52 @@ If an item is missing from a dropdown (i.e. a non-free-text field), reach out on
 Add or Edit a Reference
 -----------------------
 
+Basic info
+~~~~~~~~~~
+The basic information section should already be completed, and you will not have to extract this information.
+
+Study info
+~~~~~~~~~~
+
+Study identifiers
++++++++++++++++++
+Extract the DOI (preferred), or PMID (if available). However, this section should already be completed if available.
+
+Study design
+++++++++++++
+Select a study design from the dropdown menu. Then, extract additional detail from the text. The detail should include information such as:
+
+- unit selection process
+- experimental group allocation
+- experimental conditions
+
+Then, extract the sampling method from the text. This can be as simple as the sample type (e.g. "fecal samples collected from fresh pats on the barn floor"), or may include additional information (e.g. "Two clinical swabs per steer were inserted approximately 5 cm into the rectum and rotated until covered with a uniform amount of feces.") if available.
+
+Study reporting
++++++++++++++++
+Indicate whether or not the study included explicit AST breakpoints, and an MIC table. A study includes explicit breakpoints where each antimicrobial assayed includes a corresponding numerical break point in text (e.g. 8 mg/ml). An example of an MIC table is provided below:
+
+.. figure:: /assets/figures/example_MIC_table.png
+   :align: center
+
+   An example of an MIC table from Avrain et al. (2003).
+
+
+Location
+~~~~~~~~
+Select the country where the study was conducted. If more detail is provided than at country-level, include all sub-regions in the field below. Where multiple sub-regions are provided, record each. Where no specific sub-regions are provided, select "other" from the sub-region dropdown, and provide addtional detail. 
+
+For example, if a study was conducted in Ohio and Michigan of the United States of America, select "United States of America" as the location, and include two sub-regions, "Ohio" and "Michigan". If the study was described as being conducted "in the mid-west USA", select "United States of America" as the location, and include a sub-region "other", with details "mid-west".
+
+Auditing
+~~~~~~~~
+This section is managed by a CEDAR administrator. You do not need to add or edit values here, unless explicitly directed to do so.
+
+Notes and issues
+~~~~~~~~~~~~~~~~
+This section allows you to attach notes describing problems with extraction, additional context, or omitted factors.
+
+Attach a seperate note for each concern.
 
 
 
