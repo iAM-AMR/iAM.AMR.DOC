@@ -70,9 +70,14 @@ Installing VSC, Python, and Sphinx
 Detailed installation instructions to install VSC, Python, and Sphinx is outside the scope of this documentation. In brief:
 
 #. Download and install `Visual Studio Code <https://code.visualstudio.com/>`_  
-#. Enable the Python and reStructuredText extensions in VSC  
 #. Download and install the latest version of `Python <https://www.python.org/>`_
-#. Download and install the latest version of `Sphinx <http://www.sphinx-doc.org/en/master/usage/installation>`_
+#. Download and install the latest version of `Sphinx <http://www.sphinx-doc.org/en/master/usage/installation.html>`_ and `Read the Docs Sphinx Theme <https://sphinx-rtd-theme.readthedocs.io/en/stable/index.html>`_  
+
+   - using PIP (via Python): ``pip install -U sphinx sphinx-autobuild sphinx_rtd_theme``  
+
+#. Enable the Python and reStructuredText extensions in VSC  
+
+.. tip:: If the preview window in VSC displays content without the theme (i.e. colours, formatting), ensure the explorer panel is open to the root directory (where build/ and source/ are) so VSC can locate conf.py that specifies the theme.
 
 
 Documentation FAQs
