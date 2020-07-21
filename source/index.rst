@@ -25,6 +25,13 @@ The iAM.AMR Project Documentation
    /03_activities/data_harmonization
 
 .. toctree::
+   :caption: Models
+   :maxdepth: 2
+   :numbered:
+
+   /04_models/external_data.rst
+
+.. toctree::
    :caption: Reference
    :maxdepth: 2
    :numbered:
