@@ -3,6 +3,15 @@
 reStructuredText
 ================
 
+Guides
+------
+
+- `reST Full Specification <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html>`_  
+- `reST Quick Reference <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_
+- `Sphinx's reST Primer <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_
+- `reST Cheatsheet <https://docutils.sourceforge.io/docs/user/rst/cheatsheet.html>`_  
+
+
 Document Layout
 ---------------
 

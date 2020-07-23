@@ -30,6 +30,7 @@ The iAM.AMR Project Documentation
    :numbered:
 
    /04_models/external_data.rst
+   /04_models/architecture.rst
 
 .. toctree::
    :caption: Reference
