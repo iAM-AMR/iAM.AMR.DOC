@@ -58,7 +58,17 @@ CEDAR
 [REPO, Public] CIPARS Sampling Regime Graphic
   `Link <https://github.com/iAM-AMR/CIPARS_sampling_regime>`_
 
-[REPO, MODEL] iAM.AMR.CHI.WP4 (Chicken Model w. WP4 Data)
+
+Models
+~~~~~~
+
+[REPO] Current Main Page (with example models)
+  `Link <https://github.com/chapb/IAM.AMR>`_
+
+[REPO] iAM.AMR.HUB
+  `Link <https://github.com/iAM-AMR/iAM.AMR.HUB>`_
+
+[REPO] iAM.AMR.CHI.WP4 (Chicken Model w. WP4 Data)
   `Link <https://github.com/iAM-AMR/iAM.AMR.CHI.WP4>`_
 
 

@@ -1,11 +1,31 @@
 
 
-==========================
-iAM.AMR Model Architecture
-==========================
+=======================
+iAM.AMR Model Framework
+=======================
 
-Large Models in Analytica
--------------------------
+--------
+Overview
+--------
+
+The iAM.AMR models are organized into *stories*, or collections of one or more drug-microbe-commodity combinations that together describe an important facet of resistance in the agri-food production system in Canada.
+
+Each |smod| shares the same architecture, which allows us to:
+
+- share common data and functions via linkable modules (small stand-alone models)
+- integrate the models to simultaneously evaluate multiple stories
+
+.. image:: /assets/figures/puzzle_piece.jpg
+
+You can think of models and modules fitting together like puzzle pieces; similar models and modules *'click'* into one another to form a whole.
+
+.. attention:: As a result of this *'pluggable'* framework, the iAM.AMR models are often distributed across multiple files -- ensure you have all the files you need to run your model.
+
+
+
+---------------------------
+Implementation in Analytica
+---------------------------
 
 About Modules
 ~~~~~~~~~~~~~
@@ -14,9 +34,9 @@ Models get big fast.
 
 This is particularly true of Analytica models, wherein data and model process are coupled to their layouts (recall, Lumina refers to this concept as an *Influence Diagram*). Accordingly, the Analytica wiki includes a section explicitly addressing `working with large models <https://wiki.lumina.com/index.php?title=Working_with_Large_Models>`_. 
 
-In brief, Analytica models can be broken down into smaller parts, called *modules*. These modules fit together like puzzle pieces -- each contains its own nodes and connections that together, form a whole. 
+In brief, Analytica models can be broken down into smaller parts, called *modules*. These modules fit together like puzzle pieces -- each contains its own nodes and connections that together, form a whole. A given module can be shared among multiple models.
 
-Within a model, modules are organized hierarchically, like folders on your desktop. You may have many modules in the root of your model, or choose to add modules within other modules. Or, if you prefer, you may just have one large model with no modules at all (but will be doing a lot of scrolling!). A module looks like a standard node, but you'll be able to identify them by their thicker boarders.
+Within a model, modules are organized hierarchically, like folders on your desktop. You may have many modules in the root of your model, or choose to add modules within other modules. Or, if you prefer, you may just have one large model with no modules at all (but will be doing a lot of scrolling!). A module looks like a standard node, but you'll be able to identify them by their thick black borders.
 
 
 Types of Modules
@@ -25,7 +45,7 @@ Types of Modules
 Standard Modules
 ++++++++++++++++
 
-Standard modules (or simply, *modules*) exist within the parent model file as a logical sub-dividion of your model. For example, you may add a user-interface at the root level of your model, and hide the actual model from view within a module (like we do in the iAM.AMR models). Or, you may put all nodes related to a particular antimicrobial class within a single class module.
+Standard modules (or simply, *modules*) exist within the parent model file as a logical sub-dividion of your model. For example, you may add a user-interface at the root level of your model, and hide the actual model from view within a module (we do this in the iAM.AMR models). Or, you might put all nodes related to a particular antimicrobial class within a single class module.
 
 .. hint:: 'Enter the model' on the front page of each model is actually a module! We use modules throughout the iAM.AMR models to better organize information and improve user experience.
 
@@ -43,7 +63,7 @@ Returning to our above example, if you have a parent model "agri-food production
 Linking Modules in Analytica
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For a complete explanation of how to link filed modules to parent models in Analytica, see the `Analytica Wiki <https://wiki.lumina.com/index.php?title=Import_a_module_or_library>`_.
+For a complete explanation of how to link filed modules to parent models in Analytica, see the `Analytica Wiki <https://wiki.lumina.com/index.php?title=Import_a_module_or_library>`_. For a practical example, see the iAM.AMR.HUB section.
 
 Some Important Points
 +++++++++++++++++++++
@@ -54,67 +74,36 @@ Some Important Points
 
 
 
-Connecting iAM.AMR Models
--------------------------
+---------------
+iAM.AMR Stories
+---------------
 
-We take full advantage of modules in Analytica, and use throughout the iAM.AMR models.
-
-The Hub Module
-~~~~~~~~~~~~~~
-
-Recall that the iAM.AMR models are organized into *stories*, or collections of one or more drug-microbe-commodity combinations that together describe an important facet of resistance in the agri-food production system in Canada.
-
-While the factors included in each model vary widely, there are several parameters common to all models, including: the baseline probability of resistance, the human population size, and rates of commodity consumption.
-
-To ensure these parameters are implemented and updated uniformly across all models, they are included in a separate filed module -- iAM.AMR.HUB -- that runs alongside each of the iAM.AMR story models.
-
-The Hub module is so named because of this hub-and-spoke design -- each 'spoke' model conencts back to the central Hub module, like spokes on a wheel.
-
-HUB vs. HUB.GM
-++++++++++++++
-
-To ensure end-users do not accidently overwrite or change values in the Hub module(and subsequently propagate these changes to all story models), we maintain two different copies of the Hub module: the Gold Master [GM] (iAM.AMR.HUB.GM) and the production copy (iAM.AMR.HUB).
-
-The Gold Master (a term borrowed from audio and software engineering) is  -- as the name suggests -- the master copy of the Hub module. The GM is where all development (additions, deletions, changes) occurs. The production module is a *protected and encrypted* copy of the mutable (editable) GM module. 
-
-.. important:: The iAM.AMR.HUB module is the module to which the story models are linked. Do not link your story model to the iAM.AMR.HUB.GM module.
-
-What does this mean in practice? To make changes to our Hub module, we first make the changes to the GM. Then, we save a protected copy, overwriting the existing production model. Because the name and location of the Hub module do not change, the story models automatically recognize the new production copy, and any changes are propagated when the story models are opened.
-
-You can think of making changes to the Hub module like making changes to a manuscript. All changes are made in Microsoft Word, before creating a PDF to submit to the journal.
-
-
-The Basic Hub Workflow
-++++++++++++++++++++++
-
-There are several steps to edit the Hub:
-
- #. Download/pull the latest version of the models from GitHub
- #. Edit the Gold Master Hub module [iAM.AMR.HUB.GM] and story models as required  
- #. Save the Gold Master Hub module  
- #. Save an additional copy of the Gold Master as a protected model, with the name 'iAM.AMR.HUB', overwriting the existing Hub module  
- #. Review the story models to ensure no bugs were introduced during editing  
- #. Upload/push the changes to the GitHub repository  
-
-
-Save a Protected Model
-^^^^^^^^^^^^^^^^^^^^^^
-
-Creating a protected version of an Analytica model/module is simple, but **requires Analytica Enterprise**.
-
-While in edit mode, navigate to `File > Save a Copy In...`. When prompted for a save location and file name, select *Save as a Browse-Only Model* in the lower left corner.
-
-.. figure:: /assets/figures/hubModel_save.png
-   :align: center
-
-   The *Save a Copy In...* Dialogue
-
-Selecting *Save as a Browse-Only Model* will automatically select *Lock and Encrypt the Copy*. Ensure you are saving a copy of the Gold Master without overwriting the Gold Master itself.
-
-.. danger:: Analytica will let you shoot yourself in the foot. Do not overwrite the GM with a protected production copy.
-
-
-Other Modules
+Naming Scheme
 ~~~~~~~~~~~~~
 
-Generally, any data which are applicable for multiple -- but not all -- story models are stored in a module, and are saved as *iAM.AMR.MOD_contents_here*.
+Insert Here.
+
+Story Icons
+~~~~~~~~~~~
+
+Insert Here.
+
+Existing Models
+~~~~~~~~~~~~~~~
+
+- iAM.AMR.3GC
+- iAM.AMR.CHI
+- iAM.AMR.FQC
+
+
+
+---------------
+iAM.AMR Modules
+---------------
+
+Naming Scheme
+~~~~~~~~~~~~~
+
+Modules are generally saved with a prefix of *iAM.AMR.MOD* in the format *iAM.AMR.MOD_contents_here*.
+
+
