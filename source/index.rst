@@ -8,6 +8,7 @@ The iAM.AMR Project Documentation
    :maxdepth: 1
 
    /00_main/summary
+   /00_main/important_links
 
 .. toctree::
    :caption: Project

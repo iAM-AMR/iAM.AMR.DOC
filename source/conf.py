@@ -61,3 +61,22 @@ html_static_path = ['_static']
 html_js_files = [
     'https://p.trellocdn.com/embed.min.js'
 ]
+
+# From an online source, no docs to explain the format.
+# 
+# In my conf.py I added this:
+#
+# address = '192.168.1.1'
+# port = 'port 3333'
+#
+# rst_prolog = """
+# .. |address| replace:: {0}
+# .. |port| replace:: {1}
+# """.format(
+# address, 
+# port
+# )
+
+rst_prolog = """
+.. |pm| replace:: Brennan Chapman
+"""
