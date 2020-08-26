@@ -34,6 +34,7 @@ The iAM.AMR Project Documentation
 
    /04_models/external_data.rst
    /04_models/architecture.rst
+   /04_models/hub.rst
 
 .. toctree::
    :caption: Technology
