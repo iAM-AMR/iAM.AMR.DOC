@@ -172,3 +172,28 @@ Figures
       This is the descriptive text for the figure.
 
 
+Text Substitutions
+------------------
+
+To setup a text substitution, add a block to your ``conf.py``::
+
+  rst_prolog = """
+  .. |placeholder| replace:: Definition
+  .. |other| replace:: other definition
+  """
+
+Both ``rst_prolog`` and ``rst_epilogue`` should enable substitution. The following solution has also been proposed, but is untested::
+
+  address = '192.168.1.1'
+  port = 'port 3333'
+
+  rst_prolog = """
+  .. |address| replace:: {0}
+  .. |port| replace:: {1}
+  """.format(
+  address, 
+  port
+  )
+
+Then, simply add ``|placeholder|`` to your document to access the substitution.
+
