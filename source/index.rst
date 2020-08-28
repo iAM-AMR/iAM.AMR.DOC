@@ -16,6 +16,7 @@ The iAM.AMR Project Documentation
    :numbered:
 
    /02_project/CEDAR
+   /02_project/Sawmill
 
 .. toctree::
    :caption: Activities
@@ -24,6 +25,7 @@ The iAM.AMR Project Documentation
 
    /03_activities/literature_extract
    /03_activities/data_harmonization
+   /03_activities/processing_cedar_queries
 
 .. toctree::
    :caption: Models
@@ -33,6 +35,13 @@ The iAM.AMR Project Documentation
    /04_models/external_data.rst
    /04_models/architecture.rst
    /04_models/hub.rst
+
+.. toctree::
+   :caption: Technology
+   :maxdepth: 2
+   :numbered:
+
+   /09_technology/software.rst
 
 .. toctree::
    :caption: Reference
