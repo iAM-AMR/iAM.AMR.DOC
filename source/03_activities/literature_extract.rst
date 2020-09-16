@@ -21,9 +21,7 @@ On the *Add or Edit a Factor* form, you will extract factor-level information su
 - the host, microbe, and resistance tested
 - counts, rates, or odds ratios describing the effect of the factor
 
-Geographic versions of CEDAR_forest
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-To simplify data extraction, two versions of the CEDAR back-end *CEDAR_forest* were created: *CEDAR_forest_east* for access from the GoC network, and *CEDAR_forest_west* for access from outside the GoC network.
+
 
 
 Common Concerns
@@ -70,9 +68,20 @@ If a study includes an 'Intermediate' category, add the intermediate isolates/ra
 
 Note that these alternative systems are not the same. While all organic is ABF (antibiotic-free), not all ABF is organic. 'Welfare' and 'humane' production systems are likewise different. 
 
+.. raw:: html
 
-Add or Edit a Reference
------------------------
+  <iframe src="https://giphy.com/embed/PjwvIXLnnMF0ytRpcp" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/PjwvIXLnnMF0ytRpcp">via GIPHY</a></p>
+
+
+|br| 
+
+|hr|
+
+|br| 
+
+
+The "Add or Edit a Reference" Form
+----------------------------------
 
 Basic info
 ~~~~~~~~~~
@@ -111,20 +120,95 @@ Select the country where the study was conducted. If more detail is provided tha
 
 For example, if a study was conducted in Ohio and Michigan of the United States of America, select "United States of America" as the location, and include two sub-regions, "Ohio" and "Michigan". If the study was described as being conducted "in the mid-west USA", select "United States of America" as the location, and include a sub-region "other", with details "mid-west".
 
-Auditing
-~~~~~~~~
-This section is managed by a CEDAR administrator. You do not need to add or edit values here, unless explicitly directed to do so.
+|br| 
 
-Notes and issues
-~~~~~~~~~~~~~~~~
+
+
+
+History tab
+~~~~~~~~~~~
+The data extraction process can be broken down into steps; the *History tab* tracks the progress of the references as they move along each of these steps toward completion.
+
+Each time a user completes an *activity*, they must update the reference history by adding an entry in the tab. This includes when a user completes an activity previously assigned to another user; the user should always add an entry for all completed activities.
+
+.. hint::
+   
+   Think of the history tab as tracking milestones; any time the reference reaches a new stage of completion or verification, the history should be updated. This is used to infer the completeness and reliability of the data for downstream activities.
+
+
+Activities
+++++++++++
+
+Activities are generic terms for steps in the data extraction process; always select the appropriate, specific step when updating the reference history.
+
+In brief, the life cycle of a reference consists of these activities:
+
+- the reference is imported
+- the reference is assigned
+- the reference is extracted (or extracted in duplicate)
+- the reference is reviewed
+- the reference is (optionally) signed-off on by a senior user
+
+
+Steps
++++++
+
++---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Status                          | Definition                                                                                                                                                                                      |
++---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| imported                        | The reference has been imported into the database from |br| the   literature search.                                                                                                            |
++---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| import_single                   | The reference had been extracted in a previous version (V1) |br| of   CEDAR, and was imported here (replicate 1 of 2).                                                                          |
++---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| import_dual                     | The reference had been extracted in a previous version (V1) |br| of   CEDAR, and was imported here (replicate 2 of 2).                                                                          |
++---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| import_reviewed                 | The reference had been extracted in a previous version (V1) |br| of   CEDAR, and was imported here (already reviewed).                                                                          |
++---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| assigned                        | The reference has been assigned to a user for data extraction.                                                                                                                                  |
++---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| extracted_excluded |br| _single | The reference has been extracted (replicate 1 of 2). |br| Or, the   reference has been excluded.                                                                                                |
++---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| reviewed_single                 | The reference has been extracted (singular extraction), |br| and a second   user has reviewed and corrected any errors or omissions |br| (or concurs the   reference should be excluded).       |
++---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| signed_off_single               | The reference has been extracted (singular extraction), |br| and a senior   user has reviewed and corrected any errors or omissions |br| (or concurs the   reference should be excluded).       |
++---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| recheck_single                  | The reference has been extracted, but upon review |br| the original   extractor (select their name here, not yours) |br| must re-check the   reference. |br| Check the notes field for details. |
++---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| extracted_dual                  | The reference has been extracted in duplicate (replicate 2 of 2).                                                                                                                               |
++---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| reviewed_dual                   | The reference has been extracted in duplicate, |br| all conflicts were   resolved.                                                                                                              |
++---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| signed_off_dual                 | The reference has been extracted in duplicate, |br| all conflicts were   resolved by a senior user.                                                                                             |
++---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+Life Cycle of a Reference
++++++++++++++++++++++++++
+
+.. figure:: /assets/figures/reference_history.png
+   :align: center
+
+   The life cycle of a reference.
+
+|br|
+
+Notes and Issues Tab
+~~~~~~~~~~~~~~~~~~~~
 This section allows you to attach notes describing problems with extraction, additional context, or omitted factors.
 
 Attach a seperate note for each concern.
 
 
 
-Add or Edit a Factor
---------------------
+|br| 
+
+|hr|
+
+|br| 
+
+
+The "Add or Edit a Factor" Form
+-------------------------------
 
 Title
 ~~~~~
@@ -316,146 +400,3 @@ Combinations with sulfonamides are almost always specified with the sulfonamide 
   
   - e.g. *sulfadimidine and trimethoprim*
 
-
-
-
-Data Extraction Rules
----------------------
-
-Immutable Factors
-~~~~~~~~~~~~~~~~~
-
-Immutable factors are defined as those that are not practically modifiable or reproducible. These include factors such as:
-
-- unique comparison groups or locations
-
-  - Barn A *vs.* Barn B
-  - Sweden *vs.* Switzerland
-
-- breed or type of animal
-
-  - Ross chicks *vs.* Cobb chicks
-  - Swedish Friesian vs. Swiss Holsteins
-
-- life stage or production stage  
-
-  - egg *vs.* chick *vs.* broiler
-  - grow-finish *vs.* farrow-to-finish
-  - farm *vs.* abattoir *vs.* retail
-
-Immutable factors should not be extracted.
-
-Binary and Continuous Factors
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-When a factor is binary (i.e. two discrete outcomes, such as "Yes" and "No"), it shall be extracted. 
-
-When a factor is continuous (e.g. a one unit increase in the predictor results in an X unit increase in the outcome) it shall not be extracted.  
-
-Selecting a Referent Level
-++++++++++++++++++++++++++
-
-Binary factors consist of a referent and exposure group (e.g. your control and exposure groups respectively). The referent should generally be defined as the default practice in industry, or the least interventionist, while the exposure is the less common, or more interventionist approach. See above for more details. 
-
-Multiple Discrete Levels (Catagories)
-+++++++++++++++++++++++++++++++++++++
-
-When a factor has multiple levels (e.g. low, medium, and high), the factor shall be extracted seperately for each level, using the same referent level.  
-
-For example, for a factor with levels low, medium, and high, the factor is extracted as low *vs.* medium, and low *vs.* high. The factor medium *vs.* high shall not eb extracted. The choice of referent level is described above.
-
-Non-informative Levels
-^^^^^^^^^^^^^^^^^^^^^^
-
-An exception is non-informative levels, which shall not be extracted.
-
-For example, for a factor with levels 'red', 'blue', and 'other', the factor is only extracted as red *vs.* blue, because the 'other' is not part of a defined set, and cannot be inferred from the comparison. But, where levels are drawn from a defined set, they shall be extracted (these are few and far-between). For example, for a factor with levels 'summer', 'winter', 'other', the factor is extracted as 'summer' *vs.* 'winter' and 'summer' *vs.* 'other', as the 'other' can be inferred.
-
-
-Factor Data
-~~~~~~~~~~~
-
-When multiple data formats are available, we always prefer **contingency tables** (count data), followed by rate tables, and finally odds ratios or relative risk. You only need to extract one format of data for a given factor.
-
-
-Resistances and MDR
-~~~~~~~~~~~~~~~~~~~
-
-All factors related to antimicrobial resistance should be extracted, including those related to non-traditional antimicrobials (e.g. ionophores, coccidiostats, and metals). They should be extracted as finely as possible where specified (e.g. ceftiofur-resistance, rather than third-generation cephalosporin resistance).
-
-Multi-drug resistance (MDR) should not be extracted, because the specific combination of resistances is impossible to compare to across studies/situations. However, if you are presented with MDR data, it may be possible to tease out antimicrobial-specific data. Before you do - ensure that the individual antimicrobial data For example, imagine that 'X' and 'Y' number of isolates were tested for each 'Poor' and 'Good' producers, as in the study below:
-
-.. figure:: /assets/figures/mdr_example.png
-   :align: center
-
-   An example of an MDR table using rates from Spears (1990).
-
-We can tease out this information by adding up the occurence of resistance across all profiles, to calculate the number of resistant organisms.
-
-+---------------+------------------------------------------------------+------------------------------------------------------+
-| Antimicrobial | AMR+ in Poor Producers                               | AMR+ in Good Producers                               |
-+---------------+------------------------------------------------------+------------------------------------------------------+
-| GM            | (0.19)(X) +   (0.579)(X) + (0.744)(X)                | (0.218)(Y) +   (0.902)(Y) + (0.451)(Y)               |
-+---------------+------------------------------------------------------+------------------------------------------------------+
-| SU            | (0.19)(X) +   (0.579)(X) + (0.1074)(X) + (0.0992)(X) | (0.218)(Y) +   (0.902)(Y) + (0.827)(Y) + (0.0977)(Y) |
-+---------------+------------------------------------------------------+------------------------------------------------------+
-| AM            | (0.0165)(X)                                          | (0.0376)(Y)                                          |
-+---------------+------------------------------------------------------+------------------------------------------------------+
-
-
-Multiple Measurements
-~~~~~~~~~~~~~~~~~~~~~
-
-Often, factors may be assessed at multiple time-points. For example, swine may be sampled for resistant organisms at birth, weaning, growing-finishing, and again at abattoir.  
-
-As a general rule, where the *allocation* and *observation stages* are the same, the **Measurement Closest to Human Exposure** or **MCHE** should be extracted.  
-
-Where the *allocation* and *observation stages* differ, the **MCHE** within the *allocation* stage should be extracted (if available). These rules, and their exceptions, are described below.  
-
-Multiple Measurements at a Single Stage
-+++++++++++++++++++++++++++++++++++++++
-
-Where multiple measurements are available at a single production stage (i.e. the *allocation* and *observation stages* are the same), the measurement closest to human exposure should be extracted, except
-
-... where there are missing or unavailable data at the time-point closest to human exposure
-
-.. admonition:: Example
-
-   Resistance was assayed at days 10, 20, and 30 of production for the exposed group, but only at days 10 and 20 for the referent group.  
-   
-   Day 20 is extracted.
-
-- where the time-point is not applicable to the Canadian context
-
-  e.g. a measurement at >36 days into broiler production, past the point of harvest in Canadian industry.
-
-Multiple Measurements at Farm
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Where multiple measurements are available at the **on-farm stage** for **cattle** and **swine**, a measurement should be extracted at the end of each production sub-stage. This includes the following:
-
-- Cattle
-
-  - Stage 1
-  - Stage 2
-
-- Swine
-  
-  - Stage 1
-  - Stage 2
-
-See the production basics section for more information.
-
-Multiple Measurements at Multiple Stages
-
-
-
-
-
-Provisional Rules
-~~~~~~~~~~~~~~~~~
-
-
-3.	Genomic data – record if AMR prevalence given + note what gene in description (can leave AMR dropdown empty – tetA and tetB are available in AMR dropdown though!), otherwise make a note (eg, CFU/g, gene copies, etc.). 
-
-5.	Salmonella species – combine if AMR prevalence given for more than one Salmonella species

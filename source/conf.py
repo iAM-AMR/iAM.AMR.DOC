@@ -80,4 +80,11 @@ html_js_files = [
 rst_prolog = """
 .. |pm| replace:: Brennan Chapman
 .. |smod| replace:: story model
+.. |br| raw:: html
+
+    <br>
+
+.. |hr| raw:: html
+
+   <hr>
 """

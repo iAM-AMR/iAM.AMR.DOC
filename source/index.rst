@@ -24,6 +24,7 @@ The iAM.AMR Project Documentation
    :numbered:
 
    /03_activities/literature_extract
+   /03_activities/data_extract_rules
    /03_activities/data_harmonization
    /03_activities/processing_cedar_queries
 
