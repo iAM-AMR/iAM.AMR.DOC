@@ -28,8 +28,16 @@ Immutable factors are defined as those that are not practically modifiable or re
   - egg *vs.* chick *vs.* broiler
   - grow-finish *vs.* farrow-to-finish
   - farm *vs.* abattoir *vs.* retail
+  
+- unique years/periods of time
+
+  - 1998 *vs.* 1999
 
 Immutable factors should not be extracted.
+
+.. admonition:: Important
+
+   If a reason for the comparison is given, such as a growth promoter ban/change in related industry policy, factors comparing unique years/periods of time may be valid for extraction. For instance, one period of time might represent pre-ban conditions, while the next might represent post-ban conditions. In this case, the factor title should be "<Antimicrobial(s)> Ban", and any antimicrobials available for use pre-ban, as well as any available both pre- and post-ban that were specifically mentioned, should be tagged as if the factor is an AMU factor. Any information about the prevalence of actual growth promoter use pre-ban (and sometimes post-ban) should be provided in the factor description and/or reference notes.
 
 Binary and Continuous Factors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
