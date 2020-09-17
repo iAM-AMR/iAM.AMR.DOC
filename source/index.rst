@@ -23,10 +23,19 @@ The iAM.AMR Project Documentation
    :maxdepth: 2
    :numbered:
 
-   /03_activities/literature_extract
-   /03_activities/data_extract_rules
    /03_activities/data_harmonization
    /03_activities/processing_cedar_queries
+
+.. toctree::
+   :caption: Data Extraction
+   :maxdepth: 2
+   :numbered:
+
+   /data_extraction/data_extract
+   /data_extraction/data_extract_rules
+   /data_extraction/form_reference
+   /data_extraction/form_factor
+
 
 .. toctree::
    :caption: Models
