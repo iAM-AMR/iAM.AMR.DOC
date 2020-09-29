@@ -3,8 +3,8 @@
 Data Extraction
 ===============
 
-Overview
---------
+Getting Started
+---------------
 This section provides instructions for data extraction into CEDAR. If you are not familiar with CEDAR, please review the :ref:`section on CEDAR <02_project/CEDAR:The CEDAR Database>`.
 
 There are two types of data you will be extracting: reference-level data, which provides context for the outcome, and factor-level data, which describes the outcome itself. These data are entered in a reference-level form, and a factor-level form respectively.

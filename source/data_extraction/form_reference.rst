@@ -77,6 +77,10 @@ Or from `Cameron-Veas et al. (2018) <https://doi.org/10.1016/j.tvjl.2018.02.002>
 
   An isolate was identified as susceptible or resistant, based on the epidemiological cut-off value (ECOFF) defined by the European Committee of Antimicrobial Susceptibility Testing (EUCAST, 2016).
 
+Or from `Jahanbakhsh et al. (2015) <http://dx.doi.org/10.1016/j.rvsc.2015.07.014>`_, using disk diffusion:
+
+  The strains were recorded as susceptible, intermediate, orresistant according to the zone diameter interpretative standards recommended by Clinical and Laboratory Standards Institute (CLSI) in 2010 (CLSI, 2010) for most of the antimicrobials and in 2008 for ceftiofur (CLSI, 2008).
+
 
 .. tip:: Studies that use diffusion-based assays often report the concentration of the disks -- this is not an explicit breakpoint. Instead an explicit breakpoints would be given as diameters (in mm).
 
