@@ -52,6 +52,7 @@ The iAM.AMR Project Documentation
    :numbered:
 
    /09_technology/software.rst
+   /09_technology/add_page
 
 .. toctree::
    :caption: Reference
