@@ -8,6 +8,10 @@ The iAM.AMR Project Documentation
    :maxdepth: 1
 
    /00_main/summary
+   /00_main/background
+   /00_main/get_started
+   /00_main/prostructure
+   /00_main/search
    /00_main/important_links
 
 .. toctree::
@@ -16,6 +20,7 @@ The iAM.AMR Project Documentation
    :numbered:
 
    /02_project/CEDAR
+   /02_project/cedarr
    /02_project/Sawmill
 
 .. toctree::
@@ -52,6 +57,8 @@ The iAM.AMR Project Documentation
    :numbered:
 
    /09_technology/software.rst
+   /09_technology/analytica
+   /09_technology/git
    /09_technology/add_page
 
 .. toctree::
