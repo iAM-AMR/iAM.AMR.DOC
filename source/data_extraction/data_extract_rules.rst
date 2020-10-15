@@ -33,6 +33,8 @@ Immutable factors are defined as those that are not practically modifiable or re
 
   - 1998 *vs.* 1999
 
+Note that factors which assess the same animals before and after AMU are acceptable.
+
 Immutable factors should not be extracted.
 
 .. admonition:: Important
@@ -153,3 +155,10 @@ Provisional Rules
 3.	Genomic data – record if AMR prevalence given + note what gene in description (can leave AMR dropdown empty – tetA and tetB are available in AMR dropdown though!), otherwise make a note (eg, CFU/g, gene copies, etc.). 
 
 5.	Salmonella species – combine if AMR prevalence given for more than one Salmonella species
+
+
+Sample Type 
+~~~~~~~~~~~
+
+Where individual fecal samples are available, those are preferable to pooled samples. When a pooled fecal sample can't be taken directly from the animal, the goal is to obtain the equivalent of a pooled fecal sample. Extract litter/barn floor samples and **not** water/feed/dirt samples.
+
