@@ -66,11 +66,11 @@ Result
 Result refers to the format of the factors' data. Data are presented in one of several formats: 
 
 - as contingency tables (counts of AMR+, AMR-, and totals)
-- as rate tables (percentages of AMR+, AMR -, and totals)
+- as prevalence tables (percentages of AMR+, AMR -, and totals)
 - as relative risks
 - as odds ratios
 
-When multiple data formats are available, we always prefer **contingency tables** (count data), followed by rate tables, and finally odds ratios or relative risk. You only need to extract one format of data for a given factor.
+When multiple data formats are available, we always prefer **contingency tables** (count data), followed by prevalence tables, and finally odds ratios or relative risk. You only need to extract one format of data for a given factor.
 
 
 |br|
@@ -120,6 +120,10 @@ Select the unit of analysis (i.e. the unit allocated to the exposed and referent
 AMU
 ---
 Select the ingredients used as part of the factor. As you begin to type, the field will be auto-completed from the list of available ingredients. Then, select 'Add AMU' to add the ingredient to the list. Likewise, highlight the ingredient and select 'Delete AMU' to remove it from the list.
+
+When the study uses a drug that specifies a different form than what appears in ATCvet, (e.g. -tartarate, -sulfate, -free acid, -chloride, copper, ccfa, etc) do not attach a note to the reference. Instead, in the factor description field, write "drug administered as X". 
+
+e.g. *tylosin* (official name in ATCvet) may be administered as *tylosin tartrate.*
 
 Refer to the :ref:`selecting an antimicrobial <03_activities/literature_extract:Selecting an Antimicrobial>` section for details on how to extract data for factors including multiple ingredients.
 

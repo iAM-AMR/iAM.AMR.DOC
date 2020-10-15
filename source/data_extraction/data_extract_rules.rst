@@ -71,7 +71,7 @@ For example, for a factor with levels 'red', 'blue', and 'other', the factor is 
 Factor Data
 ~~~~~~~~~~~
 
-When multiple data formats are available, we always prefer **contingency tables** (count data), followed by rate tables, and finally odds ratios or relative risk. You only need to extract one format of data for a given factor.
+When multiple data formats are available, we always prefer **contingency tables** (count data), followed by prevalence tables, and finally odds ratios or relative risk. You only need to extract one format of data for a given factor.
 
 
 Resistances and MDR
