@@ -33,6 +33,8 @@ Immutable factors are defined as those that are not practically modifiable or re
 
   - 1998 *vs.* 1999
 
+Note that factors which assess the same animals before and after AMU are acceptable.
+
 Immutable factors should not be extracted.
 
 .. admonition:: Important
@@ -69,7 +71,7 @@ For example, for a factor with levels 'red', 'blue', and 'other', the factor is 
 Factor Data
 ~~~~~~~~~~~
 
-When multiple data formats are available, we always prefer **contingency tables** (count data), followed by rate tables, and finally odds ratios or relative risk. You only need to extract one format of data for a given factor.
+When multiple data formats are available, we always prefer **contingency tables** (count data), followed by prevalence tables, and finally odds ratios or relative risk. You only need to extract one format of data for a given factor.
 
 
 Resistances and MDR
@@ -143,6 +145,10 @@ See the production basics section for more information.
 Multiple Measurements at Multiple Stages
 
 
+Sample Type 
+~~~~~~~~~~~
+
+Where individual fecal samples are available, those are preferable to pooled samples. When a pooled fecal sample can't be taken directly from the animal, the goal is to obtain the equivalent of a pooled fecal sample. Extract litter/barn floor samples and **not** water/feed/dirt samples.
 
 
 
@@ -153,3 +159,6 @@ Provisional Rules
 3.	Genomic data – record if AMR prevalence given + note what gene in description (can leave AMR dropdown empty – tetA and tetB are available in AMR dropdown though!), otherwise make a note (eg, CFU/g, gene copies, etc.). 
 
 5.	Salmonella species – combine if AMR prevalence given for more than one Salmonella species
+
+
+

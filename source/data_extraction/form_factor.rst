@@ -66,11 +66,11 @@ Result
 Result refers to the format of the factors' data. Data are presented in one of several formats: 
 
 - as contingency tables (counts of AMR+, AMR-, and totals)
-- as rate tables (percentages of AMR+, AMR -, and totals)
+- as prevalence tables (percentages of AMR+, AMR -, and totals)
 - as relative risks
 - as odds ratios
 
-When multiple data formats are available, we always prefer **contingency tables** (count data), followed by rate tables, and finally odds ratios or relative risk. You only need to extract one format of data for a given factor.
+When multiple data formats are available, we always prefer **contingency tables** (count data), followed by prevalence tables, and finally odds ratios or relative risk. You only need to extract one format of data for a given factor.
 
 
 |br|
@@ -139,6 +139,9 @@ Regardless of whether you are selecting an antimicrobial for AMR or AMU, the goa
 Below, we use the terms *ingredient*, *antiinfective* and *antimicrobial*, and these are largely interchangable for our purposes. An *ingredient* is a generic term for an item described in the index. An *antiinfective* is an umbrella term for an ingredient with anti-infective properties (e.g. an antimicrobial, antiparasitic, or a compound like copper sulphate that has antimicrobial properties). And an *antimicrobial* is an ingredient with antimicrobial properties, generally recognized as a 'drug'. 
 
 An AST generally includes at least one traditional *antiinfective*, and may include one or more additional *active ingredients* (e.g. chlortetracycline and copper supplementation) or an adjuvant (e.g. penicillin with a beta-lactamase inhibitor).
+
+.. hint:: When the study uses a drug that specifies a different form than what appears in ATCvet, (e.g. -tartarate, -sulfate, -free acid, -chloride, copper, ccfa, etc) do not attach a note to the reference. Instead, in the factor description field, write "drug administered as X". e.g. *tylosin* (official name in ATCvet) may be administered as *tylosin tartrate.*
+
 
 ATCVet Code Reference
 ~~~~~~~~~~~~~~~~~~~~~
