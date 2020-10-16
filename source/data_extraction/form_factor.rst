@@ -105,7 +105,7 @@ If no allocation is provided, the interventionist practice should be used as the
 
 The exception to these rules is *Antimicrobial Use*. Where the factor describes antimicrobial use -- regardless of how the authors allocate the exposed and referent groups -- the exposure should always be antimicrobial use, and the referent should always be no use. Additionally, the factor should be recorded in the format "<Antimicrobial> Use" (where <Antimicrobial> is the antimicrobial used), and "No Use".
 
-For example, if a study compares the rates of resistance in broilers administered ceftiofur, the exposure should be recorded as "Ceftiofur Use" and the referent as "No Use".
+For example, if a study compares the prevalences of resistance in broilers administered ceftiofur, the exposure should be recorded as "Ceftiofur Use" and the referent as "No Use".
 
 
 |br|

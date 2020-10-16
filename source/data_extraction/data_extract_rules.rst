@@ -84,7 +84,7 @@ Multi-drug resistance (MDR) should not be extracted, because the specific combin
 .. figure:: /assets/figures/mdr_example.png
    :align: center
 
-   An example of an MDR table using rates from Spears (1990).
+   An example of an MDR table using prevalences from Spears (1990).
 
 We can tease out this information by adding up the occurence of resistance across all profiles, to calculate the number of resistant organisms.
 

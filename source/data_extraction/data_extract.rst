@@ -19,7 +19,7 @@ On the *Add or Edit a Factor* form, you will extract factor-level information su
 
 - the exposed and referent groups
 - the host, microbe, and resistance tested
-- counts, rates, or odds ratios describing the effect of the factor
+- counts, prevalences, or odds ratios describing the effect of the factor
 
 
 
@@ -61,7 +61,7 @@ See below.
 ... the study uses SIR (Susceptible, Intermediate, and Resistant)?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If a study includes an 'Intermediate' category, add the intermediate isolates/rate to the resistant category (i.e. we round up intermediate to resistant).
+If a study includes an 'Intermediate' category, add the intermediate isolates/prevalence to the resistant category (i.e. we round up intermediate to resistant).
 
 ... I want to compare conventional, ABF, organic, 'welfare' or 'humane' production systems?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
