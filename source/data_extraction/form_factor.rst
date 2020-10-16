@@ -121,10 +121,6 @@ AMU
 ---
 Select the ingredients used as part of the factor. As you begin to type, the field will be auto-completed from the list of available ingredients. Then, select 'Add AMU' to add the ingredient to the list. Likewise, highlight the ingredient and select 'Delete AMU' to remove it from the list.
 
-When the study uses a drug that specifies a different form than what appears in ATCvet, (e.g. -tartarate, -sulfate, -free acid, -chloride, copper, ccfa, etc) do not attach a note to the reference. Instead, in the factor description field, write "drug administered as X". 
-
-e.g. *tylosin* (official name in ATCvet) may be administered as *tylosin tartrate.*
-
 Refer to the :ref:`selecting an antimicrobial <03_activities/literature_extract:Selecting an Antimicrobial>` section for details on how to extract data for factors including multiple ingredients.
 
 
@@ -143,6 +139,9 @@ Regardless of whether you are selecting an antimicrobial for AMR or AMU, the goa
 Below, we use the terms *ingredient*, *antiinfective* and *antimicrobial*, and these are largely interchangable for our purposes. An *ingredient* is a generic term for an item described in the index. An *antiinfective* is an umbrella term for an ingredient with anti-infective properties (e.g. an antimicrobial, antiparasitic, or a compound like copper sulphate that has antimicrobial properties). And an *antimicrobial* is an ingredient with antimicrobial properties, generally recognized as a 'drug'. 
 
 An AST generally includes at least one traditional *antiinfective*, and may include one or more additional *active ingredients* (e.g. chlortetracycline and copper supplementation) or an adjuvant (e.g. penicillin with a beta-lactamase inhibitor).
+
+.. hint:: When the study uses a drug that specifies a different form than what appears in ATCvet, (e.g. -tartarate, -sulfate, -free acid, -chloride, copper, ccfa, etc) do not attach a note to the reference. Instead, in the factor description field, write "drug administered as X". e.g. *tylosin* (official name in ATCvet) may be administered as *tylosin tartrate.*
+
 
 ATCVet Code Reference
 ~~~~~~~~~~~~~~~~~~~~~

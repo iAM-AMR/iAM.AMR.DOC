@@ -145,6 +145,10 @@ See the production basics section for more information.
 Multiple Measurements at Multiple Stages
 
 
+Sample Type 
+~~~~~~~~~~~
+
+Where individual fecal samples are available, those are preferable to pooled samples. When a pooled fecal sample can't be taken directly from the animal, the goal is to obtain the equivalent of a pooled fecal sample. Extract litter/barn floor samples and **not** water/feed/dirt samples.
 
 
 
@@ -157,8 +161,4 @@ Provisional Rules
 5.	Salmonella species – combine if AMR prevalence given for more than one Salmonella species
 
 
-Sample Type 
-~~~~~~~~~~~
-
-Where individual fecal samples are available, those are preferable to pooled samples. When a pooled fecal sample can't be taken directly from the animal, the goal is to obtain the equivalent of a pooled fecal sample. Extract litter/barn floor samples and **not** water/feed/dirt samples.
 
