@@ -1,5 +1,8 @@
 
 
+.. image:: assets/figures/iam.amr.logo.png
+   :alt: The iAM.AMR project logo.
+
 The iAM.AMR Project Documentation
 ===================================
 

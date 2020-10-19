@@ -160,7 +160,13 @@ Images
 ::
 
    .. image:: images/image_name.png
+      :height: 100px
+      :width: 200 px
+      :scale: 50 %
+      :alt: alternate text
+      :align: right
 
+The same fields are applicable for figures.
 
 Figures
 -------
