@@ -44,11 +44,11 @@ The CEDAR database
 ~~~~~~~~~~~~~~~~~~
 CEDAR, the Collection of Epidemiologically Derived Associations with Resistance, is a Microsoft Access database, designed to house data extracted in support of the IAM.AMR project and associated activities.
 
-The studies identified through the literature search are reviewed, and data extracted as per a number of criteria outlined on the :ref:`CEDAR main page <project/cedardb:The CEDAR Database>`.
+The studies identified through the literature search are reviewed, and data extracted as per a number of criteria outlined on the :ref:`CEDAR main page <project/CEDAR:The CEDAR Database>`.
 
-The cedarr package
-~~~~~~~~~~~~~~~~~~
-The cedarr package is an R package which processes queries extracted from the CEDAR database. The package is fully documented in-line using Roxygen2, and is outlined on the :ref:`cedarr main page <project/cedarr:The cedarr Package>`.
+The sawmill package
+~~~~~~~~~~~~~~~~~~~
+The sawmill package is an R package which processes queries extracted from the CEDAR database. The package is fully documented in-line using Roxygen2, and is outlined on the :ref:`sawmill main page <project/Sawmill:The sawmill R Package>`.
 
 Model Building
 ~~~~~~~~~~~~~~
