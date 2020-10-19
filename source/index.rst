@@ -69,7 +69,14 @@ The iAM.AMR Project Documentation
    /10_reference/documentation
    /10_reference/reST
    /10_reference/math_stats
-   /10_reference/publications
+
+.. toctree::
+   :caption: Team
+   :maxdepth: 2
+   :numbered:
+
+   /team/publications
+
 
 
 Indices and tables
