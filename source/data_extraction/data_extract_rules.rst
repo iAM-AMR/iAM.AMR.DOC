@@ -33,6 +33,10 @@ Immutable factors are defined as those that are not practically modifiable or re
 
   - 1998 *vs.* 1999
 
+- size of herd of origin
+  
+  - small *vs.* large
+
 Note that factors which assess the same animals before and after AMU are acceptable.
 
 Immutable factors should not be extracted.

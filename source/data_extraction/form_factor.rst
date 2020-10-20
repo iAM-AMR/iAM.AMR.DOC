@@ -210,6 +210,10 @@ If the ingredients include an antiinfective and another active ingredient...
     - e.g. ciprofloxacin and amoxicillin used together would be recorded as *quinolones, combinations with other antibacterials* (not *penicillins, combinations with other antibacterials*), *ciprofloxacin*, and *amoxicillin*
     - e.g. amoxicillin and chlortetracycline used together would be recorded as *penicillins, combinations with other antibacterials* (not *tetracyclines, combinations with other antibacterials*), *amoxicillin*, and *chlortetracycline*
 
+.. Note:: Sulfonamides/sulfa drugs are almost always provided as an existing combination - **you do not have to select the individual antimicrobials** 
+  
+  - i.e. *sulfamethoxazole and trimethoprim*
+  
 
 Idiosyncracies of the ATCvet index
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
