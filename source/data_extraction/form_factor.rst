@@ -237,3 +237,8 @@ Combinations with sulfonamides are almost always specified with the sulfonamide 
   
   - e.g. *sulfadimidine and trimethoprim*
 
+Other Additions to the Index
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- A2C (a resistance pattern of amoxicillin-clavulanic acid, ceftiofur and cefoxitin)
+
