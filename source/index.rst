@@ -23,6 +23,7 @@ The iAM.AMR Project Documentation
    :numbered:
 
    /02_project/CEDAR
+   /02_project/Data_Extract_Notes
    /02_project/Sawmill
 
 .. toctree::
