@@ -31,7 +31,7 @@ If you have any difficulties accessing the repository, consult this :ref:`FAQ <r
 
 Once you have access, follow the instructions in the README to download the models. 
 
-.. figure:: /images/github_home_screen.png
+.. figure:: /assets/figures/github_home_screen.png
    :align: center
 
    All of the project files (including models, and internal project information) can be downloaded as a ZIP file, using the large green 'Clone or Download' button.

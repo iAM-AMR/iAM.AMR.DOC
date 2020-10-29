@@ -117,7 +117,7 @@ Using the interface
 ~~~~~~~~~~~~~~~~~~~
 There are three main sections of the Rayyan interface: filters, references, and preview.
 
-.. figure:: /images/rayyan_basic_interface.png
+.. figure:: /assets/figures/rayyan_basic_interface.png
     :align: center
 
     The Rayyan interface is comprised of three sections: the filters, references, and preview panels.
@@ -132,14 +132,14 @@ Unfortunately, Rayyan does not automatically assign references to reviewers; eac
 
 Each reference must be screened by two reviewers (i.e the references are *dual-screened*). To only show references which have 0 or 1 reviews (and thus require an additional review), use the *Maximum collaborator decisions* filter in the filters panel to filter the references with *At most 1* decision, as shown below:
 
-.. figure:: /images/rayyan_filter_to_screen.png
+.. figure:: /assets/figures/rayyan_filter_to_screen.png
     :align: center
     
     Using the 'At most 1' filter limits the returned references to those not already screened in duplicate.
 
 To only show references to which your region has been assigned (e.g. for Ontario and Alberta, to facilitate conflict resolution), select your region (AB or ON) from the “Search Methods” panel, as shown below. The regions are “Uploaded References [AB.txt]“ and “Uploaded References [ON.txt]”. The region “Uploaded References [OTHER.txt]” is used for other reviewers.
 
-.. figure:: /images/rayyan_filter_to_screen_region.png
+.. figure:: /assets/figures/rayyan_filter_to_screen_region.png
     :align: center
     
     Select your region to facilitate later conflict resolution.
@@ -156,7 +156,7 @@ After reviewing the reference, you will either choose to include the study, or e
 
 The figure below shows an example of five references, each in a different decision state. The first two references are *included* -- the second reference is included with a *label*. The third and forth references are *excluded* -- the fourth includes a *reason* for exclusion. The fifth reference is marked as *maybe*. 
 
-.. figure:: /images/rayyan_decision_example.png
+.. figure:: /assets/figures/rayyan_decision_example.png
     :align: center
     
     An example of each inclusion/exclusion decision state in Rayyan.
@@ -183,7 +183,7 @@ Determining whether a reference includes the above populations is the easy part 
 
 We have developed a simple flowchart to assist in the screening process:
 
-.. figure:: /images/screening_process.jpg
+.. figure:: /assets/figures/screening_process.jpg
     :align: center
     
     The screening process.

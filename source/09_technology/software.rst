@@ -103,7 +103,7 @@ Select a R Installation (optional)
 ++++++++++++++++++++++++++++++++++
 Where multiple versions of R are available, or where the installation has not successfully been added to the registry, it may be necessary to select the appropriate (usually the latest) version of R. 
 
-.. figure:: /images/rstudiolocate.png
+.. figure:: /assets/figures/rstudiolocate.png
    :align: center
    
    The RStudio R installation selection window.
