@@ -69,7 +69,7 @@ Funding and History
 -------------------
 Stakeholders from each human, animal, and environmental health disciplines are often engaged in addressing the risk posed by AMR in the agri-food production system. A project [#Majowicz]_ by an associated team aimed to identify non-traditional stakeholders, who are often overlooked for engagement, but are nonetheless affected by AMR. As part of this project, the team created a large diagram of drivers, included below.
 
-.. figure:: /images/majfig2.png
+.. figure:: /assets/figures/majfig2.png
    :align: center
 
    Figure 2 from Majowicz et al. (2018) demonstrating the complexity of the drivers of AMR.

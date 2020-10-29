@@ -59,11 +59,11 @@ An Analytica model consists of one or more objects. An Analytica object, much li
 
 The most common object in Analytica is the node (the terms object and node are often, though incorrectly, used interchangeably), and the most important attribute of each node is its definition. The definition is where quantitative data is stored, and where the mathematical relationships between nodes are defined. Other attributes generally contain qualitative data or descriptors (metadata), such as units of measurement.
 
-.. image:: /images/ana_node_structure.png
+.. image:: /assets/figures/ana_node_structure.png
 
 An influence diagram – the interface you see when you open the model – is a collection of nodes and their connections which serve to communicate the underlying mathematical relationships captured in the model. Because these models are designed to be accessible to users, it is essential that they are as clear and understandable as possible.
 
-.. image:: /images/ana_influence.png
+.. image:: /assets/figures/ana_influence.png
 
 Node Types
 ~~~~~~~~~~
@@ -139,15 +139,15 @@ Array Abstraction
 ~~~~~~~~~~~~~~~~~
 Indices serve as the basis for Analytica’s ‘Intelligent Array’ system, one of Analytica’s most powerful functions. For those readers with experience in programming, array abstraction (Lumina’s terminology for the implementation of the Intelligent Array system) is akin to automatic vectorization of code. In simpler terms, any operation applied to a table or function which includes an index, is automatically applied over the entire index. Let’s return to our example of an index containing a list of months; multiplying a table containing monthly sales data (indexed by the Month Index) by 5 will automatically multiply each cell by 5 –- no need to specify the operation for each individual cell.
 
-.. image:: /images/ana_array_ab.png
+.. image:: /assets/figures/ana_array_ab.png
 
 The true power of array abstraction however, is Analytica’s ability to match indices, and automatically propagate these indices throughout the model. Let’s look at a different example; calculating the revenue associated with multiple products. Given two tables, containing the number of units sold, and the price per unit, we can calculate the revenue per product with a single multiplicative operation. The number of units for Product A in the first table is multiplied by the price of Product A in the second table (and so on for all products), and the result is a single column table, also indexed by the product names.
 
-.. image:: /images/ana_array_ab2.png
+.. image:: /assets/figures/ana_array_ab2.png
 
 Additionally, Analytica can identify where operations occur over two different indices and automatically create a matrix, populated with the cross product of those indices. Expanding on our previous example, we can calculate the profit on each product throughout the year, assuming our profit margin changes as a result of material cost (perhaps we’re a bakery, and the cost of vanilla changes throughout the year). Given two tables, containing the revenue per product, and the margin per month, we can calculate our profit again with a single multiplicative operation. The revenue for each product is automatically multiplied by each month’s margin value, and the result is a matrix, indexed both by product names and months.
 
-.. image:: /images/ana_array_ab_cross.png
+.. image:: /assets/figures/ana_array_ab_cross.png
 
 The rules of array abstraction will become more apparent as you build your models; array abstraction (and the rules that govern it) are some of the more difficult concepts to grasp in Analytica, especially before you’ve had an opportunity to try it yourself. One key thing to remember is that indices are propagated forward in the model, and each index adds a dimension to your table or matrix. Any operation on an object associated with an index will bring that index forward into the calculation. The exception to this rule are array reducing functions; for example, Sum() adds elements of a table along an index (for example, if we wanted the total revenue for all products), reducing the dimensionality of the table by one (i.e. removing the index).
 
@@ -170,7 +170,7 @@ Recall that an index can be thought of as the rows or columns of a table. What t
 
 However, we can’t do this with a traditional Table in Analytica. As Analytica will remind you, if you ever go to delete an element from an index, data are lost as the Table shrinks. Instead, we rely on a DetermTable; an object which works exactly like a Table, but dynamically resizes when calculated. In the example shown below, the DetermTable is indexed by a Decision node, which is set to “Second Quarter”. This means that while the DetermTable contains all of the information necessary to evaluate the whole table, it will only evaluate and return the “Second Quarter” value.
 
-.. image:: /images/determtable.png
+.. image:: /assets/figures/determtable.png
 
 If we wanted to achieve a similar effect using a standard Table, we would need to manually delete and re-add elements of the index, then repopulate the Table – not something that’d you’d want to do regularly. Moreover, it is not something that end-users could easily accomplish.
 	
