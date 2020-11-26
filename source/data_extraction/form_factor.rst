@@ -234,6 +234,13 @@ Sulfamethazine  sulfadimidine
 Sulfisoxazole   sulfafurazole
 ==============  ======================= 
 
+Always together
++++++++++++++++
+
+Some antimicrobials are always administered in combination, even if the combination isn't specified in text. If you see one of these antimicrobials, assume they mean this code. These include:
+
+- Imipenem and cilastatin (136)
+
 Order of ingredients
 ++++++++++++++++++++
 
