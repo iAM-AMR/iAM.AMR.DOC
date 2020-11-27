@@ -121,6 +121,24 @@ Always access CEDAR by opening the front-end file *CEDAR.accdb*. When you open *
 
 On the left-hand side, the database objects are organized by type (tables, queries, forms) in the Navigation Pane. 
 
+What do I do if I get a security warning?
++++++++++++++++++++++++++++++++++++++++++
+
+Upon opening *CEDAR.accdb*, you may see a security warning prompt like one of those shown below.
+You may also see a security prompt if you are re-linking or using a new version of the *CEDAR.accdb* file.
+
+.. figure:: /assets/figures/sec_warn_01.png
+   :align: center
+
+   Example security warning
+
+.. figure:: /assets/figures/sec_warn_02.png
+   :align: center
+
+   Another example security warning
+
+In all cases, you can simply select *Enable Content* or *Accept/Trust* as necessary.
+
 Re-link *CEDAR.accdb* and *CEDAR_forest.accdb*
 ++++++++++++++++++++++++++++++++++++++++++++++
 The first time you open *CEDAR.accdb* (or an updated version of *CEDAR.accdb*), you must **re-link** the front-end and back-end databases. If you forget to re-link the databases, opening a database object like a query or form will result in an error message, similar to the one below:
