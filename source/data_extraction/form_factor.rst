@@ -72,6 +72,8 @@ Result refers to the format of the factors' data. Data are presented in one of s
 
 When multiple data formats are available, we always prefer **contingency tables** (count data), followed by prevalence tables, and finally odds ratios or relative risk. You only need to extract one format of data for a given factor.
 
+.. attention:: If extracting an odds ratio, be sure to extract the p-value corresponding to that odds ratio, if provided. For factors defined by odds ratios, p-values cannot be calculated later, unlike factors defined by contingency or prevalence tables.
+
 
 |br|
 
