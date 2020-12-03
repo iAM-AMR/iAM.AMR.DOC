@@ -34,7 +34,7 @@ The iAM.AMR project focuses on four [food-animal species | commodities]:
 
 The iAM.AMR project focuses on four microbes:
 
-- E. coli  
+- E. coli
 - Salmonella Spp.
 - Campylobacter Spp.
 - Enterococcus Spp.
@@ -55,7 +55,6 @@ The iAM.AMR project focuses on resistance to drugs of human importance, includin
    /00_main/get_started
    /00_main/background
    /00_main/prostructure
-   /00_main/important_links
 
 .. toctree::
    :caption: Project
