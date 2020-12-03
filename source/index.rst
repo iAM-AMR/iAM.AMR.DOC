@@ -3,18 +3,58 @@
 .. image:: assets/figures/iam.amr.logo.png
    :alt: The iAM.AMR project logo.
 
+=================================
 The iAM.AMR Project Documentation
-===================================
+=================================
+
+Background
+----------
+Antimicrobial resistance (AMR) refers to the ability of microorganisms to withstand the effects of antimicrobials (to which they were formerly susceptible). In short, AMR reduces (or eliminates) our ability to treat certain types of infections. 
+
+While the primary driver (cause) of AMR is human *antimicrobial use* (AMU), we're also concerned with animal AMU in the agri-food production system; AMU may increase AMR in zoonotic pathogens, and Canadians may be exposed to these pathogens through the consumption of microbially-contaminated foods.
+
+
+Project
+-------
+The goal of the iAM.AMR project is to quantify the relative contribution of each *bug-drug-commodity* combination to Canadians’ overall exposure to resistant pathogens arising from the agri-food production system.
+
+To that end, we searched the literature to identify factors affecting resistance, and used these factors in an integrated assessment model (IAM) framework to characterize the prevalence of AMR along the farm-to-fork continuum. Ultimately, we describe the number of servings at risk for each bug-drug-commodity combination.
+
+This framework allows us to acheive a secondary objective: to understand how broad changes (e.g. encouraging a practice, or withdrawing an antimicrobial) can influence the entire agri-food system.
+
+
+Scope
+-----
+The iAM.AMR project focuses on four [food-animal species | commodities]: 
+
+- broiler chicken | chicken
+- swine | pork
+- dairy cattle or beef cattle | beef
+- turkey | turkey
+
+The iAM.AMR project focuses on four microbes:
+
+- E. coli  
+- Salmonella Spp.
+- Campylobacter Spp.
+- Enterococcus Spp.
+
+The iAM.AMR project focuses on resistance to drugs of human importance, including:
+
+- macrolides
+- tetracyclines
+- fluoroquinolones
+- third-generation cephalosporins
+
+
 
 .. toctree::
    :caption: Welcome
    :maxdepth: 1
 
-   /00_main/summary
-   /00_main/background
    /00_main/get_started
+   /00_main/background
    /00_main/prostructure
-   /00_main/search
    /00_main/important_links
 
 .. toctree::
@@ -39,6 +79,7 @@ The iAM.AMR Project Documentation
    :maxdepth: 2
    :numbered:
 
+   /data_extraction/search
    /data_extraction/data_extract
    /data_extraction/data_extract_rules
    /data_extraction/form_reference
