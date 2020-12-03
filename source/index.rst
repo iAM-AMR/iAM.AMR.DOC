@@ -50,9 +50,18 @@ The iAM.AMR Project Documentation
    :maxdepth: 2
    :numbered:
 
-   /04_models/external_data.rst
-   /04_models/architecture.rst
-   /04_models/hub.rst
+   /models/external_data.rst
+   /models/architecture.rst
+   /models/hub.rst
+
+.. toctree::
+   :caption: Analytica
+   :maxdepth: 2
+   :numbered:
+   
+   /analytica/ana_get_started.rst
+   /analytica/analytica.rst
+   /analytica/mod.rst
 
 .. toctree::
    :caption: Technology

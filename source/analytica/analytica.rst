@@ -1,56 +1,19 @@
 
 
-Analytica
-=========
+==========
+The Basics
+==========
 
-Introduction
-------------
+Here, we cover the basics as they apply to the iAM.AMR models.
 
-What is Analytica?
-~~~~~~~~~~~~~~~~~~
-`Analytica <https://lumina.com/>`_ (by Lumina Decision Systems [hereby ‘Lumina’]) is a popular decision modelling tool for creating probabilistic risk assessment models. While Analytica is similar in many ways to a spreadsheet-based modelling tool, it adds two key differentiating features: a flexible and informative user interface, and an ‘intelligent array’ system. The former makes large, complex models easier to understand for end-users and modellers; the latter allows modellers to dynamically resize the model as new information becomes available. Both of these features are desirable for a large-scale model.
-
-Installing Analytica
-~~~~~~~~~~~~~~~~~~~~
-Analytica is available in three editions: Analytica Professional, Analytica Enterprise, and Analytica Free 101. The latter is -- as the name implies -- free!
-
-Analytica Professional is the standard, fully featured edition of Analytica, which allows users to build models of any size, and address arrays with a maximum length of 32,000 elements. Analytica Enterprise offers all the functionality of Analytica Professional, while increasing the maximum array length to 100 million elements, adding encryption, and adding the ability to use a performance profiler to identify computationally expensive model elements.
-
-Analytica Free 101 offers the same functionality as Analytica Professional, but limits users to the creation and modification of smaller models, containing no more than 101 nodes. Users can still open and evaluate larger models, but cannot make changes to variables or the underlying model structure. You will be able to open and run the IAM.AMR models with Analytica Free 101, but you will not be able to edit them.
-
-.. caution:: Older versions of Analytica Professional (4.6 or earlier) may have additional limitations with respect to OLE links. You will not be able to create or update OLE links as used in the IAM.AMR.CFG system.
-
-All editions can be installed using the same installer, available from `Lumina's download page <http://www.lumina.com/support/downloads/>`_.
-
-Installing Analytica on a GoC computer
-++++++++++++++++++++++++++++++++++++++
-Analytica **is packaged** for GoC computers (i.e. Analytica is an authorized program). However, these packages are rarely up to date.
-
-The only action that the installer performs that is required is the generation of a license file -- otherwise Analytica can be run as extracted. We can skip the installation (requiring administrator privileges) if we have a license (e.g. professional or enterprise), or a license file for Analytica Free 101.
-
-.. tip:: The following instructions use C:/myprograms as an example installation directory. You can install these programs in any writable directory. These instructions also assume you are using a 64-bit operating system -- this is true of most modern computers.
-
-#. Download the latest version of `the Analytica installer <http://www.lumina.com/support/downloads/>`_.  
-#. Right-click on the installer and select '7-Zip > Extract to "Ana64Setup"'. This will create a new folder in your current directory. 
-#. Navigate to the root of your C:/ drive, and if it doesn't already exist, create a new folder called 'myprograms'.
-#. Move the folder you created in step 2 into the myprograms folder.
-#. Navigate to the folder (within C:/myprograms/), and locate the 'Analytica64.exe' executable. Right-click on Analytica64.exe and select 'Send to > Desktop' to create a shortcut.
-#. Launch Analytica.
-#. You will be prompted to enter a license code.
-
-   - If you have a license code, enter it here.
-   - If you do not have a license code (i.e. you are using the free version), :download:`download this license file <../assets/Free101.lic>` by right-clicking on the link and choosing *Save link as...*. Copy the downloaded license file to your installation folder (the one within C:/myprograms/). Then, from the *License ID* dropdown, select *Add license from .lic file*, and select the downloaded license file. The installation should authorize. The license selection window can also be accessed through the *Help > Update license* menu.
-
-
-Getting Started in Analytica
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lumina has provided a number of great first-party resources for getting started with Analytica, including the Analytica User Guide, and a series of Analytica tutorials. These, in addition to the `Analytica Wiki <https://wiki.analytica.com/index.php?title=Analytica_Wiki>`_, are accessible from the help menu within Analytica. For a general introduction to Analytica, we recommend you get started by reading the `User Guide <https://wiki.analytica.com/index.php?title=Analytica_User_Guide>`_, which is available as a PDF in Analytica’s help menu, or on the Wiki.
-
-.. tip:: If you’re not a fan of manuals, Lumina has distilled the User Guide into a few key chapters listed `here <https://wiki.analytica.com/index.php?title=If_you_don%E2%80%99t_read_manuals>`_.
-
-The remainder of this section provides an introduction to some of the basic concepts in Analytica most relevant to the IAM.AMR models. We recommend reviewing this section after exploring the User Guide, and becoming (at least cursorily) familiar with Analytica’s interface. Think of this section as a summary of the most important points of the first few chapters.
+We recommend reviewing this section after exploring GET START, and the User Guide or Wiki; this section is a summary of the key points from the early sections of this material. Additional training resources are available in the `iAM.AMR Team Repo <https://goto.iam.amr.pub/repo-team>`_ (*login required*).
 
 Moreover, there is nothing like first-hand experience. We recommend you try the tutorials, or modelling a simple, every day problem, for which you may have formerly used a spreadsheet.
+
+
+Learn Analytica
+---------------
+See: :ref:`Learn Analytica <analytica/ana_get_started:Learn Analytica>`
 
 
 Basic Concepts in Analytica

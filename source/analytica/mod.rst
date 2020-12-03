@@ -1,31 +1,9 @@
 
 
-=======================
-iAM.AMR Model Framework
-=======================
+==================
+Models and Modules
+==================
 
---------
-Overview
---------
-
-The iAM.AMR models are organized into *stories*, or collections of one or more drug-microbe-commodity combinations that together describe an important facet of resistance in the agri-food production system in Canada.
-
-Each |smod| shares the same architecture, which allows us to:
-
-- share common data and functions via linkable modules (small stand-alone models)
-- integrate the models to simultaneously evaluate multiple stories
-
-.. image:: /assets/figures/puzzle_piece.jpg
-
-You can think of models and modules fitting together like puzzle pieces; similar models and modules *'click'* into one another to form a whole.
-
-.. attention:: As a result of this *'pluggable'* framework, the iAM.AMR models are often distributed across multiple files -- ensure you have all the files you need to run your model.
-
-
-
----------------------------
-Implementation in Analytica
----------------------------
 
 About Modules
 ~~~~~~~~~~~~~
@@ -71,39 +49,5 @@ Some Important Points
 - Changes in a linked module (i.e. a filed module) are propegated in **both directions**. Do not make an edit within the module in your model that you do not want to propegate to all models linked to that module.  
 - Generally, you do not want to *embed* a module, as that breaks the link to the original module file, and no updates or changes will be propegated in either direction.
 - For existing links, you will have to re-link the modules if the files have been moved relative to one another. For example, when you download the files from GitHub, you will have to re-link the module when open. 
-
-
-
----------------
-iAM.AMR Stories
----------------
-
-Naming Scheme
-~~~~~~~~~~~~~
-
-Insert Here.
-
-Story Icons
-~~~~~~~~~~~
-
-Insert Here.
-
-Existing Models
-~~~~~~~~~~~~~~~
-
-- iAM.AMR.3GC
-- iAM.AMR.CHI
-- iAM.AMR.FQC
-
-
-
----------------
-iAM.AMR Modules
----------------
-
-Naming Scheme
-~~~~~~~~~~~~~
-
-Modules are generally saved with a prefix of *iAM.AMR.MOD* in the format *iAM.AMR.MOD_contents_here*.
 
 
