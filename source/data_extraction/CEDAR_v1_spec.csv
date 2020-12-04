@@ -1,0 +1,32 @@
+Field Name,Expected Data Type,Field Description
+ID,numeric,Factor ID
+status,text,Current status of the corresponding reference
+name,text,First author name + et al. + publication date of reference
+docID,text,DOI or PMID for the reference
+population,text,"Host involved (i.e. cattle, swine)"
+sub_population,text,"Specific host involved (i.e. dairy cows, beef calves)"
+genus,text,"Microbe genus involved (i.e. Escherichia, Salmonella)"
+species,text,"Microbe species involved (i.e. coli, spp.)"
+production_stage,text,Stage of production relevant to study intervention
+antimicrobial,text,Antimicrobial involved
+title,text,Factor title
+definition,text,Factor description
+exposed,text,Description of the exposed group
+referent,text,Description of the referent group
+result_format,text,"Set of result fields available in the study (i.e. Contingency Table, Rate Table)"
+tbl_a,numeric,Contingency Table: # AMR+ in exposed group
+tbl_b,numeric,Contingency Table: # AMR- in exposed group
+tbl_c,numeric,Contingency Table: # AMR+ in referent group
+tbl_d,numeric,Contingency Table: # AMR- in referent group
+tbl_m1,numeric,Total # in exposed group
+tbl_m2,numeric,Total # in referent group
+tbl_p,numeric,Rate Table: % AMR+ in exposed group
+tbl_q,numeric,Rate Table: % AMR+ in referent group
+or_lo,numeric,Odds Ratio: Lower confidence interval
+factor_or,numeric,Odds Ratio: Odds ratio value for the factor
+or_up,numeric,Odds Ratio: Upper confidence interval
+or_sig,text,Odds Ratio: Significance value (p-value)
+exclude_iam,text,"When TRUE, factor is to be excluded from the iAM.AMR models"
+metaID,numeric,Meta-analysis group ID (if applicable)
+ma_resistance,text,Meta-analysis group description (if applicable)
+type,text,"Meta-analysis type (i.e. within studies, across studies) (if applicable)"

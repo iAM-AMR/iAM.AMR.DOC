@@ -47,6 +47,8 @@ The iAM.AMR project focuses on resistance to drugs of human importance, includin
 - third-generation cephalosporins
 
 
+See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for an up-to-date list of models and locations.
+
 
 .. toctree::
    :caption: Welcome
@@ -55,44 +57,6 @@ The iAM.AMR project focuses on resistance to drugs of human importance, includin
    /00_main/get_started
    /00_main/background
    /00_main/prostructure
-
-.. toctree::
-   :caption: Project
-   :maxdepth: 2
-   :numbered:
-
-   /02_project/CEDAR
-   /02_project/Data_Extract_Notes
-   /02_project/Sawmill
-
-.. toctree::
-   :caption: Activities
-   :maxdepth: 2
-   :numbered:
-
-   /03_activities/data_harmonization
-   /03_activities/processing_cedar_queries
-
-.. toctree::
-   :caption: Data Extraction
-   :maxdepth: 2
-   :numbered:
-
-   /data_extraction/search
-   /data_extraction/data_extract
-   /data_extraction/data_extract_rules
-   /data_extraction/form_reference
-   /data_extraction/form_factor
-
-
-.. toctree::
-   :caption: Models
-   :maxdepth: 2
-   :numbered:
-
-   /models/external_data.rst
-   /models/architecture.rst
-   /models/hub.rst
 
 .. toctree::
    :caption: Analytica
@@ -104,12 +68,43 @@ The iAM.AMR project focuses on resistance to drugs of human importance, includin
    /analytica/mod.rst
 
 .. toctree::
+   :caption: Data
+   :maxdepth: 2
+   :numbered:
+
+   /data_extraction/search
+   /data_extraction/CEDAR
+   /data_extraction/data_extract
+   /data_extraction/data_extract_rules
+   /data_extraction/form_reference
+   /data_extraction/form_factor
+   /data_extraction/processing_cedar_queries
+   /data_extraction/Sawmill
+..   /02_project/Data_Extract_Notes
+
+.. toctree::
+   :caption: Models
+   :maxdepth: 2
+   :numbered:
+
+   /models/external_data.rst
+   /models/architecture.rst
+   /models/hub.rst
+
+.. toctree::
+   :caption: Other Activities
+   :maxdepth: 2
+   :numbered:
+
+   /03_activities/data_harmonization
+
+
+.. toctree::
    :caption: Technology
    :maxdepth: 2
    :numbered:
 
    /09_technology/software.rst
-   /09_technology/analytica
    /09_technology/git
    /09_technology/add_page
 
