@@ -87,7 +87,6 @@ See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for
    :maxdepth: 2
    :numbered:
 
-   /models/external_data.rst
    /models/architecture.rst
    /models/hub.rst
 
