@@ -1,38 +1,40 @@
 Field Name,Field Description,Added to Output by Function __
 ID,Factor ID,
-status,Current status of the corresponding reference,
-name_short,First author name + et al. + publication date of reference,
+ref_key,First author name + et al. + publication date of reference,
 doi,DOI or PMID for the reference,
 host_01,"Host involved (i.e. cattle, swine)",
 host_02,"Specific host involved (i.e. dairy cows, beef calves)",
 microbe_01,"Microbe genus involved (i.e. Escherichia, Salmonella)",
 microbe_02,"Microbe species involved (i.e. coli, spp.)",
 stage_allocate,Stage of production relevant to study intervention,
-AMR,Antimicrobial involved,
+AMR,Antimicrobial assayed for resistance for the factor in question,
 factor_title,Factor title,
 factor_description,Factor description,
 group_exposed,Description of the exposed group,
 group_referent,Description of the referent group,
-res_format,"Set of result fields available in the study (i.e. Contingency Table, Rate Table)",
+res_format,"Set of result fields available in the study (i.e. Contingency Table, Prevalence Table)",
 A ,Contingency Table: # AMR+ in exposed group,
 B,Contingency Table: # AMR- in exposed group,
 C,Contingency Table: # AMR+ in referent group,
 D ,Contingency Table: # AMR- in referent group,
-nexp,Total # in exposed group,
-nref,Total # in referent group,
-P,Rate Table: % AMR+ in exposed group,
-Q,Rate Table: % AMR+ in referent group,
-oddslo,Odds Ratio: Lower confidence interval,
+nexp,Total # [res_unit] in exposed group,
+nref,Total # [res_unit] in referent group,
+P,Prevalence Table: % AMR+ in exposed group,
+Q,Prevalence Table: % AMR+ in referent group,
+oddslo,Odds Ratio: Lower bound of the confidence interval,
 odds ,Odds Ratio: Odds ratio value for the factor,
-oddsup,Odds Ratio: Upper confidence interval,
+oddsup,Odds Ratio: Upper bound of the confidence interval,
 oddsig,Odds Ratio: Significance value (p-value),
+oddsci,Confidence interval (always 95%),add_CI
 exclude,"When TRUE, factor is to be excluded from the iAM.AMR models",
-ID_meta,Meta-analysis group ID (if applicable),
-meta_type,Meta-analysis group description (if applicable),
+ID_meta,Meta-analysis: ID of the meta-analysis group to which the factor belongs (if applicable),
+meta_amr,Meta-analysis: antimicrobial/class of antimicrobials to which resistance was assayed in the factors included in this particular meta-analysis group (if applicable),
+meta_type,"Meta-analysis: type/level of granularity of this particular meta-analysis group (i.e. within studies, across studies) (if applicable)",
+exclude_sawmill,"If TRUE, factor was excluded from calculations by sawmill due to errors/missing data",check_grain
+exclude_sawmill_reason,Accompanying reason for factors with exclude_sawmill = TRUE,trim_scraps
 grain,"Set of result fields provided in the study (i.e. if A, B, C, and D are provided, the grain is con_table_pos_neg)",check_grain
 low_cell_count,"If TRUE, at least one of A, B, C, or D is less than or equal to the low_cell_threshold and a correction factor was applied to A, B, C, and D",build_table
 null_comparison,"If TRUE, both A and C are equal to 0 (meaning that no AMR+ observations were made)",build_table
-oddsci,Confidence interval (always 95%),add_CI
 odds_ratio,"Final odds ratio (either copied from odds field if provided, or calculated)",build_chairs
 se_log_or,Standard error of the log(odds ratio),build_chairs
 pval,"Significance value (p-value, either copied from oddsig field if provided, or calculated)",build_horse
