@@ -4,10 +4,10 @@ tbl_a,contable_a
 tbl_b,contable_b
 tbl_c,contable_c
 tbl_d,contable_d
-tbl_p,ratetable_a
-,ratetable_b
-tbl_q,ratetable_c
-,ratetable_d
+tbl_p,prevtable_a
+,prevtable_b
+tbl_q,prevtable_c
+,prevtable_d
 tbl_m1,table_n_exp
 tbl_m2,table_n_ref
 factor_or,odds_ratio

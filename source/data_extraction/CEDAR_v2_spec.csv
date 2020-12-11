@@ -1,1 +1,37 @@
-Field Name,Expected Data Type,Field DescriptionRWID,numeric,RefWorks ID for the referenceident_doi,text,DOI for the referenceident_pmid,numeric,PMID for the referencename_bibtex,text,First author + publication date of referenceID_factor,numeric,ID of the factorAMR,text,Antimicrobial involvedfactor_title,text,Factor titlefactor_description,text,Factor descriptionhost_01,text,"Host involved (i.e. cattle, swine)"host_02,text,"Specific host involved (i.e. dairy cows, beef calves)"microbe_01,text,"Microbe genus involved (i.e. Escherichia, Salmonella)"microbe_02,text,"Microbe species involved (i.e. coli, spp.)"stage_allocate,text,Stage of production at which the intervention to the exposed group is made in the studystage_observe,text,Stage of production at which the intervention's effect is measured in the studygroup_exposed,text,Description of the exposed groupgroup_referent,text,Description of the referent groupres_format,text,"Set of result fields available in the study (i.e. Contingency Table, Rate Table)"res_unit,text,"Unit to which the results apply (i.e. flock, isolate, pooled isolate)"contable_a,numeric,Contingency Table: # AMR+ in exposed groupcontable_b,numeric,Contingency Table: # AMR- in exposed groupcontable_c,numeric,Contingency Table: # AMR+ in referent groupcontable_d,numeric,Contingency Table: # AMR- in referent groupratetable_a,numeric,Rate Table: % AMR+ in exposed groupratetable_b,numeric,Rate Table: % AMR- in exposed groupratetable_c,numeric,Rate Table: % AMR+ in referent groupratetable_d,numeric,Rate Table: % AMR- in referent grouptable_n_exp,numeric,Total # in exposed grouptable_n_ref,numeric,Total # in referent groupodds_ratio,numeric,Odds Ratio: Odds ratio value for the factorodds_ratio_lo,numeric,Odds Ratio: Lower confidence intervalodds_ratio_up,numeric,Odds Ratio: Upper confidence intervalodds_ratio_sig,text,Odds Ratio: Significance value (p-value)ID_meta,numeric,Meta-analysis group ID (if applicable)meta_amr,text,Meta-analysis group description (if applicable)meta_type,text,"Meta-analysis type (i.e. within studies, across studies) (if applicable)"
+Field Name,Expected Data Type,Field Description
+RWID,text,RefWorks ID for the reference
+ident_doi,text,DOI for the reference
+ident_pmid,text,PMID for the reference
+name_bibtex,text,First author + publication date of reference
+ID_factor,numeric,ID of the factor
+AMR,text,Antimicrobial assayed for resistance for the factor in question
+factor_title,text,Factor title
+factor_description,text,Factor description
+host_01,text,"Host involved (i.e. cattle, swine)"
+host_02,text,"Specific host involved (i.e. dairy cows, beef calves)"
+microbe_01,text,"Microbe genus involved (i.e. Escherichia, Salmonella)"
+microbe_02,text,"Microbe species involved (i.e. coli, spp.)"
+stage_allocate,text,Stage of production at which the intervention to the exposed group is made in the study
+stage_observe,text,Stage of production at which the intervention's effect is measured in the study
+group_exposed,text,Description of the exposed group
+group_referent,text,Description of the referent group
+res_format,text,"Set of result fields available in the study (i.e. Contingency Table, Prevalence Table)"
+res_unit,text,"Unit to which the results apply (i.e. flock, isolate, pooled isolate)"
+contable_a,numeric,Contingency Table: # AMR+ in exposed group
+contable_b,numeric,Contingency Table: # AMR- in exposed group
+contable_c,numeric,Contingency Table: # AMR+ in referent group
+contable_d,numeric,Contingency Table: # AMR- in referent group
+prevtable_a,numeric,Prevalence Table: % AMR+ in exposed group
+prevtable_b,numeric,Prevalence Table: % AMR- in exposed group
+prevtable_c,numeric,Prevalence Table: % AMR+ in referent group
+prevtable_d,numeric,Prevalence Table: % AMR- in referent group
+table_n_exp,numeric,Total # [res_unit] in exposed group
+table_n_ref,numeric,Total # [res_unit] in referent group
+odds_ratio,numeric,Odds Ratio: Odds ratio value for the factor
+odds_ratio_lo,numeric,Odds Ratio: Lower bound of the confidence interval
+odds_ratio_up,numeric,Odds Ratio: Upper bound of the confidence interval
+odds_ratio_sig,text,Odds Ratio: Significance value (p-value)
+odds_ratio_confidence,numeric,Odds Ratio: The confidence interval (i.e. 95%)
+ID_meta,text,Meta-analysis: ID of the meta-analysis group to which the factor belongs (if applicable)
+meta_amr,text,Meta-analysis: antimicrobial/class of antimicrobials to which resistance was assayed in the factors included in this particular meta-analysis group (if applicable)
+meta_type,text,"Meta-analysis: type/level of granularity of this particular meta-analysis group (i.e. within studies, across studies) (if applicable)"

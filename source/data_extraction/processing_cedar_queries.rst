@@ -5,28 +5,26 @@ Processing CEDAR Exports
 
 Overview
 --------
-This section provides instructions for processing CEDAR exports (queries, timber), for inclusion in the iAM.AMR models.
+This section provides instructions for processing CEDAR exports (queries, timber), so that they can be used to populate the iAM.AMR models.
 
-This processing is done using the **sawmill** R package. 
-If you are not familiar with sawmill, please review the :ref:`section on sawmill <02_project/Sawmill:The sawmill R Package>`.
+This processing is performed using the **sawmill** R package. 
+If you are not familiar with sawmill, please review the :ref:`section on sawmill <data_extraction/Sawmill:The sawmill R Package>`, and install it as per the instructions on that page before continuing.
 
-.. tip:: This section should be read concurrently with step 3 of the *Bootstrap* installation or step 4 of the *Standard* installation (see the *Installation and Use* section of the sawmill GitHub repository's *README.MD* file).
+.. tip:: This section should be read concurrently with the last step of your chosen installation procedure (**Bootstrap** or **Standard**): please see the `Installation and Use <https://github.com/iAM-AMR/sawmill#installation-and-use>`_ section of the sawmill GitHub repository's *README* instruction file).
 
-Preparing the Input File
-------------------------
+Raw Timber
+----------
 
-CEDAR timber should be in the form of an Excel file, where each row represents an individual factor.
+CEDAR timber should be in the form of an Excel (*.xlsx*) file, where each row represents an individual factor.
 
-.. tip:: If you are not sure which fields within CEDAR correspond to those specified in the following sections, please consult Charly Phillips or Brennan Chapman.
-
-CEDAR v2 input
-~~~~~~~~~~~~~~
+CEDAR v2 timber
+~~~~~~~~~~~~~~~
 
 The following table is an example of a properly formatted CEDAR v2 input timber file (header row and one example factor row are shown). 
 
 .. csv-table:: CEDAR v2 Timber Example
    :file: CEDAR_v2_ex.csv
-   :widths: 30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
+   :widths: 30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
    :header-rows: 1
 
 .. attention:: The left-to-right order and names of the fields in your input file must match that shown above *exactly*, otherwise sawmill will raise an error.
@@ -38,10 +36,10 @@ Each field has an expected data type, as dictated below. A description of each f
    :widths: 30,10,50
    :header-rows: 1
 
-.. attention:: The type of data contained within each of the fields in your input file should match those outlined above, as processing errors can occur otherwise. Please see :ref:`Warnings due to unexpected data types <03_activities/processing_cedar_queries:Warnings due to unexpected data types>` for more information.
+.. attention:: The type of data contained within each of the fields in your input file should match those outlined above, as processing errors can occur otherwise. Please see :ref:`Warnings due to unexpected data types <data_extraction/processing_cedar_queries:Warnings due to unexpected data types>` for more information.
 
-CEDAR v1 input
-~~~~~~~~~~~~~~
+CEDAR v1 timber
+~~~~~~~~~~~~~~~
 
 The following table is an example of a properly formatted CEDAR v1 input timber file (header row and one example factor row are shown).
 
@@ -59,7 +57,7 @@ Each field has an expected data type, as dictated below. A description of each f
    :widths: 30,10,50
    :header-rows: 1
 
-.. attention:: The type of data contained within each of the fields in your input file should match those outlined above, as processing errors can occur otherwise. Please see :ref:`Warnings due to unexpected data types <03_activities/processing_cedar_queries:Warnings due to unexpected data types>` for more information.
+.. attention:: The type of data contained within each of the fields in your input file should match those outlined above, as processing errors can occur otherwise. Please see :ref:`Warnings due to unexpected data types <data_extraction/processing_cedar_queries:Warnings due to unexpected data types>` for more information.
 
 Using sawmill
 -------------
@@ -67,33 +65,33 @@ Using sawmill
 Changing default values of sawmill arguments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. tip:: This sub-section is optional if you have chosen the *Bootstrap* installation.
+.. tip:: This sub-section is optional if you have chosen the **Bootstrap** installation.
 
-Complete descriptions of these arguments and guides as to how they should be changed can be found in the *Sawmill Arguments* section of the sawmill GitHub repository's *README.md* file.
+Complete descriptions of these arguments and guides as to how they should be changed can be found in the `Sawmill Arguments <https://github.com/iAM-AMR/sawmill#sawmill-arguments>`_ section of the sawmill GitHub repository's *README.md* file.
 
-To change these arguments, open **mill.R**.
-The default values are specified in this script in a single line of code, as shown in the following figure. 
+To change these arguments, open *start_mill.R* and *mill.R*.
+The default values are specified in this script in a single line of code, as shown for *mill.R* in the following figure. 
 
 .. figure:: /assets/figures/RStudio_default_arguments.jpg
    :align: center
 
-   Default arguments in sawmill's **mill.R** script.
+   Default arguments in sawmill's *mill.R* script.
 
-The argument values can be changed directly in this line of code. For example, if you wanted to change the argument **write_scrap** to *FALSE*, simply replace the *TRUE* after the *=* sign with *FALSE*.
+The argument values can be changed directly in this line of code. For example, if you wanted to change the argument **insensible_p_lo** to *98*, simply replace the *99* after the *=* sign with *98*.
 
-.. attention:: You must click *Install and Restart* in the *Build* tab of RStudio for any changes to the code to take effect.
+.. attention:: You must click *Install and Restart* in the **Build** tab of RStudio for any changes to the code to take effect.
 
 Running sawmill
 ~~~~~~~~~~~~~~~
 
-Please see the instructions in the *Installation and Use* section of the GitHub repository's *README.md* file.
+Please see the instructions in the `Installation and Use <https://github.com/iAM-AMR/sawmill#installation-and-use>`_ section of the GitHub repository's *README.md* file.
 
-Prompts will appear in the *Console* as you follow the instructions from GitHub. 
+Prompts will appear in the **Console** as you follow the instructions from GitHub. 
 Enter the information requested by the prompts and select the input timber file from its saved location on your computer.
 
-Once sawmill is finished running, it will prompt you to save the processed output. Select an appropriate location on your computer to do so.
+Once sawmill is finished running, it will prompt you to save the processed timber. Select an appropriate location on your computer to do so.
 
-.. important:: Save the processed output with a *.csv* extension to prevent errors from occurring.
+.. important:: Save the processed timber with a *.csv* extension to prevent errors from occurring.
 
 If **errors** or **warnings** appear, please see the following sub-sections.
 
@@ -102,8 +100,8 @@ Errors
 
 Errors will stop sawmill from continuing to run, at whichever point in the pipeline they are raised.
 
-An error message will appear in the *Console*, indicating which function caused the error.
-For example, if an error occurs due to an error in the **build_chairs** function, the message will look something like the following:
+An error message will appear in the **Console**, indicating which function caused the error.
+For example, if the error is raised in the *build_chairs* function, the message will look something like the following:
 
 .. figure:: /assets/figures/Error_console.jpg
    :align: center
@@ -113,7 +111,7 @@ For example, if an error occurs due to an error in the **build_chairs** function
 Please note that only the lines beginning with "Error" constitute the actual error message. 
 Although the "Processed function..." lines are also in red text, they should be present in the case of a normal output (i.e. one without errors or warnings).
 
-.. important:: In the event of an error, please send the error message and input timber file that produced it to Charly Phillips or Brennan Chapman.
+.. important:: In the event of an error, please send the error message and input timber file that produced it to the maintainer of sawmill's GitHub repository.
 
 Warnings
 ~~~~~~~~
@@ -145,17 +143,17 @@ The type of warning received (**Coercing** or **Expecting**) can help you decide
 Coercing warnings
 ^^^^^^^^^^^^^^^^^
 
-Coercing warnings appear when R is able to convert the affected cell(s) to the appropriate, expected data type(s).
+Coercing warnings appear when R *is* able to convert the affected cell(s) to the appropriate, expected data type(s).
 
 Below is an example of a cell that is likely to produce a coercing warning. This value is in the **odds_ratio_up** column, so its data type should be numeric.
-While the value is a number, it is formatted as text (flagged by Excel with a green half-triangle in the upper left corner of the cell).
+While the value is a number, it is formatted as text (flagged by Excel in the upper left corner of the cell).
 
 .. figure:: /assets/figures/Coercing_warning_Excel.jpg
    :align: center
 
    Example of a cell that produces a coercing warning.
 
-Warning messages for coercing warnings look something like that shown below.
+Warning messages for coercing warnings appear in the **Console** and look something like that shown below.
 The Excel cell shown above produced one of these warnings (the one affecting AE524 / R524C31).
 
 .. figure:: /assets/figures/Coercing_warning_ex.jpg
@@ -168,9 +166,9 @@ If only coercing warnings are present, you can safely choose to continue with pr
 Expecting warnings
 ^^^^^^^^^^^^^^^^^^
 
-Expecting warnings appear when R is unable to convert the affected cell(s) to the appropriate, expected data type(s).
+Expecting warnings appear when R is *not* able to convert the affected cell(s) to the appropriate, expected data type(s).
 
-Below is an example of a cell that is likely to produce an expecting warning. This value is in the **rate_table_d** column, so its data type should be numeric.
+Below is an example of a cell that is likely to produce an expecting warning. This value is in the **prev_table_d** column, so its data type should be numeric.
 However, a text string is present, and it cannot be converted to a numeric data type.
 
 .. figure:: /assets/figures/Expecting_warning_Excel.jpg
@@ -178,8 +176,8 @@ However, a text string is present, and it cannot be converted to a numeric data 
 
    Example of a cell that produces an expecting warning.
 
-Warning messages for expecting warnings look something like that shown below.
-The Excel cell shown above produced this warning; it affects cell Z2 / R2C6.
+Warning messages for expecting warnings appear in the **Console** and look something like that shown below.
+The Excel cell shown above produced this warning; it affects cell Z2 / R2C26.
 
 .. figure:: /assets/figures/Expecting_warning_ex.jpg
    :align: center
@@ -189,17 +187,16 @@ The Excel cell shown above produced this warning; it affects cell Z2 / R2C6.
 The implications of expecting warnings vary depending on the columns in which they occur.
 
 If the affected cell(s) are in any of the columns specified in the table below, you should stop the pipeline and fix the affected cells. 
-These fields have a direct effect on the odds ratio calculation, so in the event of unexpected data types in any of these, sawmill will typically deem the factor unusable, excluding the row from further processing, removing it from the processed output, and writing it to the *scrap_pile* **without warning**.
-
-.. note:: For more information about the *scrap_pile* please see **write_scrap**, under the *Sawmill Arguments* section of the GitHub repository's *README.md* file.
+These fields have a direct effect on the odds ratio calculation, so in the event of unexpected data types in any of these, sawmill will 
+typically deem the factor unusable, excluding the row from further processing and writing it to the :ref:`scrap pile <data_extraction/processing_cedar_queries:Scrap pile>` **without warning**.
 
 .. csv-table:: Columns Which Affect Calculations
    :file: Calculation_Fields.csv
    :widths: 30,30
    :header-rows: 1
 
-If the affected cell(s) are in any of the other columns, however, sawmill will simply replace the cell with a value of **NA**. 
-The factor will not be deleted, and the row will still appear in the processed output. 
+If the affected cell(s) are in any of the other columns, however, sawmill will simply replace the cell with a value of *NA*. 
+The factor will not be deleted, and the row will still appear in the processed timber. 
 In cases like this, it is up to the user whether or not to continue with processing when faced with the prompt.
 
 .. attention:: Output fields may still be affected by unexpected data types in these other columns. For instance, the **url** and **html_link** output columns are affected by *ident_doi* (v2)/*docID* (v1), and sometimes *ident_pmid* (v2). Also, the **identifier** output column is affected by *ID_factor* (v2)/*ID* (v1) and *factor_title* (v2)/*title* (v1).
@@ -207,14 +204,14 @@ In cases like this, it is up to the user whether or not to continue with process
 Other warnings
 ++++++++++++++
 
-Every time you execute sawmill, you will likely see a message resembling the following in the *Console*, once the pipeline has finished and you have saved your processed output.
+Every time you execute sawmill, you will likely see a message resembling the following in the **Console**, once the pipeline has finished and you have saved your processed timber.
 
 .. figure:: /assets/figures/standard_warning.jpg
    :align: center
 
    Generic warnings alert.
 
-If you follow the prompt by entering the following into the *Console*::
+If you follow the prompt by entering the following into the **Console**::
    
    warnings()
 
@@ -225,88 +222,152 @@ You will see something closely resembling the following:
 
    Generic warning messages.
 
-This type of warning can be ignored. It occurs when the significance value (p-value) for the odds ratio is calculated using the Fisher's exact test.
+This type of warning can be ignored. It occurs when the significance value (p-value) for the factor is calculated using the Fisher's exact test.
 Since the values used in the Fisher's test must be rounded to the nearest integer, a warning is generated to notify the user that the rounding took place.
 
-.. attention:: If the warning messages are of any other nature than those mentioned, please contact Charly Phillips or Brennan Chapman for assistance.
+.. attention:: If the warning messages are of any other nature than those mentioned, please contact the maintainer of sawmill's GitHub repository for assistance.
 
-Interpreting the Output File
-----------------------------
+Evaluating the Processed Timber (Planks)
+----------------------------------------
 
-This section outlines the fields that will be present in the processed output (*.csv*) file. 
+This section outlines the fields that will be present in the processed timber *.csv* file. 
+Each row now represents a plank of processed timber, or a factor usable for an iAM.AMR model.
 
-Output from CEDAR v2
+The output .csv file
 ~~~~~~~~~~~~~~~~~~~~
+
+In general, planks will appear in the following order, from top to bottom, in the output *.csv* file:
+
+#. *Error-free factors* for which an odds ratio and other outputs were successfully calculated (**exclude_sawmill** was assigned a value of False)
+#. *Meta-analysis results* for each meta-analysis grouping (each unique meta-analysis ID)
+#. *Erroneous factors* for which an odds ratio and other outputs were *not* successfully calculated (**exclude_sawmill** was assigned a value of True)
+
+.. note:: Rows containing the results of a meta-analysis will look slightly different (for instance, some fields may have values of *NA*).
+
+CEDAR v2 planks
+~~~~~~~~~~~~~~~
 
 The following table is an example of processed timber from CEDAR v2.
 
 While all fields present in the input timber are retained in the output, some will have new names. 
 Sawmill renames some of the fields to improve uniformity between v1 and v2 outputs.
 
-Please note that rows containing the results of a meta-analysis will look slightly different (for instance, some fields may have values of **NA**).
-
 .. csv-table:: Output from CEDAR v2 Example
    :file: CEDAR_v2_output_ex.csv
-   :widths: 30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
+   :widths: 30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
    :header-rows: 1
 
-A description of each output field is provided below. The fields which are added by sawmill and thus only appear in the processed output are also annotated with the function responsible for adding them to the output.
+A description of each output field is provided below. The fields which are added by sawmill and thus only appear in the processed timber are also annotated with the function responsible for adding them.
 
-Please note that the **odds_ratio**, **se_log_or**, and **pval** fields are added by the *do_MA* function when the row displays the results of a meta-analysis.
+Please note that the **odds_ratio**, **se_log_or**, and **pval** fields are added by the *do_MA* function in cases where the row contains the results of a meta-analysis.
+Also, the **logOR** field is only added if there is at least one meta-analysis grouping (one unique meta-analysis ID) in the raw timber.
 
 .. csv-table:: Output from CEDAR v2 Specification
    :file: CEDAR_v2_output_spec.csv
    :widths: 30,10,50
    :header-rows: 1
 
-Output from CEDAR v1
-~~~~~~~~~~~~~~~~~~~~
+CEDAR v1 planks
+~~~~~~~~~~~~~~~
 
 The following table is an example of processed timber from CEDAR v1.
 
 While all fields present in the input timber are retained in the output, some will have new names. 
 Sawmill renames some of the fields to improve uniformity between v1 and v2 outputs.
 
-Please note that rows containing the results of a meta-analysis will look slightly different (for instance, some fields may have values of **NA**).
+Please note that rows containing the results of a meta-analysis will look slightly different (for instance, some fields may have values of *NA*).
 
 .. csv-table:: Output from CEDAR v1 Example
    :file: CEDAR_v1_output_ex.csv
-   :widths: 30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
+   :widths: 30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
    :header-rows: 1
 
-A description of each output field is provided below. The fields which are added by sawmill and thus only appear in the processed output are also annotated with the function responsible for adding them to the output.
-Please note that the **odds_ratio**, **se_log_or**, and **pval** fields are added by the *do_MA* function when the row displays the results of a meta-analysis.
+A description of each output field is provided below. The fields which are added by sawmill and thus only appear in the processed timber are also annotated with the function responsible for adding them.
 
 .. csv-table:: Output from CEDAR v1 Specification
    :file: CEDAR_v1_output_spec.csv
    :widths: 30,10,50
    :header-rows: 1
 
+Adding meta-analysis groupings
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Upon examining the processed timber, you may wish to group certain factors together for meta-analysis in the raw timber and rerun sawmill.
+
+.. attention:: Meta-analysis is currently only supported for timber from CEDAR v2.
+
+To add a meta-analysis grouping, make the following changes to the optional meta-analysis fields in the original, raw timber file:
+
+#. **ID_meta**: assign the same meta-analysis ID to all factors you wish to include in the grouping
+#. **meta_amr**: specify the antimicrobial or class of antimicrobials to which resistance is assayed
+#. **meta_type**: describe the type and level of granularity of the meta-analysis grouping
+
+.. tip:: The actual meta-analysis ID assigned to a particular grouping is irrelevant, as long as it is consistent across all factors in the grouping.
+
+The table below provides example values for each meta-analysis field, as they might appear for a factor in the raw timber.
+
+.. csv-table:: Meta-analysis Example
+   :file: Meta-analysis_example.csv
+   :widths: 50,50,50
+   :header-rows: 1
+
+All three meta-analysis fields (**ID_meta**, **meta_amr**, and **meta_type**) can simply be left blank for factors that should not be involved in meta-analysis calculations.
+
 What to check for
 ~~~~~~~~~~~~~~~~~
 
-CEDAR v2: insensible_rate_table field
-+++++++++++++++++++++++++++++++++++++
+Meta-analysis results
++++++++++++++++++++++
 
-Check your output *.csv* file for rows where **insensible_rate_table** = TRUE.
-These rows likely have data entry errors in the rate table columns, as this result indicates that (% AMR+ exposed) **+** (% AMR- exposed) does not come to approximately 100, and/or that (% AMR+ referent) **+** (% AMR- referent) does not come to approximately 100.
+The key components of meta-analysis results are added to the processed timber, but the complete results are available for viewing in the top right corner of RStudio, under *ma_results* in the **Environment** tab:
 
-The scrap_pile
-++++++++++++++
+.. figure:: /assets/figures/output_upper_right.PNG
+   :align: center
 
-If your output file is significantly shorter than your input file or seems to be missing a good deal of factors, you may want to check the *scrap_pile*.
+   Environment tab.
 
-To view the first few rows of the *scrap_pile*, enter the following into the *Console* after running sawmill::
-   
-   scrap_pile
+Clicking *ma_results* should open something like the following in the **Script editor** area, with results grouped by meta-analysis ID.
+In this case, the two meta-analysis groupings are indicated by meta-analysis IDs *7* and *18*.
 
-You should expect to see entries here that are missing the fields necessary to calculate an odds ratio; these cannot be salvaged.
+.. figure:: /assets/figures/ma_results.PNG
+   :align: center
 
-If you see unexpected entries, please save the *scrap_pile* as a *.csv* file by entering the following lines into the *Console*::
-   
-   install.packages("readr")
-   library(readr)
-   readr::write_csv(scrap_pile, file.choose())
+   Meta-analysis results.
 
-Examining this entire *.csv* file should give you a clue as to why most of your factors are being discarded, and how to fix the issue.
-If not, contact Charly Phillips or Brennan Chapman.
+Scrap pile 
+++++++++++
+
+The scrap pile contains those erroneous factors for which sawmill could not calculate an odds ratio and/or other key outputs.
+All factors in the scrap pile are also appended to the very end of the processed timber file (you can find them by filtering for where **exclude_sawmill** = True).
+
+The scrap pile can be accessed in the top right corner of RStudio, under *scrap_pile* in the **Environment** tab:
+
+.. figure:: /assets/figures/output_upper_right.PNG
+   :align: center
+
+   Environment tab.
+
+After clicking on *scrap_pile*, you can scroll sideways to the **exclude_sawmill_reason** column, which contains a brief description of why this factor was not usable.
+
+Validation fields
++++++++++++++++++
+
+Low cell count factors
+^^^^^^^^^^^^^^^^^^^^^^
+
+When one or more of the four values in the 2x2 contingency table is equal to zero, sawmill sets the **low_cell_count** field to True.
+To avoid divide by zero errors, sawmill increments all four values by 0.5.
+
+Null comparison factors
+^^^^^^^^^^^^^^^^^^^^^^^
+
+When the # AMR+ observations in both the exposed and referent groups are equal to zero, sawmill sets the **null_comparison** field to True.
+To avoid divide by zero errors, sawmill increments all four values by 0.5.
+
+Any null comparison factors also have the **low_cell_count** field set to True.
+
+CEDAR v2: factors with an insensible_prev_table
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Check your output *.csv* file for rows where the **insensible_prev_table** field is set to True.
+These rows likely have data entry errors in the prevalence table columns, as this result indicates that (% AMR+ exposed) **+** (% AMR- exposed) does not come to approximately 100, and/or that (% AMR+ referent) **+** (% AMR- referent) does not come to approximately 100.
