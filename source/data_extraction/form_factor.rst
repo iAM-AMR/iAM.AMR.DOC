@@ -234,6 +234,7 @@ Penicillin G    benzylpenicillin
 Penicillin V/K  phenoxymethylpenicillin
 Sulfamethazine  sulfadimidine
 Sulfisoxazole   sulfafurazole
+Linco-Spectin   lincomycin, combinations
 ==============  ======================= 
 
 Always together
