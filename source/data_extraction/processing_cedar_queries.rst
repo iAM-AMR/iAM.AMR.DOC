@@ -89,11 +89,14 @@ Please see the instructions in the `Installation and Use <https://github.com/iAM
 Prompts will appear in the **Console** as you follow the instructions from GitHub. 
 Enter the information requested by the prompts and select the input timber file from its saved location on your computer.
 
-Once sawmill is finished running, it will prompt you to save the processed timber. Select an appropriate location on your computer to do so.
+Once sawmill is finished running, it will prompt you to save one or more output files. 
+For each one, you will be prompted to select the save location on your computer.
 
-.. important:: Save the processed timber with a *.csv* extension to prevent errors from occurring.
+.. important:: Save all output files with *.csv* extensions to prevent errors from occurring.
 
 If **errors** or **warnings** appear, please see the following sub-sections.
+
+.. caution:: You will likely rerun sawmill many times, as deciding which factors to include in a model is an iterative process. You will need to enter the command `rm(list = ls())` into the **Console** before rerunning sawmill. This must be done once for every rerun. This way, variables saved during sawmill's previous run will not carry over to the new one.
 
 Errors
 ~~~~~~
@@ -227,22 +230,55 @@ Since the values used in the Fisher's test must be rounded to the nearest intege
 
 .. attention:: If the warning messages are of any other nature than those mentioned, please contact the maintainer of sawmill's GitHub repository for assistance.
 
-Evaluating the Processed Timber (Planks)
-----------------------------------------
+Evaluating the Processed Timber (Planks) and Other Outputs
+----------------------------------------------------------
 
 This section outlines the fields that will be present in the processed timber *.csv* file. 
 Each row now represents a plank of processed timber, or a factor usable for an iAM.AMR model.
 
-The output .csv file
-~~~~~~~~~~~~~~~~~~~~
+An overview of additional output *.csv* files that may be produced is also provided.
 
-In general, planks will appear in the following order, from top to bottom, in the output *.csv* file:
+The output .csv files
+~~~~~~~~~~~~~~~~~~~~~
 
-#. *Error-free factors* for which an odds ratio and other outputs were successfully calculated (**exclude_sawmill** was assigned a value of False)
+Processed timber
+++++++++++++++++
+
+A processed timber file is produced for each successful run of sawmill.
+
+Two types of planks (rows) are present in the following order, from top to bottom:
+
+#. *Error-free factors* for which an odds ratio and other outputs were successfully calculated
 #. *Meta-analysis results* for each meta-analysis grouping (each unique meta-analysis ID)
-#. *Erroneous factors* for which an odds ratio and other outputs were *not* successfully calculated (**exclude_sawmill** was assigned a value of True)
 
 .. note:: Rows containing the results of a meta-analysis will look slightly different (for instance, some fields may have values of *NA*).
+
+Scrap pile
+++++++++++
+
+This file is only provided as an output if there is at least one erroneous factor in the raw timber.
+
+The scrap pile contains all erroneous factors, or factors for which an odds ratio and other key outputs
+were *not* successfully calculated.
+
+Its fields are overall quite similar to those present in the raw timber, with two unique additions:
+
+#. **exclude_sawmill**: Flagged as TRUE, indicating that the factor was excluded from calculations by sawmill due to errors/missing data
+#. **exclude_sawmill_reason**: A more detailed description of why the factor was not usable
+
+Full meta-analysis results
+++++++++++++++++++++++++++
+
+This file is only provided as an output if there is at least one meta-analysis grouping in the raw timber.
+
+Each row represents the results from a single meta-analysis grouping, indicated by the value of **ID_meta** 
+in the far-left column.
+
+The main estimates produced by the meta-analysis calculation (odds ratio, standard error of the log(odds ratio), 
+and p-value) are included in the processed timber. However, the full results
+produced by *metafor* (the meta-analysis R package used by sawmill), contain many more fields describing other parameters of the calculation.
+
+For a full description of these parameters, please see pg. 241 of the `metafor user guide <https://cran.r-project.org/web/packages/metafor/metafor.pdf>`_, which is the Value list for rma.uni.
 
 CEDAR v2 planks
 ~~~~~~~~~~~~~~~
@@ -254,13 +290,14 @@ Sawmill renames some of the fields to improve uniformity between v1 and v2 outpu
 
 .. csv-table:: Output from CEDAR v2 Example
    :file: CEDAR_v2_output_ex.csv
-   :widths: 30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
+   :widths: 30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
    :header-rows: 1
 
 A description of each output field is provided below. The fields which are added by sawmill and thus only appear in the processed timber are also annotated with the function responsible for adding them.
 
-Please note that the **odds_ratio**, **se_log_or**, and **pval** fields are added by the *do_MA* function in cases where the row contains the results of a meta-analysis.
-Also, the **logOR** field is only added if there is at least one meta-analysis grouping (one unique meta-analysis ID) in the raw timber.
+.. tip:: The **odds_ratio**, **se_log_or**, and **pval** fields are added by the *do_MA* function in cases where the row contains the results of a meta-analysis.
+
+.. tip:: The **logOR** field is only added if there is at least one meta-analysis grouping (one unique meta-analysis ID) in the raw timber.
 
 .. csv-table:: Output from CEDAR v2 Specification
    :file: CEDAR_v2_output_spec.csv
@@ -313,53 +350,19 @@ The table below provides example values for each meta-analysis field, as they mi
 
 All three meta-analysis fields (**ID_meta**, **meta_amr**, and **meta_type**) can simply be left blank for factors that should not be involved in meta-analysis calculations.
 
-What to check for
-~~~~~~~~~~~~~~~~~
+Checking the validation fields
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Meta-analysis results
-+++++++++++++++++++++
-
-The key components of meta-analysis results are added to the processed timber, but the complete results are available for viewing in the top right corner of RStudio, under *ma_results* in the **Environment** tab:
-
-.. figure:: /assets/figures/output_upper_right.PNG
-   :align: center
-
-   Environment tab.
-
-Clicking *ma_results* should open something like the following in the **Script editor** area, with results grouped by meta-analysis ID.
-In this case, the two meta-analysis groupings are indicated by meta-analysis IDs *7* and *18*.
-
-.. figure:: /assets/figures/ma_results.PNG
-   :align: center
-
-   Meta-analysis results.
-
-Scrap pile 
-++++++++++
-
-The scrap pile contains those erroneous factors for which sawmill could not calculate an odds ratio and/or other key outputs.
-All factors in the scrap pile are also appended to the very end of the processed timber file (you can find them by filtering for where **exclude_sawmill** = True).
-
-The scrap pile can be accessed in the top right corner of RStudio, under *scrap_pile* in the **Environment** tab:
-
-.. figure:: /assets/figures/output_upper_right.PNG
-   :align: center
-
-   Environment tab.
-
-After clicking on *scrap_pile*, you can scroll sideways to the **exclude_sawmill_reason** column, which contains a brief description of why this factor was not usable.
-
-Validation fields
-+++++++++++++++++
+These are present in the processed timber file.
 
 Low cell count factors
-^^^^^^^^^^^^^^^^^^^^^^
+++++++++++++++++++++++
 
 When one or more of the four values in the 2x2 contingency table is equal to zero, sawmill sets the **low_cell_count** field to True.
 To avoid divide by zero errors, sawmill increments all four values by 0.5.
 
 Null comparison factors
-^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++
 
 When the # AMR+ observations in both the exposed and referent groups are equal to zero, sawmill sets the **null_comparison** field to True.
 To avoid divide by zero errors, sawmill increments all four values by 0.5.
@@ -367,7 +370,7 @@ To avoid divide by zero errors, sawmill increments all four values by 0.5.
 Any null comparison factors also have the **low_cell_count** field set to True.
 
 CEDAR v2: factors with an insensible_prev_table
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++
 
 Check your output *.csv* file for rows where the **insensible_prev_table** field is set to True.
 These rows likely have data entry errors in the prevalence table columns, as this result indicates that (% AMR+ exposed) **+** (% AMR- exposed) does not come to approximately 100, and/or that (% AMR+ referent) **+** (% AMR- referent) does not come to approximately 100.
