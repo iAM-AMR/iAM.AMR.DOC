@@ -34,7 +34,7 @@ The iAM.AMR project focuses on four [food-animal species | commodities]:
 
 The iAM.AMR project focuses on four microbes:
 
-- E. coli
+- E.coli
 - Salmonella Spp.
 - Campylobacter Spp.
 - Enterococcus Spp.
@@ -75,6 +75,7 @@ See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for
    /data_extraction/search
    /data_extraction/CEDAR
    /data_extraction/data_extract
+   /data_extraction/tips_and_tricks
    /data_extraction/data_extract_rules
    /data_extraction/form_reference
    /data_extraction/form_factor
