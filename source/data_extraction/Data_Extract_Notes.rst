@@ -7,10 +7,10 @@ Data Extraction Notes
 Add or Edit a Factor Form
 -------------------------
 
- - always use first match to AM in dropdown
- - removing duplicate AMU will result in both being deleted
+ - Always use the first match to an antimicrobial in the dropdown
+ - Removing duplicate antimicrobials will result in both being deleted
  - Ignore discrepancies in cascading fields
- - Duplicating factors DOES NOT duplicate AMU
+ - Duplicating factors DOES NOT duplicate the AMU field
 
 
 

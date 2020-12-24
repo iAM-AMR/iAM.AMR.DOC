@@ -43,7 +43,7 @@ Immutable factors should not be extracted.
 
 .. admonition:: Important
 
-   If a reason for the comparison is given, such as a growth promoter ban/change in related industry policy, factors comparing unique years/periods of time may be valid for extraction. For instance, one period of time might represent pre-ban conditions, while the next might represent post-ban conditions. In this case, the factor title should be "<Antimicrobial(s)> Ban", and any antimicrobials available for use pre-ban, as well as any available both pre- and post-ban that were specifically mentioned, should be tagged as if the factor is an AMU factor. Any information about the prevalence of actual growth promoter use pre-ban (and sometimes post-ban) should be provided in the factor description and/or reference notes.
+   If a reason for the comparison is given, such as a growth promoter ban/change in related industry policy, factors comparing unique years/periods of time may be valid for extraction. See :ref:`Antimicrobial ban factors <data_extraction/form_factor:Antimicrobial bans or changes in industry policy>`.
 
 Binary and Continuous Factors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,7 +57,7 @@ Selecting a Referent Level
 
 Binary factors consist of a referent and exposure group (e.g. your control and exposure groups respectively). The referent should generally be defined as the default practice in industry, or the least interventionist, while the exposure is the less common, or more interventionist approach. See above for more details. 
 
-Multiple Discrete Levels (Catagories)
+Multiple Discrete Levels (Categories)
 +++++++++++++++++++++++++++++++++++++
 
 When a factor has multiple levels (e.g. low, medium, and high), the factor shall be extracted seperately for each level, using the same referent level.  
@@ -77,6 +77,9 @@ Factor Data
 
 When multiple data formats are available, we always prefer **contingency tables** (count data), followed by prevalence tables, and finally odds ratios or relative risk. You only need to extract one format of data for a given factor.
 
+If data are presented as odds ratios, extract those from univariable analyses, but **not** those from multi-variable analyses.
+
+In cases where there are zero observations of resistance in both the exposed and referent groups, corresponding values may be omitted from tables but still mentioned in-text. Such "non-significant" values should still be extracted.
 
 Resistances and MDR
 ~~~~~~~~~~~~~~~~~~~

@@ -21,12 +21,38 @@ Title
 -----
 Create a title to describe the factor in title case. 
 
-The title should be simple, direct, and give no experimental context -- the title should be generic, as to easily identify comparable factors between studies. There are two specific cases recognized: 
+The title should be simple, direct, and give no experimental context -- the title should be generic, as to easily identify comparable factors between studies. 
 
-- where the factor solely describes antimicrobial use, the title should be recorded in the format "<Antimicrobial> Use", where <Antimicrobial> is the antimicrobial used
+Common factor types
+~~~~~~~~~~~~~~~~~~~
 
-- where the factor describes production type (i.e. a comparison between conventional, and organic, ABF, or free-range production), the title should be recorded as "Production Type"
+Antimicrobial use (AMU)
++++++++++++++++++++++++
 
+Where the factor solely describes antimicrobial use, the title should be recorded in the format "<Antimicrobial> Use", where <Antimicrobial> is the antimicrobial used.
+
+The antimicrobial(s) used should be tagged using the :ref:`AMU field <data_extraction/form_factor/AMU>`.
+
+Before and after AMU
+^^^^^^^^^^^^^^^^^^^^
+
+Where the factor describes the same group of host animals before and after AMU, designate pre-AMU data as representative of the referent group and post-AMU data as representative of the exposed group.
+Treat the factor exactly like an :ref:`Antimicrobial Use factor <data_extraction/form_factor/Antimicrobial use>`.
+
+Production type
++++++++++++++++
+
+Where the factor describes production type (i.e. a comparison between conventional, and organic, ABF, or free-range production), the title should be recorded as "Production Type".
+
+Antimicrobial bans or changes in industry policy 
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+Where the factor describes the effect of a growth promoter ban, or of a related change in industry policy, the title should be recorded as "<Antimicrobial(s)> Ban".
+In this case, the :ref:`exposed and referent groups <data_extraction/form_factor:Exposed and referent groups>` should represent pre-ban and post-ban conditions, respectively.
+
+Any antimicrobials available for use pre-ban, as well as any available both pre- and post-ban that were specifically mentioned, should be tagged using the :ref:`AMU field <data_extraction/form_factor/AMU>`, as if the factor is an :ref:`Antimicrobial Use factor <data_extraction/form_factor/Antimicrobial use>`.
+
+Any information about the prevalence of actual growth promoter use pre-ban (and sometimes post-ban) should be provided in the :ref:`factor description <data_extraction/form_factor:Description>` and/or in the :ref:`reference notes <data_extraction/form_reference:Notes and Issues Tab>`.
 
 |br|
 
@@ -235,7 +261,9 @@ Penicillin V/K  phenoxymethylpenicillin
 Sulfamethazine  sulfadimidine
 Sulfisoxazole   sulfafurazole
 Linco-Spectin   lincomycin, combinations
-==============  ======================= 
+==============  =======================
+
+.. note:: When the Penicillin type is not specified, select Penicillin V (phenoxymethylpenicillin).
 
 Always together
 +++++++++++++++

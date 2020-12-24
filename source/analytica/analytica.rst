@@ -26,7 +26,7 @@ The most common object in Analytica is the node (the terms object and node are o
 
 An influence diagram – the interface you see when you open the model – is a collection of nodes and their connections which serve to communicate the underlying mathematical relationships captured in the model. Because these models are designed to be accessible to users, it is essential that they are as clear and understandable as possible.
 
-.. image:: /assets/figures/ana_influence.png
+.. image:: /assets/figures/ana_influence.PNG
 
 Node Types
 ~~~~~~~~~~
