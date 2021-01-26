@@ -16,7 +16,7 @@ Module Contents
 ---------------
 The Hub module contains the following functions:
 
--	Filter By (filterBy)
+-	Get Data (getData)
    A function used to select the data to import from the Hub module into a story model
 -	Counts to Prevalence (countPrevalence)  
    A function to calculate a prevalence, represented by a Beta() distribution, from count data in a countTotal table
@@ -94,6 +94,13 @@ Hub Functions
 
 Each function is described within its own Description attribute. Where necessary, further information is provided here.
 
+Get Data
+~~~~~~~~
+The Get Data function takes a table indexed by the baseline indices, and returns a subset of the data, filtered by the provided story-model indices. 
+
+.. note:: If a main-model index is omitted, the table will be returned indexed by the baseline index.
+
+
 Count to Prevalence
 ~~~~~~~~~~~~~~~~~~~
 The Count to Prevalence function converts a countTotal table into a table of prevalences, represented by a Beta distribution. For more details on the use of the Beta() distribution, see the Math and Stats section.
@@ -110,13 +117,6 @@ The Interleave function combines two similarly-indexed tables, overwriting data 
 .. note:: Interleave() respects array abstraction; where <<newData>> is specified with fewer indices than <<originalData>>, <<newData>> is expanded (abstracted) to fit.
 
 By default, Interleave() replaces all data for which there is a match (<<replaceMissing>> = True). To only replace existing data (i.e. replace existing data, not fillng data gaps), set (<<replaceMissing>> = False.
-
-Filter By
-~~~~~~~~~
-The Filter By function takes a table indexed by the baseline indices, and returns a subset of the data, filtered by the provided story-model indices. 
-
-.. note:: If a main-model index is omitted, the table will be returned indexed by the baseline index.
-
 
 
 Depreciated Functions
