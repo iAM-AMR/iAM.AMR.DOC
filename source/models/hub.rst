@@ -128,9 +128,28 @@ To Do.
 HUB vs. HUB.GM
 --------------
 
-To ensure end-users do not accidently overwrite or change values in the Hub module (and subsequently propagate these changes to all story models), we maintain two different copies of the Hub module: the Gold Master [GM] (iAM.AMR.HUB.GM) and the production copy (iAM.AMR.HUB).
+To ensure end-users do not accidently overwrite or change values in the Hub module (and subsequently propagate these changes to all story models), we maintain two different copies of the Hub module: the Gold Master [GM] (iAM.AMR.HUB.GM) and the production copy (iAM.AMR.HUB). 
 
 The Gold Master (a term borrowed from audio and software engineering) is  -- as the name suggests -- the master copy of the Hub module. The GM is where all development (additions, deletions, changes) occurs. The production module is a *protected and encrypted* copy of the mutable (editable) GM module, connected to each of the story models. 
+
+See more details in the `iAM.AMR.HUB repo <https://goto.iam.amr.pub/repo-hub>`_.
+
+iAM.AMR.HUB
+   
+ - iAM.AMR.HUB is the main, working-copy of the Hub module. 
+ - iAM.AMR.HUB is an encrypted, browse-only (non-editable) copy of iAM.AMR.HUB.GM.
+ - Download and use iAM.AMR.HUB in your models, or **select this module** if prompted to locate the Hub module by Analytica.
+ 
+iAM.AMR.HUB.GM
+
+ - iAM.AMR.HUB.GM is the secondary, developer copy of the Hub module.
+ - iAM.AMR.HUB.GM is an unencrypted, editable copy of iAM.AMR.HUB.
+ - Download and edit iAM.AMR.HUB.GM to add new features to the module; **do not select this module** if prompted to locate the Hub module by Analytica.
+
+iAM.AMR.HUB.EX
+
+ - An example model demonstrating the use of the Hub module.
+
 
 .. important:: The iAM.AMR.HUB module is the module to which the story models are linked. Do not link your story model to the iAM.AMR.HUB.GM module.
 
@@ -139,31 +158,3 @@ What does this mean in practice? To make changes to our Hub module, we first mak
 You can think of making changes to the Hub module like making changes to a manuscript. All changes are made in Microsoft Word, before creating a PDF to submit to the journal.
 
 
-The Basic Hub Workflow
-~~~~~~~~~~~~~~~~~~~~~~
-
-There are several steps to edit the Hub:
-
- #. Download/pull the latest version of the models from GitHub
- #. Edit the Gold Master Hub module [iAM.AMR.HUB.GM] and story models as required  
- #. Save the Gold Master Hub module  
- #. Save an additional copy of the Gold Master as a protected model, with the name 'iAM.AMR.HUB', overwriting the existing Hub module  
- #. Review the story models to ensure no bugs were introduced during editing  
- #. Upload/push the changes to the GitHub repository  
-
-
-Save a Protected Model
-++++++++++++++++++++++
-
-Creating a protected version of an Analytica model/module is simple, but **requires Analytica Enterprise**.
-
-While in edit mode, navigate to `File > Save a Copy In...`. When prompted for a save location and file name, select *Save as a Browse-Only Model* in the lower left corner.
-
-.. figure:: /assets/figures/hubModel_save.png
-   :align: center
-
-   The *Save a Copy In...* Dialogue
-
-Selecting *Save as a Browse-Only Model* will automatically select *Lock and Encrypt the Copy*. Ensure you are saving a copy of the Gold Master without overwriting the Gold Master itself.
-
-.. danger:: Analytica will let you shoot yourself in the foot. Do not overwrite the GM with a protected production copy.
