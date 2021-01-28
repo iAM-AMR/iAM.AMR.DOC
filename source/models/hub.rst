@@ -107,7 +107,7 @@ The Count to Prevalence function converts a countTotal table into a table of pre
 
 By default, the function replaces missing count and total values with ‘1’ and ‘15’ respectively. Alternatively, it can return ‘Null’, or a Beta() distribution specified with alternative default count and total values.
 
-..important:: The defaults specified here are not the direct parameters used in the Beta() distribution. See the Math and Stats section for more details.
+.. important:: The defaults specified here are not the direct parameters used in the Beta() distribution. See the Math and Stats section for more details.
 
 
 Interleave

@@ -44,6 +44,8 @@ Production type
 
 Where the factor describes production type (i.e. a comparison between conventional, and organic, ABF, or free-range production), the title should be recorded as "Production Type".
 
+.. important:: These alternative systems are not the same. While all organic is ABF (antibiotic-free), not all ABF is organic. 'Welfare' and 'humane' production systems are likewise different. 
+
 Antimicrobial bans or changes in industry policy 
 ++++++++++++++++++++++++++++++++++++++++++++++++
 

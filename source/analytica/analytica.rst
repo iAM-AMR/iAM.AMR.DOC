@@ -65,7 +65,7 @@ Recall that the title of each node (shown by default in the user interface) is d
 
 As node identifiers are automatically created, they may be nonsensical or unnecessarily complex. Using our former example, if we had several nodes titled “Jim’s Favourite Cookies” (perhaps within a model of several bakeries), we could easily end up with a series of identifiers “Jim_s_Favourite_Coo1, Jim_s_Favourite_Coo2, Jim_s_Favourite_Coo3” and no idea as to which bakeries these refer.
 	
-Therefore, it is best practice to manually edit the identifier after it is generated, using a uniform and consistent naming scheme (e.g. “Jim_Fav_BakeryA”, “Jim_Fav_BakeryB”). The schema developed for the IAM.AMR project is described in the :ref:`conventions <reference/conventions:Factor Identifier>`.
+Therefore, it is best practice to manually edit the identifier after it is generated, using a uniform and consistent naming scheme (e.g. “Jim_Fav_BakeryA”, “Jim_Fav_BakeryB”). The schema developed for the iAM.AMR project is described in the :ref:`conventions <reference/conventions:Factor Identifier>`.
 
 .. tip:: If you are updating the titles of nodes, you can disable the automatic prompt to regenerate the identifier based on the new title in the preferences menu –- this can speed up the process of updating the model where the identifier has already been set correctly.
 
@@ -79,7 +79,7 @@ Arrows between nodes can be supressed using individual node style properties (by
 
 The text-case used in node titles (and identifiers) should be consistent across the model. While title-case may be more attractive for short titles, sentence case improves readability. Decide on one format, and use it consistently throughout the model.
 
-The schema developed for the IAM.AMR project is described in the :ref:`conventions <reference/conventions:Node Colour>`.
+The schema developed for the iAM.AMR project is described in the :ref:`conventions <reference/conventions:Node Colour>`.
 
 Attributes and Metadata
 ~~~~~~~~~~~~~~~~~~~~~~~

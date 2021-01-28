@@ -5,7 +5,7 @@ Project Structure
 
 Goals
 -----
-The overall goal of the IAM.AMR project is to elucidate and quantify the relative contributions of specific agri-food commodities and related environmental exposure pathways to Canadians’ overall exposure to antimicrobial resistant bacteria arising from the agri-food production system. To meet this goal, we endeavor to:
+The overall goal of the iAM.AMR project is to elucidate and quantify the relative contributions of specific agri-food commodities and related environmental exposure pathways to Canadians’ overall exposure to antimicrobial resistant bacteria arising from the agri-food production system. To meet this goal, we endeavor to:
 
 * create a conceptual model describing the agri-food production system, the drivers of AMR within this system, and the effects of AMR within this system (and beyond) on human, animal, and environmental health.
 * collect data from national AMR and AMU surveillance programmes, associated research projects, and the scientific literature to describe the ecology and epidemiology of AMR in this system historically, and at present.
@@ -33,16 +33,16 @@ Additional food-animal and bacterial species of interest include turkeys and Ent
 
 Organization via stories
 ++++++++++++++++++++++++
-The models are organized primarily by ‘stories’, or bug-drug-host combinations of particular interest. Existing stories and their corresponding models are available in the IAM.AMR GitHub repository. 
+The models are organized primarily by ‘stories’, or bug-drug-host combinations of particular interest. Existing stories and their corresponding models are available in the iAM.AMR GitHub repository. 
 
 
 Literature Search
 ~~~~~~~~~~~~~~~~~
-The IAM.AMR models are informed by a single, all-encompassing literature search. A description of the literature search and associated products is provided on the :ref:`literature search main page <project/search:Literature Search>`.
+The iAM.AMR models are informed by a single, all-encompassing literature search. A description of the literature search and associated products is provided on the :ref:`literature search main page <project/search:Literature Search>`.
 
 The CEDAR database
 ~~~~~~~~~~~~~~~~~~
-CEDAR, the Collection of Epidemiologically Derived Associations with Resistance, is a Microsoft Access database, designed to house data extracted in support of the IAM.AMR project and associated activities.
+CEDAR, the Collection of Epidemiologically Derived Associations with Resistance, is a Microsoft Access database, designed to house data extracted in support of the iAM.AMR project and associated activities.
 
 The studies identified through the literature search are reviewed, and data extracted as per a number of criteria outlined on the :ref:`CEDAR main page <02_project/CEDAR:The CEDAR Database>`.
 
@@ -54,7 +54,7 @@ Model Building
 ~~~~~~~~~~~~~~
 Once the data are extracted from the literature, collated in -- and queried from -- the database, and processed by the R package, they are included in a model built around a robust model framework.
 
-The IAM.AMR models are designed to predict the frequency of exposure of Canadians (and specifically, Ontarians) to antimicrobial-resistant bacteria from agri-food products. To do so, the models follow agri-food production along the farm-to-fork continuum – where possible, from birth (or hatch), through rearing, slaughter, processing, retail, and finally human consumption.
+The iAM.AMR models are designed to predict the frequency of exposure of Canadians (and specifically, Ontarians) to antimicrobial-resistant bacteria from agri-food products. To do so, the models follow agri-food production along the farm-to-fork continuum – where possible, from birth (or hatch), through rearing, slaughter, processing, retail, and finally human consumption.
 
 The models start with a baseline prevalence of resistance, derived from the earliest sampling point we have available – ideally as close to birth (or hatch) as possible. This prevalence of resistance is affected by practices at each stage of production; we term these practices ‘factors’ which affect resistance. These factors are grouped by stage of production: on-farm, at abattoir, and at retail. 
 
@@ -74,7 +74,7 @@ Stakeholders from each human, animal, and environmental health disciplines are o
 
    Figure 2 from Majowicz et al. (2018) demonstrating the complexity of the drivers of AMR.
 
-The IAM.AMR project was born out of the concept of enumerating these identified pathways. Beginning in 2014, the IAM.AMR project was supported by the Ontario Ministry of Agriculture, Food and Rural Affairs (OMAFRA) New Directions Funding Program (Project ND2013‐1967), with a focus on the applicability of the models specifically to Ontario (a focus that remains today). Subsequently, the project has been continued as a sub-project of GRDI-AMR.
+The iAM.AMR project was born out of the concept of enumerating these identified pathways. Beginning in 2014, the iAM.AMR project was supported by the Ontario Ministry of Agriculture, Food and Rural Affairs (OMAFRA) New Directions Funding Program (Project ND2013‐1967), with a focus on the applicability of the models specifically to Ontario (a focus that remains today). Subsequently, the project has been continued as a sub-project of GRDI-AMR.
 
 .. [#Majowicz] Majowicz, S.E., Parmley, E.J., Carson, C. et al. BMC Res Notes (2018) 11: 170. https://doi.org/10.1186/s13104-018-3279-8
 
@@ -82,5 +82,5 @@ GRDI
 ~~~~
 The Genomics Research and Development Initiative (`GRDI <http://grdi-irdg.collaboration.gc.ca/eng/index.html>`_) funds genomic research across the federal science portfolio. A specific focus of GRDI is the development of shared priority projects (i.e. projects involving multiple federal departments). The GRDI-AMR project (2016 – 2021) is a nine million dollar shared priority project lead by Ed Topp at AAFC, which aims to use genomics to understand how the development of AMR in the agri-food production system impacts human health. 
 
-The project is broadly divided into five working groups; the IAM.AMR project is a significant, evergreen deliverable from work package five.
+The project is broadly divided into five working groups; the iAM.AMR project is a significant, evergreen deliverable from work package five.
 
