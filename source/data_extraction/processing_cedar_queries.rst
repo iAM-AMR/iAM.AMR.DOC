@@ -59,6 +59,69 @@ Each field has an expected data type, as dictated below. A description of each f
 
 .. attention:: The type of data contained within each of the fields in your input file should match those outlined above, as processing errors can occur otherwise. Please see :ref:`Warnings due to unexpected data types <data_extraction/processing_cedar_queries:Warnings due to unexpected data types>` for more information.
 
+Meta-analyses Guidelines
+------------------------
+
+Meta-analysis is a statistical approach for combining data from multiple studies, often used to increase statistical power, or resolve uncertainty in effect size or direction. The simplest way to think of a meta-analysis is as a weighted average of the included observations, where the weighting accounts for the statistical properties of the studies.
+
+Meta-analysis is used in the iAM.AMR project to derive a single effect estimator where multiple studies, or multiple observations within a study, are available to describe a given factor.
+
+When should meta-analysis be performed?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Meta-analysis must only be performed where the effect measure, and the study populations, are identical or highly similar. Therefore, meta-analysis should **never** be performed:
+
+* across food-animal species (species)
+* across bacterial species (pathogens)
+
+   * including between Campylobacter jejuni and conventional
+
+* across classes of antimicrobials
+* across classes or sub-classes of antimicrobials
+
+  * excluding NAL and FQs?
+
+* across production stages
+
+  * this includes where the effective stage is the same, but the measurement is taken at a different stage.
+
+
+When a measurement is available for the same stage of production, the same food-animal, pathogen, and antimicrobial (or sub-class of antimicrobial), as one or more others, they may be included in one of four types of meta-analysis:
+
+Within Study, Same Antimicrobial
+++++++++++++++++++++++++++++++++
+Where multiple measurements are available describing the same factor, for the same resistance, the measurements should be combined using meta-analysis.
+
+.. tip::
+   Two comparable sub-populations comprise the study population (e.g. barn A and barn B), and ceftiofur resistance is assayed for each. Meta-analysis is conducted for these observations.
+
+Within Study, Same Antimicrobial Class (or Sub-Class)
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Where multiple measurements are available describing the same factor, for the same class or sub-class of resistance, the measurements should be combined using meta-analysis. 
+
+.. tip::
+   Resistance to ceftiofur and ceftriaxone are both included in the assay. Meta-analysis is conducted for these observations, and the resistance is reported at the sub-class level (third-generation cephalosporin resistance).
+
+   Resistance to ceftiofur and ceftriaxone are both included in the assay, and there are two comparable sub-populations which comprise the study population. Meta-analysis is conducted for all of these observations, and the resistance is reported at the sub-class level (third-generation cephalosporin resistance).
+
+Across Studies, Same Antimicrobial
+++++++++++++++++++++++++++++++++++
+Where multiple measurements are available describing the same factor, for the same resistance, and the experimental conditions are comparable, the measurements should be combined using meta-analysis.
+
+.. tip::
+   Two studies measure the effect of production type (e.g. organic vs. conventional) on ceftiofur resistance. Meta-analysis is conducted for these observations.
+
+Across Studies, Same Antimicrobial Class (or Sub-Class)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Where multiple measurements are available describing the same factor, for the same class or sub-class of resistance, and the experimental conditions are comparable, the measurements should be combined using meta-analysis.
+
+.. tip::
+   Two studies measure the effect of production type (e.g. organic vs. conventional), one on ceftiofur resistance, and the other on ceftriaxone resistance. Meta-analysis is conducted for these observations.
+
+
+How is the meta-analysis performed?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Please see :ref:`Adding meta-analysis groupings <data_extraction/processing_cedar_queries:Adding meta-analysis groupings>`
+
 Using sawmill
 -------------
 
