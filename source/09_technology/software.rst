@@ -80,7 +80,7 @@ R and R Studio
 
 Install R
 +++++++++
-1. Download the latest version of R from the University of Toronto `here <http://cran.utstat.utoronto.ca/bin/windows/base/release.htm>`_.
+1. Download the latest version of R from the University of Toronto `here <https://utstat.toronto.edu/cran/bin/windows/base/release.html>`_.
 2. Navigate to the root of your C:/ drive, and if it doesn't already exist, create a new folder called 'myprograms'.
 3. Run the installer and select your preferred language.
 4. When prompted, click ‘Next’ to acknowledge the warning about administrator privileges, and ‘Next’ to accept the licensing agreement.
