@@ -48,15 +48,15 @@ Installing GitHub Desktop
 GitHub Desktop links our local installation of Git with GitHub (we’ll explore these in more depth in subsequent sections). Download GitHub Desktop `here <https://desktop.github.com/>`_, which will include its own, self-contained version of Git. Run the installer and sign in with your GitHub account credentials. When prompted to configure Git, update your name (if incorrect). You can leave the email address as generated, to reduce notifications in your inbox.
 
 
-.. image:: /assets/figures/github_desktop_login.png
+.. image:: /assets/figures/github_desktop_login.PNG
 
 Provided you have been added as a collaborator, on the ‘Let’s get started!’ screen, the IAM.AMR repository should be listed under ‘Your repositories’. 
 
-.. image:: /assets/figures/github_desktop_get_started.png
+.. image:: /assets/figures/github_desktop_get_started.PNG
 
 To download the models, select the repository, and choose ‘Clone’. Now, select a local path – the directory where you’d like to keep the models – and again, choose ‘Clone’. 
 
-.. image:: /assets/figures/github_desktop_clone.png
+.. image:: /assets/figures/github_desktop_clone.PNG
 
 The models will then be downloaded into the directory of your choosing. You can close GitHub Desktop, or explore some of the features in subsequent chapters.
 
