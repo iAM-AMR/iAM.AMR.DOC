@@ -181,6 +181,17 @@ Where multiple factors inform a single node:
 
 In some instances, it may be appropriate to deviate from this schema – care should be taken to maintain consistency despite these deviations.
 
+Study Groups
+~~~~~~~~~~~~
+
+Study groups should be named as follows:
+
+**Referent**: The group which represents the default practice in Canadian industry, or the least interventionist.
+
+**Comparator**: The group which represents the less common, or more interventionist group.
+
+.. note:: If a study has more than two groups, all groups except the Referent should be titled Comparator 1, Comparator 2, etc. For example, a study examining the effect of AMU on AMR may have multiple comparator groups, each representing a slightly different dosage or treatment regime.
+
 Node Colour
 ~~~~~~~~~~~
 Colour is used to indicate the function and contents of each node. The use of colour in the model should conform to the general scheme:
