@@ -55,7 +55,7 @@ We recommend using version 4.7+.
 
 
 Install Analytica
---------------------
+-----------------
 Analytica is packaged for GoC computers, however (as always) Shared Services is several versions behind. We can side-load Analytica using the same "extract-and-run" procedure described here.
 
 
@@ -66,3 +66,33 @@ Lumina has provided a number of great first-party resources for getting started 
 .. tip:: If you’re not a fan of manuals, Lumina has distilled the User Guide into a few key chapters listed `here <https://wiki.analytica.com/index.php?title=If_you_don%E2%80%99t_read_manuals>`_.
 
 There are additional training resources in the `iAM.AMR Team Repo <https://goto.iam.amr.pub/repo-team>`_ (*login required*).
+
+
+Search for Analytica-related information
+----------------------------------------
+
+It is somewhat difficult to search for information related to Analytica, given the *Cambridge Analytica* scandal (the CEO of Lumina addresses the `errant relationship here  <https://lumina.com/how-does-cambridge-analytica-connect-to-luminas-analytica/>`_).
+
+In Firefox (and other browsers), you can setup shortcuts for specific searches.
+
+
+Add a Shortcut to Search the Wiki
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Search shortcuts are key words you used to trigger a specific search. For example, if your search shortcut for the Analytica site is "ANA", and you want to find information on tables, you'd search "ANA tables".
+
+Firefox
++++++++
+
+To create a shortcut to use the Analytica Wiki search box, head to the `Analytica Wiki <https://wiki.analytica.com/index.php?title=Analytica_Wiki>`_ and right-click in the search bar, selecting "*Add keyword for this search*". Then, select a keyword to use.
+
+
+Add a Shortcut to Search the Analytica Domain
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To rely instead on Google's indexing of the Analytica site, we can create a site-specific search, excluding the term "Cambridge".
+
+Firefox
++++++++
+
+Right-click in the bookmarks bar, and create a bookmark. The location should be set to `https://www.google.com/search?q=site%3Aanalytica.com+-cambridge+%s`, and the keyword should be set to your desired search shortcut.
