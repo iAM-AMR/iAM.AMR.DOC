@@ -49,14 +49,17 @@ GitHub Desktop links our local installation of Git with GitHub (we’ll explore 
 
 
 .. image:: /assets/figures/github_desktop_login.PNG
+    :alt: Image of github desktop login page.
 
 Provided you have been added as a collaborator, on the ‘Let’s get started!’ screen, the IAM.AMR repository should be listed under ‘Your repositories’. 
 
 .. image:: /assets/figures/github_desktop_get_started.PNG
+    :alt: Image of github desktop 'Let's get started!' page.
 
 To download the models, select the repository, and choose ‘Clone’. Now, select a local path – the directory where you’d like to keep the models – and again, choose ‘Clone’. 
 
 .. image:: /assets/figures/github_desktop_clone.PNG
+    :alt: Image of github desktop repository clone window.
 
 The models will then be downloaded into the directory of your choosing. You can close GitHub Desktop, or explore some of the features in subsequent chapters.
 

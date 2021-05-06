@@ -119,6 +119,7 @@ There are three main sections of the Rayyan interface: filters, references, and 
 
 .. figure:: /assets/figures/rayyan_basic_interface.png
     :align: center
+    :alt: Image of the Rayyan interface with the filters labeled on the left, references labeled on the upper right and preview labeled on the lower right.
 
     The Rayyan interface is comprised of three sections: the filters, references, and preview panels.
 
@@ -134,6 +135,7 @@ Each reference must be screened by two reviewers (i.e the references are *dual-s
 
 .. figure:: /assets/figures/rayyan_filter_to_screen.png
     :align: center
+    :alt: Image demonstrating the use of 'At most 1' filter limits in Rayyan.
     
     Using the 'At most 1' filter limits the returned references to those not already screened in duplicate.
 
@@ -141,6 +143,7 @@ To only show references to which your region has been assigned (e.g. for Ontario
 
 .. figure:: /assets/figures/rayyan_filter_to_screen_region.png
     :align: center
+    :alt: Image showing options for selecting your region.
     
     Select your region to facilitate later conflict resolution.
 
@@ -158,6 +161,7 @@ The figure below shows an example of five references, each in a different decisi
 
 .. figure:: /assets/figures/rayyan_decision_example.png
     :align: center
+    :alt: Image of an example showing five references, each in a different decision state.
     
     An example of each inclusion/exclusion decision state in Rayyan.
 
@@ -185,6 +189,7 @@ We have developed a simple flowchart to assist in the screening process:
 
 .. figure:: /assets/figures/screening_process.jpg
     :align: center
+    :alt: Image of the literature search screening process in the form of a flowchart.
     
     The screening process.
 

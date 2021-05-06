@@ -74,7 +74,7 @@ Selective Media in CEDAR
 - As per our data extraction rules, we prefer results from non-selective media where available. 
 - There is a separate field for indicating where selective media are used for growth/culture, and for the AST itself (which can also be via selective media, as described above). 
 
-.. hint:: Another way to think of this distinction: we only consider media “selective“ in the context of data extraction where the added compound could differentiate between organisms of the same species, based on an acquired resistance. 
+.. hint:: Another way to think of this distinction: we only consider media “selective“ in the context of data extraction where the added compound could differentiate between organisms of the same species, based on an acquired resistance.
 
 Binary and Continuous Factors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -121,6 +121,7 @@ Multi-drug resistance (MDR) should not be extracted, because the specific combin
 
 .. figure:: /assets/figures/mdr_example.png
    :align: center
+   :alt: Table 2. The comparison and association of antibiotic resistance profiles of Escherichia coli isolated from chicken flocks classified as either "good" or "poor" producers.
 
    An example of an MDR table using prevalences from Spears (1990).
 

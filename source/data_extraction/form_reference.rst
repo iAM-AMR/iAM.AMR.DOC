@@ -91,6 +91,7 @@ An MIC table contains counts (or frequencies) of isolates that are inhibited at 
 
 .. figure:: /assets/figures/example_MIC_table.png
    :align: center
+   :alt: Table 2. MICs for ampicillin, nalidixic acid, enrofloxacin, tetracycline, erythromycin and gentamicin of C. jejuni and C. coli isolated from broilers in France.
 
    An example of an MIC table from Avrain et al. (2003).
 
@@ -172,6 +173,7 @@ Life Cycle of a Reference
 
 .. figure:: /assets/figures/reference_history.png
    :align: center
+   :alt: Image of the life cycle of a reference with each activity and corrresponding statuses.
 
    The life cycle of a reference.
 

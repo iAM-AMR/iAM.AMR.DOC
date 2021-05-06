@@ -57,6 +57,11 @@ Editing this Documentation
 --------------------------
 Note that the use of `GitHub <https://github.com/>`_ is outside of the scope of this section. Please refer to the GitHub-specific documentation. 
 
+How to Add a Page
+~~~~~~~~~~~~~~~~~
+
+This is how to add a page!
+
 Minor Edits
 ~~~~~~~~~~~
 To make a minor edit or addition, follow the link in the upper-right corner of the target page to GitHub, where you can fork the document, make changes, and submit a pull request.

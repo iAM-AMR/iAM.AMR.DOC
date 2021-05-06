@@ -16,6 +16,7 @@ Each |smod| shares the same architecture, which allows us to:
 - integrate the models to simultaneously evaluate multiple stories
 
 .. image:: /assets/figures/puzzle_piece.jpg
+    :alt: image of jigsaw puzzle pieces.
 
 You can think of models and modules fitting together like puzzle pieces; similar models and modules *'click'* into one another to form a whole.
 

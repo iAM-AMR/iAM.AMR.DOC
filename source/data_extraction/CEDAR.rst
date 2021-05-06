@@ -116,6 +116,7 @@ Always access CEDAR by opening the front-end file *CEDAR.accdb*. When you open *
 
 .. figure:: /assets/figures/cedar_launch.png
    :align: center
+   :alt: Image of CEDAR launch screen through Microsoft Access.
 
    The launch screen of *CEDAR.accdb*.
 
@@ -129,11 +130,13 @@ You may also see a security prompt if you are re-linking or using a new version 
 
 .. figure:: /assets/figures/sec_warn_01.png
    :align: center
+   :alt: Image of example security warning.
 
    Example security warning
 
 .. figure:: /assets/figures/sec_warn_02.png
    :align: center
+   :alt: Image of another example security warning.
 
    Another example security warning
 
@@ -145,6 +148,7 @@ The first time you open *CEDAR.accdb* (or an updated version of *CEDAR.accdb*), 
 
 .. figure:: /assets/figures/cedar_unlink_error.png
    :align: center
+   :alt: Image of example error message if you forget to re-link the front-end and back-end of the database.
 
    An example of the error message recieved when opening a database object from an unlinked front-end.
 
@@ -158,6 +162,7 @@ In Access 365, an additional confirmation dialogue is presented:
 
 .. figure:: /assets/figures/cedar_relink_name_confirm.png
    :align: center
+   :alt: Image of Microsoft Access message asking if you would like to relink the selected tables with a different name.
 
    The name confirmation dialogue box is only displayed in the latest versions of Access.
 
@@ -179,7 +184,8 @@ Most navigation in CEDAR is accomplished through the *Navigation Pane*, where yo
 
 .. figure:: /assets/figures/cedar_navigation.png
    :align: center
-
+   :alt: Image showing CEDAR open to Add or Edit a Reference form with the Record Navigation Bar highlighted in red at the bottom of the screen.
+   
    The Record Navigation Bar is highlighted in red at the bottom of the screen.
 
 You can use the left and right arrows to navigate between records (generally between references), or the right arrow with yellow star to create a new record (generally a new reference). This bar also contains a search feature to quickly find records.

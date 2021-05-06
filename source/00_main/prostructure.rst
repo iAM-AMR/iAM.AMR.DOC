@@ -71,6 +71,7 @@ Stakeholders from each human, animal, and environmental health disciplines are o
 
 .. figure:: /assets/figures/majfig2.png
    :align: center
+   :alt: Concept map of the drivers of AMR.
 
    Figure 2 from Majowicz et al. (2018) demonstrating the complexity of the drivers of AMR.
 

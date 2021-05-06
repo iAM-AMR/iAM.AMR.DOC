@@ -105,6 +105,7 @@ Where multiple versions of R are available, or where the installation has not su
 
 .. figure:: /assets/figures/rstudiolocate.png
    :align: center
+   :alt: Image showing selection options of R versions to choose from.
    
    The RStudio R installation selection window.
 
@@ -113,6 +114,6 @@ If you are prompted during RStudio’s installation, choose the most appropriate
 If you have multiple versions of R installed and you would like to choose a different version after RStudio has been installed, you can make the selection from Tools > Global Options. 
 
 
-Other Software
-~~~~~~~~~~~~~~
-For software such as :ref:`Analytica <technology/analytica:Analytica>` and :ref:`GitHub Desktop <technology/git:Git et al.>`, refer to their respective main pages (coming soon!).
+.. Other Software commented out
+.. ~~~~~~~~~~~~~~
+.. For software such as :ref:`Analytica <technology/analytica:Analytica>` and :ref:`GitHub Desktop <technology/git:Git et al.>`, refer to their respective main pages (coming soon!).
