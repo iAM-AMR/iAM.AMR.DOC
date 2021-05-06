@@ -137,7 +137,8 @@ The default values are specified in this script in a single line of code, as sho
 
 .. figure:: /assets/figures/RStudio_default_arguments.jpg
    :align: center
-
+   :alt: Image showing the default sawmill arguments.
+   
    Default arguments in sawmill's *mill.R* script.
 
 The argument values can be changed directly in this line of code. For example, if you wanted to change the argument **insensible_p_lo** to *98*, simply replace the *99* after the *=* sign with *98*.
@@ -171,6 +172,7 @@ For example, if the error is raised in the *build_chairs* function, the message 
 
 .. figure:: /assets/figures/Error_console.jpg
    :align: center
+   :alt: Image of example error message displayed in the console tab.
 
    Example error message.
 
@@ -199,6 +201,7 @@ These particular warnings will also generate a prompt asking whether you would l
 
 .. figure:: /assets/figures/Warning_prompt.jpg
    :align: center
+   :alt: Image of example warning prompt.
 
    Warning prompt.
 
@@ -216,6 +219,7 @@ While the value is a number, it is formatted as text (flagged by Excel in the up
 
 .. figure:: /assets/figures/Coercing_warning_Excel.jpg
    :align: center
+   :alt: Image of Microsoft Excel spreadsheet example showing cell that produce expected warning.
 
    Example of a cell that produces a coercing warning.
 
@@ -224,6 +228,7 @@ The Excel cell shown above produced one of these warnings (the one affecting AE5
 
 .. figure:: /assets/figures/Coercing_warning_ex.jpg
    :align: center
+   :alt: Image of coercing warning messages.
 
    Coercing warning examples.
 
@@ -239,6 +244,7 @@ However, a text string is present, and it cannot be converted to a numeric data 
 
 .. figure:: /assets/figures/Expecting_warning_Excel.jpg
    :align: center
+   :alt: Image of Microsoft Excel spreadsheet displaying cell that produces expected warning.
 
    Example of a cell that produces an expecting warning.
 
@@ -247,6 +253,7 @@ The Excel cell shown above produced this warning; it affects cell Z2 / R2C26.
 
 .. figure:: /assets/figures/Expecting_warning_ex.jpg
    :align: center
+   :alt: Image of expecting warning example in the console tab.
 
    Expecting warning example.
 
@@ -274,6 +281,7 @@ Every time you execute sawmill, you will likely see a message resembling the fol
 
 .. figure:: /assets/figures/standard_warning.jpg
    :align: center
+   :alt: Image of generic warning alert message.
 
    Generic warnings alert.
 
@@ -285,6 +293,7 @@ You will see something closely resembling the following:
 
 .. figure:: /assets/figures/fisher_warning.jpg
    :align: center
+   :alt: Image of generic warnings in the console tab.
 
    Generic warning messages.
 

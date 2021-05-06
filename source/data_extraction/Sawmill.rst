@@ -65,6 +65,7 @@ RStudio's interface looks something like this:
 
 .. figure:: /assets/figures/RStudio_sawmill_open.jpg
    :align: center
+   :alt: Image of RStudio's interface.
 
    RStudio interface with sawmill loaded.
 
@@ -77,6 +78,7 @@ R commands can be entered here.
 
 .. figure:: /assets/figures/RStudio_lower_left.jpg
    :align: center
+   :alt: Image of RStudio with lower left region highlighted to show location of Console.
 
    RStudio console.
 
@@ -91,6 +93,7 @@ To run a block of code, highlight it in the script editor and click the *Run* bu
 
 .. figure:: /assets/figures/RStudio_upper_left.jpg
    :align: center
+   :alt: Image of RStudio with upper left region highlighted to show the location of the script editor.
 
    RStudio script editor.
 
@@ -106,6 +109,7 @@ Here, users can navigate to R scripts they wish to view in the script editor.
 
 .. figure:: /assets/figures/RStudio_lower_right.jpg
    :align: center
+   :alt: Image of RStudio with lower right region highlighted to show the location of the navigation pane.
 
    RStudio navigation pane.
 
@@ -116,6 +120,7 @@ When the **Build** tab is selected, a package can be installed and/or re-loaded 
 
 .. figure:: /assets/figures/RStudio_upper_right.jpg
    :align: center
+   :alt: Image of RStudio with upper right region highlighted to show the location of the build tab.
 
    RStudio build tab.
 
@@ -207,6 +212,7 @@ This *README* contains important instructions related to sawmill.
 
 .. figure:: /assets/figures/README.jpg
    :align: center
+   :alt: Image of README.md file for sawmill on github.
 
    *README.md* file on GitHub.
 
