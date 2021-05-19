@@ -63,10 +63,10 @@ See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for
    :maxdepth: 2
    :numbered:
 
-   /cedar_database/cedar
-   /cedar_database/data_extract_getting_started
-   /cedar_database/form_reference
-   /cedar_database/form_factor
+   /cedar_data/cedar
+   /cedar_data/data_extract_getting_started
+   /cedar_data/form_reference
+   /cedar_data/form_factor
 
 .. toctree::
    :caption: Data
