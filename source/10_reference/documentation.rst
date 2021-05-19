@@ -98,10 +98,10 @@ To view images on the website at full-size, right-click on the image and select 
 
 
 reStructuredText
-================
+----------------
 
 Guides
-------
+~~~~~~
 
 - `reST Full Specification <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html>`_  
 - `reST Quick Reference <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_
@@ -110,16 +110,16 @@ Guides
 
 
 Document Layout
----------------
+~~~~~~~~~~~~~~~
 
 General
-~~~~~~~
++++++++
 There shall be two blank lines at the **start** of each document. 
 
 There shall be three blank lines at the **end** of each document.
 
 Font
-~~~~
+++++
 *Italic* text is specified by surrounding text with one asterisk. **Bold** text is specified by surrounding text with two asterisks::
 
    *this text is italic*
@@ -127,7 +127,7 @@ Font
    **this text is bold**
 
 Headings
-~~~~~~~~
+++++++++
 There should be one blank line between sections of the same level (e.g. H1 -- H1) and between a section and a sub-section (e.g. H1 -- H2). There should be two blank lines between a sub-section and a greater section (e.g. H2 -- H1). There should be no blank line between a heading and the section's contents, where contents exist::
 
    Section
@@ -157,7 +157,7 @@ The following symbols should be used for headings::
 Only H1 and H2 level headings should use Title Case. Sub-headings should use Sentence case.
 
 Heading Labels
-++++++++++++++
+^^^^^^^^^^^^^^
 To link to a duplicated heading (i.e. two sections in the same document have the same heading), you will need to specify a heading label. Heading labels should be used where the heading is a common word, phrase, or where the heading is known to be repeated later in the document. 
 
 Heading labels are placed above the heading, with a blank line seperating the heading label and heading. Where heading labels are used, two blank lines should come before it, regardless of the heading level.
@@ -174,38 +174,38 @@ We use a slightly different format for links to a manually labeled section (we d
 
 
 Links
------
+~~~~~
 
 Internal links
-~~~~~~~~~~~~~~
+++++++++++++++
 ::
 
    :ref:`text <folder/docname:heading>`
 
 Internal links to manual labels
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++++++++++++++
 ::
    
    :ref:`text <label_text>`
 
 External links
-~~~~~~~~~~~~~~
+++++++++++++++
 ::
 
    `text <URL>`_
 
 Internal links to downloads
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++++++++++
 ::
 
    :download:`text <path/file.ext>`
 
 Admonitions
------------
+~~~~~~~~~~~
 Admonitions are specially marked topics or notes which appear inline with other content. They can be styled with custom CSS.
 
 Standard
-~~~~~~~~
+++++++++
 ::
 
    Example: 
@@ -223,7 +223,7 @@ Standard
 .. warning:: This is a warning admonition.
 
 Custom
-~~~~~~
+++++++
 ::
 
    Example:
@@ -239,7 +239,7 @@ Custom
 
 
 References
-----------
+~~~~~~~~~~
 ::
 
    The quick brown fox jumped over the lazy [#chapman]_ dog.
@@ -253,7 +253,7 @@ The quick brown fox jumped over the lazy [#chapman]_ dog.
 
 
 Images
-------
+~~~~~~
 ::
 
    .. image:: images/image_name.png
@@ -266,7 +266,7 @@ Images
 The same fields are applicable for figures.
 
 Figures
--------
+~~~~~~~
 ::
 
    .. figure:: /images/figure_name.png
@@ -276,7 +276,7 @@ Figures
 
 
 Text Substitutions
-------------------
+~~~~~~~~~~~~~~~~~~
 
 To setup a text substitution, add a block to your ``conf.py``::
 

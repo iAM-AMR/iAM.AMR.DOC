@@ -45,6 +45,13 @@ Immutable factors should not be extracted.
 
    If a reason for the comparison is given, such as a growth promoter ban/change in related industry policy, factors comparing unique years/periods of time may be valid for extraction. See :ref:`Antimicrobial ban factors <data_extraction/form_factor:Antimicrobial bans or changes in industry policy>`.
 
+
+Common Factor Types
+~~~~~~~~~~~~~~~~~~~
+
+To compare conventional, ABF, organic, 'welfare' or 'humane' production systems, note that these alternative systems are not the same. While all organic is ABF (antibiotic-free), not all ABF is organic. 'Welfare' and 'humane' production systems are likewise different. 
+
+
 Selective Media
 ~~~~~~~~~~~~~~~
 
@@ -112,13 +119,10 @@ If data is only presented as relative risk we cannot use relative risk at this t
 
 If data are presented as odds ratios, extract those from univariable analyses, but **not** those from multi-variable analyses. If the results are in log(Odds) or an estimate/coefficient of a logistic regression, recall that the Odds Ratio = e^x, where x is the coefficient.
 
-To compare conventional, ABF, organic, 'welfare' or 'humane' production systems, note that these alternative systems are not the same. While all organic is ABF (antibiotic-free), not all ABF is organic. 'Welfare' and 'humane' production systems are likewise different. 
-
 In cases where there are zero observations of resistance in both the exposed and referent groups, corresponding values may be omitted from tables but still mentioned in-text. Such "non-significant" values should still be extracted.
 
 If a study includes an 'Intermediate' category, add the intermediate isolates/prevalence to the resistant category (i.e. we round up intermediate to resistant).
 
-If there are no factors to extract, indicate this using the notes field, and skip the reference.
 
 Resistances and MDR
 ~~~~~~~~~~~~~~~~~~~
@@ -212,6 +216,10 @@ Common Concerns
 ---------------
 
 What do I do if ...
+
+**... there are no factors to extract**
+
+If there are no factors to extract, indicate this using the notes field, and skip the reference.
 
 **... the data are only available in a figure**
 

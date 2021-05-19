@@ -58,15 +58,15 @@ See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for
    /00_main/background
    /00_main/prostructure
 
-   .. toctree::
+.. toctree::
    :caption: CEDAR Database
    :maxdepth: 2
    :numbered:
 
-   /CEDAR_DATABASE/CEDAR
-   /CEDAR_DATABASE/Data_Extract_Getting_Started
-   /CEDAR_DATABASE/form_reference
-   /CEDAR_DATABASE/form_factor
+   /cedar_database/cedar
+   /cedar_database/data_extract_getting_started
+   /cedar_database/form_reference
+   /cedar_database/form_factor
 
 .. toctree::
    :caption: Data
@@ -74,11 +74,11 @@ See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for
    :numbered:
 
    /data_extraction/search
-   /data_extraction/Primary_Screening
+   /data_extraction/primary_screening
    /data_extraction/data_extract_rules
    /data_extraction/tips_and_tricks
    /data_extraction/processing_cedar_queries
-   /data_extraction/Sawmill
+   /data_extraction/sawmill
 ..   /02_project/Data_Extract_Notes
 
 .. toctree::
@@ -86,11 +86,11 @@ See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for
    :maxdepth: 2
    :numbered:
 
-   /models/architecture.rst
-   /models/hub.rst
    /models/ana_get_started.rst
    /models/analytica.rst
    /models/mod.rst
+   /models/architecture.rst
+   /models/hub.rst
 
 .. toctree::
    :caption: Technology
