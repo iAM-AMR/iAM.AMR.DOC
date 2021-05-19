@@ -45,13 +45,6 @@ Immutable factors should not be extracted.
 
    If a reason for the comparison is given, such as a growth promoter ban/change in related industry policy, factors comparing unique years/periods of time may be valid for extraction. See :ref:`Antimicrobial ban factors <data_extraction/form_factor:Antimicrobial bans or changes in industry policy>`.
 
-
-Common Factor Types
-~~~~~~~~~~~~~~~~~~~
-
-To compare conventional, ABF, organic, 'welfare' or 'humane' production systems, note that these alternative systems are not the same. While all organic is ABF (antibiotic-free), not all ABF is organic. 'Welfare' and 'humane' production systems are likewise different. 
-
-
 Selective Media
 ~~~~~~~~~~~~~~~
 
@@ -115,14 +108,9 @@ Factor Data
 
 When multiple data formats are available, we always prefer **contingency tables** (count data), followed by prevalence tables, and finally odds ratios or relative risk. You only need to extract one format of data for a given factor.
 
-If data is only presented as relative risk we cannot use relative risk at this time so do not extract the factor's data, but indicate the omission in the notes field.
-
-If data are presented as odds ratios, extract those from univariable analyses, but **not** those from multi-variable analyses. If the results are in log(Odds) or an estimate/coefficient of a logistic regression, recall that the Odds Ratio = e^x, where x is the coefficient.
+If data are presented as odds ratios, extract those from univariable analyses, but **not** those from multi-variable analyses.
 
 In cases where there are zero observations of resistance in both the exposed and referent groups, corresponding values may be omitted from tables but still mentioned in-text. Such "non-significant" values should still be extracted.
-
-If a study includes an 'Intermediate' category, add the intermediate isolates/prevalence to the resistant category (i.e. we round up intermediate to resistant).
-
 
 Resistances and MDR
 ~~~~~~~~~~~~~~~~~~~
@@ -210,29 +198,6 @@ Provisional Rules
 3.	Genomic data – record if AMR prevalence given + note what gene in description (can leave AMR dropdown empty – tetA and tetB are available in AMR dropdown though!), otherwise make a note (eg, CFU/g, gene copies, etc.). 
 
 5.	Salmonella species – combine if AMR prevalence given for more than one Salmonella species
-
-
-Common Concerns
----------------
-
-What do I do if ...
-
-**... there are no factors to extract**
-
-If there are no factors to extract, indicate this using the notes field, and skip the reference.
-
-**... the data are only available in a figure**
-
-(UPDATE REQUIRED) If factor data are only available in a figure (i.e. no numbers are given on a graph, or in text), and the numerical value cannot be determined with certainty (i.e. is not zero or 100%), indicate this using the notes field, and skip extracting the factor.
-
-**... I'm confused about how to extract a factor**
-
-If you're confused about a factor, reach out on Slack for clarification. Additionally, add a note to indicate why the factor was extracted in that way.
-
-**... an item I need is missing from a dropdown**
-
-If an item is missing from a dropdown (i.e. a non-free-text field), reach out on Slack. If the decision is made to use an alternative item in the list, add a note to justify this replacement. 
-
 
 
 
