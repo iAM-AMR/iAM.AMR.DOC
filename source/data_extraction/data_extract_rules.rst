@@ -124,6 +124,58 @@ In cases where there are zero observations of resistance in both the exposed and
 If a study includes an 'Intermediate' category, add the intermediate isolates/prevalence to the resistant category (i.e. we round up intermediate to resistant).
 
 
+Figure Extraction Using WebPlotDigitizer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If the factor data are only available in a figure, it may be possible to extract the data with the use of WebPlotDigitizer. Here is the link to the website https://apps.automeris.io/wpd/.
+
+This is what you will see when you go to the website:
+
+.. image:: /assets/figures/webplotdigitizer_first_see.png
+   :alt: An image of WebPlotDigitizer when tool first opened.
+
+Under "File" at the top left corner, click "Load Image(s)". Select the screenshot image file (.png or .jpg file types) of the figure(s) you want to extract. After selecting the image file(s), you will be asked to select the type of graph.
+
+.. image:: /assets/figures/webplotdigitizer_figure_example.png
+   :alt: An image of graphs type selection once image file is chosen.
+
+After selecting the type of graph, you will be shown how to calibrate the figure.
+
+.. image:: /assets/figures/webplotdigitizer_bar_chart.png
+   :alt: An image showing where to place calibration points for this example.
+
+Click the points on the axes, then fine tune using the arrow keys on your keyboard.
+
+.. image:: /assets/figures/webplotdigitizer_axes_calibration.png
+   :alt: An imange of the axes calibration for the figure.
+
+You will be asked to enter the values of the points chosen.
+
+.. image:: /assets/figures/webplotdigitizer_calibration_points.png
+   :alt: An image of calibration point values entered for this example. 
+
+For this example, the image was magnified by using the "+" button at the top right corner. On the right side of the screen is the data extraction where automatic extraction can be used first. For figure like this example where 2 colours are used, change colour from foreground to background and adjust the distance to detect smaller differences in colour (70 selected for this example). Click "run" at the bottom. 
+
+.. image:: /assets/figures/webplotdigitizer_box_highlight.png
+   :alt: Image showing automatic extraction highlighting graph bars.
+
+The manual method can be used to make adjustments as needed (in this example there are many extra points that require deleting).
+
+.. image:: /assets/figures/webplotdigitizer_automatic_extraction.png
+   :alt: Image after automatic extraction.
+   
+After editing labels, go to "View Data" where it can be exported as a csv file.
+
+.. image:: /assets/figures/webplotdigitizer_edited_labels.png 
+   :alt: Image with edited labels and "View Data" button highlighted.
+
+The number formatting can be adjusted to 2 decimal places by entering 2 for digits and selecting "Fixed" from the dropdown menu. The data can now be downloaded as a csv file.
+
+.. image:: /assets/figures/webplotdigitizer_view_data.png
+   :alt: Image of "View Data" window with number formatting.
+
+.. tip:: For more on how to use WebPlotDigitizer tutorials can be found here https://automeris.io/WebPlotDigitizer/tutorial.html and the user manual can be found here https://automeris.io/WebPlotDigitizer/userManual.pdf. 
+
 Resistances and MDR
 ~~~~~~~~~~~~~~~~~~~
 
