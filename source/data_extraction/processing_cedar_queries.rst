@@ -17,12 +17,9 @@ Raw Timber
 
 CEDAR timber should be in the form of an Excel (*.xlsx*) file, where each row represents an individual factor.
 
-CEDAR v2 timber
-~~~~~~~~~~~~~~~
+The following table is an example of a properly formatted input timber file (header row and one example factor row are shown). 
 
-The following table is an example of a properly formatted CEDAR v2 input timber file (header row and one example factor row are shown). 
-
-.. csv-table:: CEDAR v2 Timber Example
+.. csv-table:: Timber Example
    :file: CEDAR_v2_ex.csv
    :widths: 30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
    :header-rows: 1
@@ -31,29 +28,8 @@ The following table is an example of a properly formatted CEDAR v2 input timber 
 
 Each field has an expected data type, as dictated below. A description of each field is also provided.
 
-.. csv-table:: CEDAR v2 Timber Specification
+.. csv-table:: Timber Specification
    :file: CEDAR_v2_spec.csv
-   :widths: 30,10,50
-   :header-rows: 1
-
-.. attention:: The type of data contained within each of the fields in your input file should match those outlined above, as processing errors can occur otherwise. Please see :ref:`Warnings due to unexpected data types <data_extraction/processing_cedar_queries:Warnings due to unexpected data types>` for more information.
-
-CEDAR v1 timber
-~~~~~~~~~~~~~~~
-
-The following table is an example of a properly formatted CEDAR v1 input timber file (header row and one example factor row are shown).
-
-.. csv-table:: CEDAR v1 Timber Example
-   :file: CEDAR_v1_ex.csv
-   :widths: 30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
-   :header-rows: 1
-
-.. attention:: The left-to-right order and names of the fields in your input file must match that shown above *exactly*, otherwise sawmill will raise an error.
-
-Each field has an expected data type, as dictated below. A description of each field is also provided.
-
-.. csv-table:: CEDAR v1 Timber Specification
-   :file: CEDAR_v1_spec.csv
    :widths: 30,10,50
    :header-rows: 1
 
@@ -71,7 +47,7 @@ When should meta-analysis be performed?
 Meta-analysis must only be performed where the effect measure, and the study populations, are identical or highly similar. Therefore, meta-analysis should **never** be performed:
 
 * across food-animal species (species)
-* across bacterial species (pathogens)
+* across bacterial species (microbes)
 
    * including between Campylobacter jejuni and conventional
 
@@ -83,7 +59,6 @@ Meta-analysis must only be performed where the effect measure, and the study pop
 * across production stages
 
   * this includes where the effective stage is the same, but the measurement is taken at a different stage.
-
 
 When a measurement is available for the same stage of production, the same food-animal, pathogen, and antimicrobial (or sub-class of antimicrobial), as one or more others, they may be included in one of four types of meta-analysis:
 
@@ -352,15 +327,15 @@ produced by *metafor* (the meta-analysis R package used by sawmill), contain man
 
 For a full description of these parameters, please see pg. 241 of the `metafor user guide <https://cran.r-project.org/web/packages/metafor/metafor.pdf>`_, which is the Value list for rma.uni.
 
-CEDAR v2 planks
-~~~~~~~~~~~~~~~
+Planks
+~~~~~~
 
-The following table is an example of processed timber from CEDAR v2.
+The following table is an example of processed timber.
 
 While all fields present in the input timber are retained in the output, some will have new names. 
 Sawmill renames some of the fields to improve uniformity between v1 and v2 outputs.
 
-.. csv-table:: Output from CEDAR v2 Example
+.. csv-table:: Example Output
    :file: CEDAR_v2_output_ex.csv
    :widths: 30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
    :header-rows: 1
@@ -371,30 +346,8 @@ A description of each output field is provided below. The fields which are added
 
 .. tip:: The **logOR** field is only added if there is at least one meta-analysis grouping (one unique meta-analysis ID) in the raw timber.
 
-.. csv-table:: Output from CEDAR v2 Specification
+.. csv-table:: Output Specification
    :file: CEDAR_v2_output_spec.csv
-   :widths: 30,10,50
-   :header-rows: 1
-
-CEDAR v1 planks
-~~~~~~~~~~~~~~~
-
-The following table is an example of processed timber from CEDAR v1.
-
-While all fields present in the input timber are retained in the output, some will have new names. 
-Sawmill renames some of the fields to improve uniformity between v1 and v2 outputs.
-
-Please note that rows containing the results of a meta-analysis will look slightly different (for instance, some fields may have values of *NA*).
-
-.. csv-table:: Output from CEDAR v1 Example
-   :file: CEDAR_v1_output_ex.csv
-   :widths: 30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
-   :header-rows: 1
-
-A description of each output field is provided below. The fields which are added by sawmill and thus only appear in the processed timber are also annotated with the function responsible for adding them.
-
-.. csv-table:: Output from CEDAR v1 Specification
-   :file: CEDAR_v1_output_spec.csv
    :widths: 30,10,50
    :header-rows: 1
 
