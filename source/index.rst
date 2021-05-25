@@ -77,9 +77,9 @@ See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for
    /data_extraction/primary_screening
    /data_extraction/data_extract_rules
    /data_extraction/tips_and_tricks
+   /data_extraction/data_extract_notes
    /data_extraction/processing_cedar_queries
    /data_extraction/sawmill
-..   /02_project/Data_Extract_Notes
 
 .. toctree::
    :caption: Models
