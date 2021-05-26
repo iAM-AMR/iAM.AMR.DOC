@@ -253,3 +253,22 @@ If that does not work, try entering this line::
 For example, if you wanted to view the help file for the *debark* function, you would enter::
    
    ?debark()
+
+
+Meta_analysis
+-------------
+
+We use the **Metafor Package** in R to perform meta-analyses.
+We use a random-effects model.
+
+There are a number of ways to estimate heterogeneity:
+
+- Restricted Maximum Likelihood (REML)
+  
+  - default, requires convergence (it’s ML, so iterative)
+  
+- DerSimonian-Laird
+  
+  - a Olaf-approved alternative (non-iterative) 
+
+We use **REML**. We calculate the effect size based on Odds Ratio (technically log-OR), and SE of the log-OR.
