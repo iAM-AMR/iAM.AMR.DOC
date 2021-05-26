@@ -149,6 +149,11 @@ Click the points on the axes, then fine tune using the arrow keys on your keyboa
 .. image:: /assets/figures/webplotdigitizer_axes_calibration.png
    :alt: An imange of the axes calibration for the figure.
 
+To calibrate a scatterplot, 2D(X-Y) Plot should be selected and both axes require 2 data points to be added.
+
+.. image:: /assets/figures/wpd_scatterplot_calibration.png
+   :alt: An image of axes calibration for a scatterplot.
+
 You will be asked to enter the values of the points chosen.
 
 .. image:: /assets/figures/webplotdigitizer_calibration_points.png
@@ -169,10 +174,22 @@ After editing labels, go to "View Data" where it can be exported as a csv file.
 .. image:: /assets/figures/webplotdigitizer_edited_labels.png 
    :alt: Image with edited labels and "View Data" button highlighted.
 
+When extracting data using the 2D (X-Y) Plot method, you will notice that there is no option to edit labels.
+
+.. image:: /assets/figures/wpd_scatterplot_extraction.png
+   :alt: Image of extraction for a scatterplot.
+
 The number formatting can be adjusted to 2 decimal places by entering 2 for digits and selecting "Fixed" from the dropdown menu. The data can now be downloaded as a csv file.
 
 .. image:: /assets/figures/webplotdigitizer_view_data.png
    :alt: Image of "View Data" window with number formatting.
+
+Since you cannot add labels for the 2D (X-Y) Plot option, it may be useful to sort the data by x value. Order can be left as ascending. Note that the x-axis cannot be properly calibrated with the irregular intervals between the days for scatterplots like the on in this example. Only y-values will be used for the figure extraction.
+
+.. image:: /assets/figures/wpd_scatterplot_sort_data.png
+   :alt: Image of view data window with data sorted by x-value.
+
+
 
 .. tip:: For more on how to use WebPlotDigitizer tutorials can be found here https://automeris.io/WebPlotDigitizer/tutorial.html and the user manual can be found here https://automeris.io/WebPlotDigitizer/userManual.pdf. 
 
