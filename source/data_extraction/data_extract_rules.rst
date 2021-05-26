@@ -273,10 +273,6 @@ What do I do if ...
 
 If there are no factors to extract, indicate this using the notes field, and skip the reference.
 
-**... the data are only available in a figure**
-
-(UPDATE REQUIRED) If factor data are only available in a figure (i.e. no numbers are given on a graph, or in text), and the numerical value cannot be determined with certainty (i.e. is not zero or 100%), indicate this using the notes field, and skip extracting the factor.
-
 **... I'm confused about how to extract a factor**
 
 If you're confused about a factor, reach out on Slack for clarification. Additionally, add a note to indicate why the factor was extracted in that way.
