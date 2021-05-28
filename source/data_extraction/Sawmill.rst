@@ -253,3 +253,4 @@ If that does not work, try entering this line::
 For example, if you wanted to view the help file for the *debark* function, you would enter::
    
    ?debark()
+
