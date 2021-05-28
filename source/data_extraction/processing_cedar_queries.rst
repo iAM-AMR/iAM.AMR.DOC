@@ -97,6 +97,24 @@ How is the meta-analysis performed?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Please see :ref:`Adding meta-analysis groupings <data_extraction/processing_cedar_queries:Adding meta-analysis groupings>`
 
+We use the **Metafor Package** in R to perform meta-analyses.
+We use a random-effects model.
+
+There are a number of ways to estimate heterogeneity:
+
+- Restricted Maximum Likelihood (REML)
+  
+  - default, requires convergence (it’s ML, so iterative)
+  
+- DerSimonian-Laird
+  
+  - a Olaf-approved alternative (non-iterative) 
+
+We use **REML**. We calculate the effect size based on Odds Ratio (technically log-OR), and SE of the log-OR.
+
+For more details on the math behing meta-analysis go :ref:`here. <10_reference/math_stats:Meta-analysis>`
+
+
 Using sawmill
 -------------
 
