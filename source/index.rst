@@ -82,6 +82,13 @@ See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for
    /data_extraction/sawmill
 
 .. toctree::
+   :caption: Model Building
+   :maxdepth: 2
+   :numbered:
+
+   /model_building/selecting_factors
+
+.. toctree::
    :caption: Models
    :maxdepth: 2
    :numbered:
