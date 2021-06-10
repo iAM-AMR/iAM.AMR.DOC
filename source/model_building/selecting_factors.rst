@@ -12,12 +12,12 @@ Correct Factors
 
 The process of model-building also serves as a chance to correct any errors that were made during the data extraction process.
 
-Upon receiving your data query, the first thing you should do is run it through sawmill<link> :ref:`sawmill<data_extraction/sawmill:Introduction>`. Further steps are outlined below.
+Upon receiving your data query, the first thing you should do is run it through :ref:`Sawmill <data_extraction/sawmill:Introduction>`. Further steps are outlined below.
 
 Check the scrap pile
 ~~~~~~~~~~~~~~~~~~~~
 
-Sawmill will produce a file called the scrap pile if it was unable to calculate an odds ratio for one or more of the factors in your timber. If you’re not sure what sawmill or timber is please see <link>. There’s also a more detailed rundown of the scrap pile here <link>.
+Sawmill will produce a file called the scrap pile if it was unable to calculate an odds ratio for one or more of the factors in your timber. If you’re not sure what sawmill or timber is please see :ref:`Sawmill <data_extraction/sawmill:Introduction>`. There’s also a more detailed rundown of the scrap pile :ref:`here <data_extraction/processing_cedar_queries:Scrap pile>`.
 
 In some cases, these factors may have been extracted incorrectly, with one or more of the numerical fields necessary for odds ratio calculation missing from the timber. In this case, you will need to check the text of the paper to see if the key field(s) are available or not. If they are available, you can simply correct the factor and rerun it through sawmill. If the paper does not contain the fields you are missing, it will have to be excluded.
 
@@ -37,14 +37,14 @@ Check these common reasons for exclusion
 Factor is not modifiable
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-While the general practice was to exclude non-modifiable, or immutable factors such as age, location, or breed <link> at the data extraction phase, it is not always clear whether a factor is modifiable. As such, there may be some non-modifiable factors in your query that you will need to exclude from your model.
+While the general practice was to exclude non-modifiable, or immutable factors such as age, location, or breed :ref:`(read more) <data_extraction/data_extract_rules:Data Extraction Rules>` at the data extraction phase, it is not always clear whether a factor is modifiable. As such, there may be some non-modifiable factors in your query that you will need to exclude from your model.
 
 Questions of whether a factor is modifiable or not are also context-dependent, and sometimes warrant consultation with an expert. Especially when it comes to factors related to management practices, a factor may be theoretically modifiable, but the implementation required may be cost prohibitive such that the factor is not practically modifiable. For example, liquid feeding systems in swine production require specialized, expensive equipment, so a major renovation would be required in order to convert to this system.
 
 Selective media used at isolation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Midway through the data extraction process, a decision was made to exclude factors for which selective media was applied at the isolation step. For the rationale behind this decision, please see here(__).
+Midway through the data extraction process, a decision was made to exclude factors for which selective media was applied at the isolation step. For the rationale behind this decision, please see :ref:`here <data_extraction/data_extract_rules:Selective Media>`.
 
 As this decision was only made midway through the process, it is likely that some factors were extracted that do not meet this criteria.
 
@@ -161,7 +161,7 @@ If you are looking to cut down on the number of factors in your model, or need t
 Other model components
 ----------------------
 
-The following elements are handled by the iAM.AMR.HUB<link> module:
+The following elements are handled by the :ref:`iAM.AMR.HUB <models/hub:iAM.AMR.HUB>` module:
 
 1. Baseline prevalence and distribution
 2. Bacterial recovery at retail
