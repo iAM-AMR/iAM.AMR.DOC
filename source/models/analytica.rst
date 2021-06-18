@@ -13,7 +13,7 @@ Moreover, there is nothing like first-hand experience. We recommend you try the 
 
 Learn Analytica
 ---------------
-See: :ref:`Learn Analytica <analytica/ana_get_started:Learn Analytica>`
+See: :ref:`Learn Analytica <models/ana_get_started:Learn Analytica>`
 
 
 Basic Concepts in Analytica
