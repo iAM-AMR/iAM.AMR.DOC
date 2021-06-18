@@ -11,7 +11,11 @@ reStructuredText
 ~~~~~~~~~~~~~~~~
 reST, or `reStructuredText <http://docutils.sourceforge.net/rst.html>`_, is a lightweight `markup language <https://en.wikipedia.org/wiki/Markup_language>`_ originally created to document the programming language `Python <https://www.python.org/>`_.
 
-A markup language, such as reST, is a system for creating and formatting complex documents from simple plain-text files. In a nutshell, markup languages define document properties (such as titles, chapters, paragraph breaks, **bolds** and *italics*) within the text itself, ensuring that no matter how the document is conveyed to the reader (e.g. as a website, as a PDF, or as an e-book), the content will always be structured in the same way.
+A markup language, such as reST, is a system for creating and formatting complex documents from simple plain-text files. 
+
+.. tip:: Wondering what a plain-text file is? Check out the description `here <https://www.howtogeek.com/465420/what-is-plain-text/>`_.
+
+In a nutshell, markup languages define document properties (such as titles, chapters, paragraph breaks, **bolds** and *italics*) within the text itself, ensuring that no matter how the document is conveyed to the reader (e.g. as a website, as a PDF, or as an e-book), the content will always be structured in the same way.
 
 .. note:: If you’ve ever used `LaTex <https://www.latex-project.org/>`_ or designed a website in `HTML <https://en.wikipedia.org/wiki/HTML>`_, you’ve already used a markup language!
 
@@ -40,7 +44,7 @@ reST is relatively simple to learn. reST uses lines of symbols to designate head
 
 Sphinx and Read the Docs
 ~~~~~~~~~~~~~~~~~~~~~~~~
-`Sphinx <https://www.sphinx-doc.org/en/master/index.html>`_ (likewise created to document the programming language Python), is the tool used to convert plain-text reST into the desired output format (e.g. website, PDF, or e-book). 
+`Sphinx <https://www.sphinx-doc.org/en/master/index.html>`_ (likewise created to document the programming language Python), is the tool used to convert `plain-text <https://www.howtogeek.com/465420/what-is-plain-text/>`_ reST into the desired output format (e.g. website, PDF, or e-book). 
 
 `Read the Docs <https://readthedocs.org/>`_ is a free hosting service supported by `unobtrusive and ethical ads <https://docs.readthedocs.io/en/latest/advertising/ethical-advertising.html>`_, which we use to host our documentation online. Read the Docs uses Sphinx to generate the web-pages, and provide PDF versions of the documentation for offline readers.
 

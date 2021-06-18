@@ -24,7 +24,7 @@ While common, these informal version control systems lend themselves to errors a
 
 Git
 ~~~
-Git is a distributed version control system for tracking changes in source code during software development. In layman's terms, Git is a system where multiple people can work on plain-text files, merge and compare changes, and track these changes over time. Git, of course, does a lot more than that, and has incredibly powerful features that make collaborative (and importantly, simultaneous) development much easier than our rename_rename method above. But it's not an easy system to learn, since most of the work is done on the command line.
+Git is a distributed version control system for tracking changes in source code during software development. In layman's terms, Git is a system where multiple people can work on plain-text files (see `here <https://www.howtogeek.com/465420/what-is-plain-text/>`_ to find out what plain-text files are), merge and compare changes, and track these changes over time. Git, of course, does a lot more than that, and has incredibly powerful features that make collaborative (and importantly, simultaneous) development much easier than our rename_rename method above. But it's not an easy system to learn, since most of the work is done on the command line.
 
 .. caution:: It is important to note that Git is not designed for complex files, like Word documents or Excel spreadsheets. While it may not seem like it, these files have extraordinarily complex structures (a Word document is basically a web-page in disguise!), and the benefits of Git -- being able to see small, exact changes -- are lost in the noise. 
 
