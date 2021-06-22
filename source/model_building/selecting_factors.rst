@@ -31,15 +31,17 @@ Check all factors
 
 This may take awhile depending on how many factors you have in your query. However, it is an important step to check that the data extraction was done correctly, for each and every field captured.
 
-Check these common reasons for exclusion
+Check These Common Reasons for Exclusion
 ----------------------------------------
+
+.. important:: Remember to document any factors and papers you are excluding for the reasons outlined below or any other reason. 
 
 Factor is not modifiable
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 While the general practice was to exclude non-modifiable, or immutable factors such as age, location, or breed :ref:`(read more) <data_extraction/data_extract_rules:Data Extraction Rules>` at the data extraction phase, it is not always clear whether a factor is modifiable. As such, there may be some non-modifiable factors in your query that you will need to exclude from your model.
 
-Questions of whether a factor is modifiable or not are also context-dependent, and sometimes warrant consultation with an expert. Especially when it comes to factors related to management practices, a factor may be theoretically modifiable, but the implementation required may be cost prohibitive such that the factor is not practically modifiable. For example, liquid feeding systems in swine production require specialized, expensive equipment, so a major renovation would be required in order to convert to this system.
+Questions of whether a factor is modifiable or not are also context-dependent, and sometimes warrant consultation with an expert. Especially when it comes to factors related to management practices, a factor may be theoretically modifiable, but the implementation required may be cost prohibitive such that the factor is not practically modifiable.
 
 Selective media used at isolation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,7 +58,7 @@ It may be difficult to determine the appropriate production stage or sub-stage a
 Multiple production stages or sub-stages are combined
 +++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-It is also possible for AMR prevalence data to be aggregated across some combination of the farm, abattoir, and/or retail stages.
+It is also possible for data to be aggregated across some combination of the farm, abattoir, and/or retail stages.
 
 Other common examples of this particular reason for exclusion are:
 
@@ -66,20 +68,20 @@ Other common examples of this particular reason for exclusion are:
 
 .. Note:: This is especially relevant to cattle and swine, as they spend a significantly longer time at the farm stage—long enough for that farm stage to be split into multiple sub-stages.
 
-Check these possible reasons for exclusion
-------------------------------------------
+Check These Other Possible Reasons for Exclusion
+------------------------------------------------
 
 Stage of AMR measurement differs from the stage of factor application
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Generally speaking, factors where the site of AMR measurement differs from the site of factor application (i.e. antimicrobial use on the farm, sampled at retail) are excluded from our models, as it is unclear which production stage they should be placed at.
+Generally speaking, factors where the site of AMR measurement differs from the site of factor application (i.e. antimicrobial use on the farm, sampled at retail) are excluded from our models.
 
 There are a few potential exceptions to this rule, however:
 
 Production system factors measured at retail
 ++++++++++++++++++++++++++++++++++++++++++++
 
-If a production system factor (say organic vs conventional) is measured via retail meat samples, the factor can be applied at the retail stage in the model. However, if you have an abundance of factors eligible for modelling, including production system factors that are measured at farm, you should exclude those measured at retail.
+If a production system factor (say organic vs conventional) is measured via retail meat samples, the factor can be applied at the retail stage in the model. However, if you have factors eligible for modelling, including production system factors that are measured at farm, you should exclude those measured at retail.
 
 Factors applied at farm and measured at abattoir
 ++++++++++++++++++++++++++++++++++++++++++++++++
@@ -100,10 +102,10 @@ The samples are likely representative of the farm and transport stages.
 
 The samples are likely representative of the abattoir stage.
 
-Un-specific antimicrobial use factors
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Non-specific antimicrobial use factors
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Some papers may contain general antimicrobial use factors, where the antimicrobial(s) administered are not specified. If there is a large enough number of factors related to the use of specific antimicrobial(s) (i.e. ceftiofur use) eligible for inclusion in your model, these less well-characterized factors can likely be excluded.
+Some papers may contain general antimicrobial use factors, where the antimicrobial(s) administered are not specified. If there are factors related to the use of specific antimicrobial(s) (i.e. ceftiofur use) eligible for inclusion in your model, these less well-characterized factors can likely be excluded.
 
 Alternatively, these may be run separately from any specific AMU factors.
 
@@ -131,7 +133,7 @@ General resistance, or multidrug resistance, where the resistance outcome is not
 
 .. Tip:: Filter your query on the AMR field, with only blank cells selected. This may identify factors without that slipped through the extraction process, with an unspecific or combination resistance outcome.
 
-Discuss with an industry expert
+Discuss with an Industry Expert
 -------------------------------
 
 Relevancy to the Canadian context
@@ -140,9 +142,9 @@ Relevancy to the Canadian context
 As the objective of the iAM project is to produce models that are applicable to the context of the Canadian agri-food industry, this is an important step in the factor selection process. There are two ways a factor may be relevant to the Canadian context:
 
 1. It is used in Canada
-2. There is a possibility of use/application in Canada AND this application/use could impact AMR
+2. If approved for use in Canada, its application or use may impact AMR
    
-Factors in the second category will likely be included in the model, but run separately from the factors representative of the typical Canadian industry to explore “what-if” scenarios.
+Factors in the second category will likely be included in the model, but run separately from the factors representative of the typical Canadian industry to explore “what-if” scenarios.  *These “what-if” scenarios may also include factors not yet approved in Canada, but which have the potential to become relevant through future policy change and are thus worth exploring.*
 
 .. Hint:: For food-animal species that spend a longer time at the farm stage before processing (namely cattle and swine), relevancy of a factor may vary between sub-stages of the farm stage. For example, some antimicrobials administered to nursing piglets or weaned nursery pigs may be withdrawn for part or all of the finishing stage due to residue concerns.
 
@@ -154,11 +156,11 @@ The frequency of occurrence of each factor in the Canadian context should be det
 If you have too many factors in your model…
 -------------------------------------------
 
-If you are looking to cut down on the number of factors in your model, or need to due to Analytica constraints, a good place to start is to identify papers that are measuring the same factor, in the same host or host sub-population. For example, you might have two papers measuring the effect of ceftiofur use in piglets. In this case, you can choose to include only the study with the larger sample size to cut down on factors.
+If you are looking to cut down on the number of factors in your model, or need to due to Analytica constraints, a good place to start is to identify papers that are measuring the same factor, in the same host or host sub-population. For example, you might have two papers measuring the effect of ceftiofur use in piglets. In this case, you may choose to include only the study with the larger sample size, or that was performed in a population more representative of the Canadian context to cut down on factors.
 
 .. Tip:: Your standard error is a proxy for sample size, where a large SE is representative of a small sample size
 
-Other model components
+Other Model Components
 ----------------------
 
 The following elements are handled by the :ref:`iAM.AMR.HUB <models/hub:iAM.AMR.HUB>` module:
@@ -166,3 +168,14 @@ The following elements are handled by the :ref:`iAM.AMR.HUB <models/hub:iAM.AMR.
 1. Baseline prevalence and distribution
 2. Bacterial recovery at retail
 3. Consumption from the Foodbook
+
+But, you should check to ensure that these apply to your model:
+ 
+1. Check to see if your baselines are informed by actual data or placeholder values.
+2. If they are informed by placeholder values: check to see if the placeholders are applicable to your scenario. If you have better estimates of the baseline than the default value(s), perhaps informed by your discussions with an expert, use those instead. 
+
+Other Recommendations or Conventions
+------------------------------------
+
+`Analyticar <https://github.com/iAM-AMR/analyticar>`_ (when we fix it!)
+
