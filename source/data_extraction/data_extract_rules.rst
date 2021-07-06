@@ -189,7 +189,25 @@ Since you cannot add labels for the 2D (X-Y) Plot option, it may be useful to so
 .. image:: /assets/figures/wpd_scatterplot_sort_data.png
    :alt: Image of view data window with data sorted by x-value.
 
+3D Plots
+++++++++
 
+It is not always feasible to extract 3D plots.
+WebPlotDigitizer can only extract from a 3D plot when the axes are in the same plane as your computer screen, or where the 3D bars are flush against the front and back of the axis.
+For example, the figure below can be extracted by manually selecting points, ideally from the top left corner of each 3D bar.
+
+.. figure:: /assets/figures/wpd_3D_good.PNG
+   :align: center
+
+   Extractable 3D Plot. From Figure 1 in "Decontamination treatments can increase the prevalence of resistance to antibiotics of Escherichia coli naturally present on poultry" by Capita et al., 2013. doi: 10.1016/j.fm.2012.11.011.
+
+However, WebPlotDigitizer is unable to extract 3D plots with distorted perspectives, i.e. where the axes are offset (putting a space between the axis and the bars).
+Plots like those shown below are thus excluded from extraction.
+
+.. figure:: /assets/figures/wpd_3D_bad.PNG
+   :align: center
+
+   Non-Extractable 3D Plot. From "Changes in Antimicrobial Susceptibility of Native Enterococcus faecium in Chickens Fed Virginiamycin" by McDermott et al., 2005. doi: 10.1128/AEM.71.9.4986-4991.2005.
 
 .. tip:: For more on how to use WebPlotDigitizer tutorials can be found here https://automeris.io/WebPlotDigitizer/tutorial.html and the user manual can be found here https://automeris.io/WebPlotDigitizer/userManual.pdf. 
 
