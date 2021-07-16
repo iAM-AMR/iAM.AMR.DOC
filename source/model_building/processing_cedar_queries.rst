@@ -35,85 +35,6 @@ Each field has an expected data type, as dictated below. A description of each f
 
 .. attention:: The type of data contained within each of the fields in your input file should match those outlined above, as processing errors can occur otherwise. Please see :ref:`Warnings due to unexpected data types <data_extraction/processing_cedar_queries:Warnings due to unexpected data types>` for more information.
 
-Meta-analyses Guidelines
-------------------------
-
-Meta-analysis is a statistical approach for combining data from multiple studies, often used to increase statistical power, or resolve uncertainty in effect size or direction. The simplest way to think of a meta-analysis is as a weighted average of the included observations, where the weighting accounts for the statistical properties of the studies.
-
-Meta-analysis is used in the iAM.AMR project to derive a single effect estimator where multiple studies, or multiple observations within a study, are available to describe a given factor.
-
-When should meta-analysis be performed?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Meta-analysis must only be performed where the effect measure, and the study populations, are identical or highly similar. Therefore, meta-analysis should **never** be performed:
-
-* across food-animal species (species)
-* across bacterial species (microbes)
-
-   * including between Campylobacter jejuni and conventional
-
-* across classes of antimicrobials
-* across classes or sub-classes of antimicrobials
-
-  * excluding NAL and FQs?
-
-* across production stages
-
-  * this includes where the effective stage is the same, but the measurement is taken at a different stage.
-
-When a measurement is available for the same stage of production, the same food-animal, pathogen, and antimicrobial (or sub-class of antimicrobial), as one or more others, they may be included in one of four types of meta-analysis:
-
-Within Study, Same Antimicrobial
-++++++++++++++++++++++++++++++++
-Where multiple measurements are available describing the same factor, for the same resistance, the measurements should be combined using meta-analysis.
-
-.. tip::
-   Two comparable sub-populations comprise the study population (e.g. barn A and barn B), and ceftiofur resistance is assayed for each. Meta-analysis is conducted for these observations.
-
-Within Study, Same Antimicrobial Class (or Sub-Class)
-+++++++++++++++++++++++++++++++++++++++++++++++++++++
-Where multiple measurements are available describing the same factor, for the same class or sub-class of resistance, the measurements should be combined using meta-analysis. 
-
-.. tip::
-   Resistance to ceftiofur and ceftriaxone are both included in the assay. Meta-analysis is conducted for these observations, and the resistance is reported at the sub-class level (third-generation cephalosporin resistance).
-
-   Resistance to ceftiofur and ceftriaxone are both included in the assay, and there are two comparable sub-populations which comprise the study population. Meta-analysis is conducted for all of these observations, and the resistance is reported at the sub-class level (third-generation cephalosporin resistance).
-
-Across Studies, Same Antimicrobial
-++++++++++++++++++++++++++++++++++
-Where multiple measurements are available describing the same factor, for the same resistance, and the experimental conditions are comparable, the measurements should be combined using meta-analysis.
-
-.. tip::
-   Two studies measure the effect of production type (e.g. organic vs. conventional) on ceftiofur resistance. Meta-analysis is conducted for these observations.
-
-Across Studies, Same Antimicrobial Class (or Sub-Class)
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Where multiple measurements are available describing the same factor, for the same class or sub-class of resistance, and the experimental conditions are comparable, the measurements should be combined using meta-analysis.
-
-.. tip::
-   Two studies measure the effect of production type (e.g. organic vs. conventional), one on ceftiofur resistance, and the other on ceftriaxone resistance. Meta-analysis is conducted for these observations.
-
-
-How is the meta-analysis performed?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Please see :ref:`Adding meta-analysis groupings <data_extraction/processing_cedar_queries:Adding meta-analysis groupings>`
-
-We use the **Metafor Package** in R to perform meta-analyses.
-We use a random-effects model.
-
-There are a number of ways to estimate heterogeneity:
-
-- Restricted Maximum Likelihood (REML)
-  
-  - default, requires convergence (it’s ML, so iterative)
-  
-- DerSimonian-Laird
-  
-  - a Olaf-approved alternative (non-iterative) 
-
-We use **REML**. We calculate the effect size based on Odds Ratio (technically log-OR), and SE of the log-OR.
-
-For more details on the math behing meta-analysis go :ref:`here. <10_reference/math_stats:Meta-analysis>`
-
 
 Using sawmill
 -------------
@@ -137,6 +58,30 @@ The default values are specified in this script in a single line of code, as sho
 The argument values can be changed directly in this line of code. For example, if you wanted to change the argument **insensible_p_lo** to *98*, simply replace the *99* after the *=* sign with *98*.
 
 .. attention:: You must click *Install and Restart* in the **Build** tab of RStudio for any changes to the code to take effect.
+
+Adding meta-analysis groupings
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Upon examining the processed timber, you may wish to group certain factors together for meta-analysis in the raw timber and rerun sawmill.
+
+.. attention:: Meta-analysis is currently only supported for timber from CEDAR v2.
+
+To add a meta-analysis grouping, make the following changes to the optional meta-analysis fields in the original, raw timber file:
+
+#. **ID_meta**: assign the same meta-analysis ID to all factors you wish to include in the grouping
+#. **meta_amr**: specify the antimicrobial or class of antimicrobials to which resistance is assayed
+#. **meta_type**: describe the type and level of granularity of the meta-analysis grouping
+
+.. tip:: The actual meta-analysis ID assigned to a particular grouping is irrelevant, as long as it is consistent across all factors in the grouping.
+
+The table below provides example values for each meta-analysis field, as they might appear for a factor in the raw timber.
+
+.. csv-table:: Meta-analysis Example
+   :file: Meta-analysis_example.csv
+   :widths: 50,50,50
+   :header-rows: 1
+
+All three meta-analysis fields (**ID_meta**, **meta_amr**, and **meta_type**) can simply be left blank for factors that should not be involved in meta-analysis calculations.
 
 Running sawmill
 ~~~~~~~~~~~~~~~
@@ -368,30 +313,6 @@ A description of each output field is provided below. The fields which are added
    :file: CEDAR_v2_output_spec.csv
    :widths: 30,10,50
    :header-rows: 1
-
-Adding meta-analysis groupings
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Upon examining the processed timber, you may wish to group certain factors together for meta-analysis in the raw timber and rerun sawmill.
-
-.. attention:: Meta-analysis is currently only supported for timber from CEDAR v2.
-
-To add a meta-analysis grouping, make the following changes to the optional meta-analysis fields in the original, raw timber file:
-
-#. **ID_meta**: assign the same meta-analysis ID to all factors you wish to include in the grouping
-#. **meta_amr**: specify the antimicrobial or class of antimicrobials to which resistance is assayed
-#. **meta_type**: describe the type and level of granularity of the meta-analysis grouping
-
-.. tip:: The actual meta-analysis ID assigned to a particular grouping is irrelevant, as long as it is consistent across all factors in the grouping.
-
-The table below provides example values for each meta-analysis field, as they might appear for a factor in the raw timber.
-
-.. csv-table:: Meta-analysis Example
-   :file: Meta-analysis_example.csv
-   :widths: 50,50,50
-   :header-rows: 1
-
-All three meta-analysis fields (**ID_meta**, **meta_amr**, and **meta_type**) can simply be left blank for factors that should not be involved in meta-analysis calculations.
 
 Checking the validation fields
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
