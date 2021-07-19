@@ -78,8 +78,6 @@ See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for
    /data_extraction/data_extract_rules
    /data_extraction/tips_and_tricks
    /data_extraction/data_extract_notes
-   /data_extraction/processing_cedar_queries
-   /data_extraction/sawmill
 
 .. toctree::
    :caption: Model Building
@@ -87,6 +85,10 @@ See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for
    :numbered:
 
    /model_building/selecting_factors
+   /model_building/meta_analysis_guidelines
+   /model_building/sawmill
+   /model_building/processing_cedar_queries
+
 
 .. toctree::
    :caption: Models
