@@ -3,7 +3,7 @@
 Meta-analysis Guidelines
 ========================
 
-Combinging Factors with Meta-analysis
+Combining Factors with Meta-analysis
 -------------------------------------
 
 Meta-analysis is a statistical approach for combining data from multiple studies, often used to increase statistical power, or resolve uncertainty in effect size or direction. The simplest way to think of a meta-analysis is as a weighted average of the included observations, where the weighting accounts for the statistical properties of the studies.
@@ -77,7 +77,7 @@ Resistance Outcomes
 
 .. Tip:: Check that you have the correct antimicrobial class for each of your resistance outcomes. The ATC vet codes (the classification system we use in CEDAR) sometimes classify them slightly differently than they should be.
 
-The table below outlines some common antimicrobials, their antimicrobial class, and which other antimicrobials they may or may not be combined with via meta-analysis. If an “M” is present in the Meta-analysis Status column for a particular antimicrobial, that antimicrobial may be combined with other antimicrobials marked with an “M” that share the same antimicrobial class (and likely may also be combined with other antimicrobials within that same antimicrobial class that are not listed here). Antimicrobials which are the only entries for their corresponding antimicrobial class, and for which the Meta-analysis Status column is blank may also likely be able to be combined with other antimicrobials within that same antimicrobial class that are not listed here.
+The table below outlines some common antimicrobials, their antimicrobial class, and which other antimicrobials they may or may not be combined with via meta-analysis. If an “M” is present in the Meta-analysis Status column for a particular antimicrobial, that antimicrobial may be combined with other antimicrobials marked with an “M” that share the same antimicrobial class (and *likely* may also be combined with other antimicrobials within that same antimicrobial class that are not listed here). Antimicrobials which are the only entries for their corresponding antimicrobial class, and for which the Meta-analysis Status column is blank may also *likely* be able to be combined with other antimicrobials within that same antimicrobial class that are not listed here.
 
 ======================================== ================================== ====================
 Antimicrobial                            Antimicrobial Class                Meta-analysis Status
@@ -171,7 +171,7 @@ How is the meta-analysis performed?
 
 Please see :ref:`Adding meta-analysis groupings <model_building/processing_cedar_queries:Adding meta-analysis groupings>` for instructions on how to prepare your timber for meta-analysis.
 
-Our :ref:`sawmill R packkage <model_building/sawmill:The sawmill R Package>` performs meta-analysis using the **Metafor Package**.
+Our :ref:`sawmill R package <model_building/sawmill:The sawmill R Package>` performs meta-analysis using the **Metafor Package**.
 
 We use a random-effects model.
  
