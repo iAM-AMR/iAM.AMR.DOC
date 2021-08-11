@@ -29,23 +29,27 @@ Meta-analysis must only be performed where the effect measure, and the study pop
  
   * see :ref:`Rules for Combining Resistance Outcomes <model_building/meta_analysis_guidelines:Meta-Analysis Rules>` for more specific guidance
  
-* across production stages
+* across production stages (i.e. do not combine a factor applied at the farm with a factor applied at retail)
  
   * this includes where the effective stage is the same, but the measurement is taken at a different stage.
 
-When a measurement is available for the same stage of production, the same food-animal and food-animal sub-population, pathogen, and antimicrobial (or sub-class of antimicrobial), as one or more others, they may be included in one of four types of meta-analysis:
+* across different factors
+
+  * this includes factors that are *similar* (i.e. two different ceftiofur use factors), but are **different due to their underlying methodologies** (for example, administration of ceftiofur at a dose of 5 mg/kg vs administration of ceftiofur at a dose of 30 mg/kg).
+
+When a measurement is available for the same factor, the same stage of production, the same food-animal and food-animal sub-population, pathogen, and antimicrobial (or sub-class of antimicrobial), as one or more others, they may be included in one of four types of meta-analysis:
   
 Within Study, Same Antimicrobial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Where multiple measurements are available describing the same factor, for the same resistance, the measurements should be combined using meta-analysis.
+Where multiple measurements are available describing the same factor (with the same experimental conditions), for the same resistance, the measurements should be combined using meta-analysis.
 
 .. tip:: Two comparable sub-populations comprise the study population (e.g. barn A and barn B), and ceftiofur resistance is assayed for each. Meta-analysis is conducted for these observations.
 
 Within Study, Same Antimicrobial Class (or Sub-Class)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Where multiple measurements are available describing the same factor, for the same class or sub-class of resistance, the measurements should be combined using meta-analysis. 
+Where multiple measurements are available describing the same factor (with the same experimental conditions), for the same class or sub-class of resistance, the measurements should be combined using meta-analysis. 
 
 .. tip:: Resistance to ceftiofur and ceftriaxone are both included in the assay. Meta-analysis is conducted for these observations, and the resistance is reported at the sub-class level (third-generation cephalosporin resistance).
 
@@ -142,14 +146,20 @@ Factors measured using different units of analysis (i.e. isolate and flock) may 
 Production type factors
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Factors comparing organic and conventional production may be combined with factors comparing antimicrobial-free and conventional production. As all organic production is by default antimicrobial-free, but not all antimicrobial-free production is organic, the meta-analysis result should be reported as an antimicrobial-free vs conventional production comparison.
+Factors comparing organic and conventional production may be combined with factors comparing antibiotic-free and conventional production. As all organic production is by default antibiotic-free, but not all antibiotic-free production is organic, the meta-analysis result should be reported as an antibiotic-free vs conventional production comparison.
+
+.. important:: Please note that definitions of organic and antibiotic-free production vary across studies, especially if those studies were conducted in different countries. For instance, in some cases, antibiotic-free production for swine is defined as no antimicrobials given after weaning (allowing AMU in piglets), while other papers may define antibiotic-free production as no antimicrobials given over the duration of the pigs’ lives. Another example: organic production standards in some countries (for some food-animal commodities) may include stocking density or housing requirements, whereas in other countries, they may not. It is important to make note of these definitions where provided, and **only combine factors with similar definitions of the production type**. If no definitions are provided in the body of the full-text, beyond general designations of “organic” and “antibiotic-free”, then factors with general designations may be combined together.
 
 Antimicrobial use factors
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following AMU-related factor pairings may be combined using meta-analysis:
+The following AMU-related factor pairings **likely should not** be combined using meta-analysis:
 
 1.       Different routes of administration: i.e. feed and water
+
+* The injection route *should not* be combined with either of the feed or water routes.
+* Feed and water: these have different therapeutic levels in the gut and typically should not be combined with one another. In-feed use is typically for prevention, and involves a low dose, whereas administration via water is mainly used for treatment (involving a higher dose). This may vary across animal species, however, so the dosage (if provided) or indication (if provided, i.e. preventive versus treatment) should be examined first to determine whether a combination is appropriate.
+
 
 The following AMU-related factor pairings **should not** be combined using meta-analysis:
 
