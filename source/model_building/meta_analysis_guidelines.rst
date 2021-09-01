@@ -19,7 +19,7 @@ Meta-analysis must only be performed where the effect measure, and the study pop
 * across sub-populations of food-animals (such as between piglets and finishing pigs)
 * across bacterial species (microbes)
  
-  * including between Campylobacter jejuni and conventional
+  * including between Campylobacter jejuni and Campylobacter spp.
  
 * across classes of antimicrobials (and sometimes even within an antimicrobial class)
  
@@ -114,6 +114,7 @@ ciprofloxacin                            fluoroquinolone                    M
 enrofloxacin                             fluoroquinolone                    M
 marbofloxacin                            fluoroquinolone                    M
 azithromycin                             macrolide                    
+erythromycin                             macrolide
 furazolidone                             nitrofuran derivatives             M
 nitrofurantoin                           nitrofuran derivatives             M
 amoxicillin                              penicillin                         M
