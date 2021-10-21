@@ -3,6 +3,9 @@
 Communications Style Guide
 ==========================
 
+General Conventions
+-------------------
+
 Appending a suffix on 'model' requires the insertion of a second 'l':  
 
 - e.g. 'modeller'; 'modelling'
@@ -13,6 +16,21 @@ The following should always be hyphenated or (not hyphenated) as follows:
 - End-user
 - Farm to fork pathway
 - Agri-food chain
+
+Conventions for Analytica Terms
+-------------------------------
+
+The following should always be capitalized:
+
+- Intelligent Array
+
+The proper name of functions and objects should always be capitalized where refering to a generic function or object: 
+
+- e.g. 'Choice function'; 'Table()'; 'Uniform function'
+
+The names of specific objects should always be capitalized and italicized. The type of object is not capitalized or italicized:
+
+- e.g. 'the *Interface* index'; 'the *Frequency* node'
 
 Common Definitions
 ------------------
@@ -47,20 +65,16 @@ Scenario:
 Site: 
    A generic location (e.g., farm) in the system of interest (e.g., broiler chicken production industry) that is represented by a node in the iAM.AMR.
 
-Style Guide
-~~~~~~~~~~~
+Study Groups
+~~~~~~~~~~~~
+   
+Study groups should be named as follows:
 
-The following should always be capitalized:
+**Comparator group**: The group which represents the default practice in Canadian industry, or the least interventionist. The legacy term for this group is the referent group.
 
-- Intelligent Array
-
-The proper name of functions and objects should always be capitalized where refering to a generic function or object: 
-
-- e.g. 'Choice function'; 'Table()'; 'Uniform function'
-
-The names of specific objects should always be capitalized and italicized. The type of object is not capitalized or italicized:
-
-- e.g. 'the *Interface* index'; 'the *Frequency* node'
+**Factor group**: The group which represents the less common, or more interventionist group. The legacy term for this group is the exposed group.
+   
+.. note:: If a study has more than two groups, all groups except the Comparator should be titled Factor 1, Factor 2, etc. For example, a study examining the effect of AMU on AMR may have multiple factor groups, each representing a slightly different dosage or treatment regime.
 
 Key Words
 ~~~~~~~~~
@@ -115,13 +129,53 @@ SSC
 3GC
    Third-generation Cephalosporins
 
-Study Groups
-~~~~~~~~~~~~
-   
-Study groups should be named as follows:
-   
-**Referent**: The group which represents the default practice in Canadian industry, or the least interventionist.
-   
-**Comparator**: The group which represents the less common, or more interventionist group.
-   
-.. note:: If a study has more than two groups, all groups except the Referent should be titled Comparator 1, Comparator 2, etc. For example, a study examining the effect of AMU on AMR may have multiple comparator groups, each representing a slightly different dosage or treatment regime.
+Terms for Factor Applicability to the Canadian Context
+------------------------------------------------------
+
+This terminology is used to describe factor applicability to the Canadian context, and should act as a guide for selecting which factors to run separately or together in the models.
+We consider the applicability separately in three different time periods: Past, Present, Future. This avoids us requiring terms referencing potential changes between time periods.
+
+These terms can be applied nationally or regionally depending on the circumstance; the terms 'standard' and 'uncommon' should not be interpreted in a geographical context (at least for now). For example, a standard practice implemented only in Alberta is still considered a standard practice, even though it may not be used in other regions.
+
+While each of these categories has a different degree of frequency of occurrence within Canada (i.e. the frequency of occurrence of a standard practice would be closer to 100% relative to the other categories), we have not ascribed specific frequency thresholds to these categories--their purpose is to provide a qualitative categorization.
+
+Standard Practice
+~~~~~~~~~~~~~~~~~
+
+These practices are widely adopted in industry, or are common responses to predictable exogenous events.
+
+For example: biosecurity practices, therapeutic antimicrobial use, endemic disease treatment.
+
+Uncommon Practice
+~~~~~~~~~~~~~~~~~
+
+These practices are adopted by a subset of industry, are used for production of a niche product, or are responses to unpredictable exogenous events.
+
+For example: alternative health products, probiotics, competitive exclusion products, unusual disease treatment.
+
+Banned
+~~~~~~
+
+These are practices that are not used in Canada, or are not permitted by strongly enforced policy.
+
+For example: use of `banned drugs <https://www.canada.ca/en/health-canada/services/drugs-health-products/veterinary-drugs/list-banned-drugs.html>`_
+
+Discouraged
+~~~~~~~~~~~
+
+These are practices that are discouraged by legislation or industry bodies, are recognized as “bad-practice”, or are being phased out of practice in pending legislation or industry action.
+
+These include practices not currently used in Canada, but would otherwise fall into this category if adopted.
+
+For example: use of Category I antimicrobials for growth promotion.
+
+
+Not Adopted
+~~~~~~~~~~~
+
+These are practices that have not been considered, or could not be practically implemented in Canada.
+
+For example: out-wintering in extreme conditions
+
+Unknown / other
+~~~~~~~~~~~~~~~

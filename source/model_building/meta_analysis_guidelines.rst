@@ -21,23 +21,23 @@ Meta-analysis must only be performed where the effect measure, and the study pop
  
   * including between Campylobacter jejuni and Campylobacter spp.
  
-* across classes of antimicrobials (and sometimes even within an antimicrobial class)
- 
-  * see :ref:`Rules for Combining Resistance Outcomes <model_building/meta_analysis_guidelines:Meta-Analysis Rules>` for more specific guidance
- 
 * across classes or sub-classes of antimicrobials
  
   * see :ref:`Rules for Combining Resistance Outcomes <model_building/meta_analysis_guidelines:Meta-Analysis Rules>` for more specific guidance
+  
+* across different units of analysis 
+  
+  * for example, data extracted from the text as % resistant isolates should not be combined with data extracted from the text as % resistant animals
  
 * across production stages (i.e. do not combine a factor applied at the farm with a factor applied at retail)
  
-  * this includes where the effective stage is the same, but the measurement is taken at a different stage.
+  * this includes where the effective stage (or stage of application) is the same, but the measurement is taken at a different stage.
 
 * across different factors
 
-  * this includes factors that are *similar* (i.e. two different ceftiofur use factors), but are **different due to their underlying methodologies** (for example, administration of ceftiofur at a dose of 5 mg/kg vs administration of ceftiofur at a dose of 30 mg/kg).
+  * this includes factors that are *similar* (i.e. two different ceftiofur use factors), but are **different due to their underlying methodologies** (for example, administration of ceftiofur at a subtherapeutic dose vs administration of ceftiofur at a therapeutic dose).
 
-When a measurement is available for the same factor, the same stage of production, the same food-animal and food-animal sub-population, pathogen, and antimicrobial (or sub-class of antimicrobial), as one or more others, they may be included in one of four types of meta-analysis:
+When a measurement is available for the same factor, the same stage of production, the same food-animal and food-animal sub-population, bacteria, antimicrobial (or sub-class of antimicrobial), and unit of analysis, as one or more others, they may be included in one of four types of meta-analysis:
   
 Within Study, Same Antimicrobial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,7 +79,7 @@ Resistance Outcomes
 
 *Generally*, two or more factors may be combined using meta-analysis if their resistance outcomes belong to the same antimicrobial class or sub-class.
 
-.. Tip:: Check that you have the correct antimicrobial class for each of your resistance outcomes. The ATC vet codes (the classification system we use in CEDAR) sometimes classify them slightly differently than they should be.
+.. Tip:: Check that you have the correct antimicrobial class for each of your resistance outcomes. The ATC vet codes (the classification system we use in CEDAR) sometimes classify them slightly differently than they should be. A better resource is TO DO LINK.
 
 The table below outlines some common antimicrobials, their antimicrobial class, and which other antimicrobials they may or may not be combined with via meta-analysis. If an “M” is present in the Meta-analysis Status column for a particular antimicrobial, that antimicrobial may be combined with other antimicrobials marked with an “M” that share the same antimicrobial class (and *likely* may also be combined with other antimicrobials within that same antimicrobial class that are not listed here). Antimicrobials which are the only entries for their corresponding antimicrobial class, and for which the Meta-analysis Status column is blank may also *likely* be able to be combined with other antimicrobials within that same antimicrobial class that are not listed here.
 
@@ -138,11 +138,6 @@ Genomic resistance outcomes
 Only resistance outcomes pertaining to the exact same gene may be combined using meta-analysis. Different genes which confer (or may confer) resistance to the same antimicrobial class or individual antimicrobial should **not** be combined (i.e. tetA and tetB), nor should they be combined with any phenotypic outcomes.
 
 .. Tip:: Gene subgroups (such as blaCTX M1, blaCTX M2) should not be combined with one another.
-
-Different units of analysis
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Factors measured using different units of analysis (i.e. isolate and flock) may be combined with meta-analysis.
 
 Production type factors
 ~~~~~~~~~~~~~~~~~~~~~~~
