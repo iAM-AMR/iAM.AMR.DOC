@@ -14,7 +14,7 @@ The following should always be hyphenated or (not hyphenated) as follows:
 
 - Model-builder
 - End-user
-- Farm to fork pathway
+- Farm-to-fork pathway
 - Agri-food chain
 
 Conventions for Analytica Terms

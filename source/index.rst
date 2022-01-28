@@ -118,6 +118,7 @@ See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for
    /10_reference/style_guide
    /10_reference/documentation
    /10_reference/data_harmonization
+   /10_reference/iam_modelling_methods
    /10_reference/math_stats
 
 

@@ -12,6 +12,8 @@ Despite this variability, there are a number of functions and parameters common 
 
 Note, because the Hub module is a filed module  (i.e. is stored in a separate module file), **you must have a copy of both the Hub module AND the story model, to run the story models**.
 
+.. important:: You can download the iAM.AMR.HUB `here <https://github.com/iAM-AMR/iAM.AMR.HUB>`_.
+
 Module Contents
 ---------------
 The Hub module contains the following functions:
@@ -157,4 +159,16 @@ What does this mean in practice? To make changes to our Hub module, we first mak
 
 You can think of making changes to the Hub module like making changes to a manuscript. All changes are made in Microsoft Word, before creating a PDF to submit to the journal.
 
+Model Documentation
+-------------------
+
+The HUB is equipped with an Analytica library called Model Documentation.
+This library provides a way to export all descriptions and definitions for objects in your model to an Excel spreadsheet.
+
+.. figure:: /assets/figures/model_documentation_hub.jpg
+    :align: center
+
+    The iAM.AMR.HUB model, with the model documentation library highlighted
+
+Detailed instructions for using this library can be found by clicking on the Model Documentation node (highlighted in the above figure) within the iAM.AMR.HUB itself.
 

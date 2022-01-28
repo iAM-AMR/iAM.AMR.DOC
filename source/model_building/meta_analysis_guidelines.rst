@@ -153,9 +153,11 @@ The following AMU-related factor pairings **likely should not** be combined usin
 
 1.       Different routes of administration: i.e. feed and water
 
-* The injection route *should not* be combined with either of the feed or water routes.
-* Feed and water: these have different therapeutic levels in the gut and typically should not be combined with one another. In-feed use is typically for prevention, and involves a low dose, whereas administration via water is mainly used for treatment (involving a higher dose). This may vary across animal species, however, so the dosage (if provided) or indication (if provided, i.e. preventive versus treatment) should be examined first to determine whether a combination is appropriate.
+* Injection and any other route of administration: the vast majority of the time, injection *should not* be combined with either of the feed or water routes. However, expert consultation may find exceptions to this rule.
+* Feed and water: these usually have different therapeutic levels in the gut and typically should not be combined with one another, but exceptions to this rule may be more common than exceptions for combinations involving injection. In-feed use is typically for prevention, and involves a low dose, whereas administration via water is mainly used for treatment (involving a higher dose). This may vary across animal species, however, so the dosage (if provided) or indication (if provided, i.e. preventive versus treatment) should be examined first to determine whether a combination is appropriate.
 
+
+.. note:: Regarding combinations of injection with other routes of administration, an exception to this rule was made in the swine/E. coli & Salmonella model (as advised by Anne Deckert (swine expert) in January 2022). In this exception, oxytetracycline use (injectable) was combined with oxytetracycline use (in-feed) in grower-finisher pigs, as the typical dosage and effect once administered are typically the same for both factors.
 
 The following AMU-related factor pairings **should not** be combined using meta-analysis:
 
