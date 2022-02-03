@@ -61,7 +61,22 @@ As a result of the variety of units used in the iAM modelling framework, this as
 Model Structure and Inputs
 --------------------------
 
-If you're looking for a more detailed overview of the model structure, input parameters, and distributions, check out the :ref:`iAM.AMR.HUB model <models/hub:iAM.AMR.HUB>`. You can click through the definitions of any inputs (like the baseline probability and bacterial recovery rate), as well as the functions used to calculate distributions for these inputs.
+Those of you writing papers on iAM.AMR models will likely have a table in your Methods section that describes the model inputs, their values, and the data sources used. 
 
-.. tip:: You can export this model structure information from Analytica using the Model Documentation library in Analytica. There are instructions for accessing the Model Documentation library :ref:`here <models/hub:Model Documentation>`. 
+Up-to-date Content
+~~~~~~~~~~~~~~~~~~
+
+If you're looking for a more detailed (and up-to-date!) overview of the model equations, input parameters, and distributions, check out the :ref:`iAM.AMR.HUB model <models/hub:iAM.AMR.HUB>`. You can click through the definitions of any inputs (like the baseline probability and bacterial recovery rate), as well as the functions used to calculate distributions for these inputs.
+
+.. tip:: You can export this model-related information from Analytica and into a spreadsheet using the Model Documentation library in Analytica. There are instructions for accessing the Model Documentation library :ref:`here <models/hub:Model Documentation>`. 
+
+Example Structure
+~~~~~~~~~~~~~~~~~
+
+An example layout of the structure for such a table can be found in `Courtney Primeau's thesis <https://atrium.lib.uoguelph.ca/xmlui/handle/10214/17935>`_.
+Chapter 3 pertains to the iAM.AMR model that she developed. Relevant tables begin at page 126.
+
+.. important:: Our terminology has changed from Exposure/Referent (Table 3.1) to Factor/Comparator, see up-to-date terminology :ref:`here <10_reference/style_guide:Communications Style Guide>`.
+
+.. important:: We have switched to using the standard error of the log(odds ratio) (as opposed to the standard error of the odds ratio) in the models since this thesis was written. Our R package, sawmill, is set up to deliver the odds ratio and the standard error of the log(odds ratio) as outputs for the models, see :ref:`here <model_building/processing_cedar_queries:Planks>`.
 
