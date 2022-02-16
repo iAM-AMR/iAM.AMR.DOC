@@ -41,22 +41,21 @@ This allows us to use the farm as the unit for the factors' frequencies of occur
 
 To elaborate further, there are a variety of units used at different parts of the farm-to-fork pathway:
 
-1. **Baseline Probability**: unit is the isolate if informed by CIPARS data (e.g., number of resistant E. coli isolates out of total E. coli isolates assayed for resistance)
+1. **Baseline Probability**: unit is the isolate if informed by CIPARS data (e.g., the baseline probability of resistant E. coli would be the number of resistant E. coli isolates divided by the total number of E. coli isolates assayed for resistance)
 2. **Factors**: unit varies depending on the extracted data
 3. **Frequencies of Occurrence**: unit is the farm (e.g., 50% of swine farms in Canada use penicillins)
-4. **Bacterial Recovery Rate at Retail**: unit is a "serving" of meat contaminated with a particular bacteria (e.g., 33% of retail chicken servings sampled by CIPARS contained Salmonella)
-5. **Prevalence of Servings Contaminated with AMR Bacteria**: unit is a "serving" of meat contaminated with a particular resistant bacteria (e.g., 90% probability (prevalence) of resistant Salmonella at retail in chicken (from factors) * 33% of servings of chicken meat contaminated with Salmonella = 29.7% servings of chicken meat contaminated with resistant Salmonella)
-6. **Consumption Rate**: this represents the proportion of people (unit = people) consuming a particular type of meat in a one-week period
-7. **Exposure**: this represents the number of servings at risk (unit = servings) in a one-week period
-
-Please note the following sub-assumptions to Assumption Three:
-
-1. It is assumed that each CIPARS retail meat sample used to determine the bacterial recovery rate at retail is the same size as an "average sized" serving of meat
-2. It is assumed that everyone who consumes a particular type of meat consumes average-sized servings
-3. Since the Exposure is calculated by multiplying the prevalence of servings contaminated with AMR bacteria by the number of people consuming the particular type of meat in one week, it may seem that the appropriate unit of Exposure would be the # of people at risk in a one-week period (rather than the # of servings at risk). However, our Assumption Three allows us to assume that the % of servings contaminated with AMR bacteria scales proportionally to the % weekly meat intake of one person that is contaminated with AMR bacteria.
+4. **Bacterial Recovery Rate at Retail**: this represents the proportion of servings of a particular meat type that are contaminated with a particular bacteria (unit = serving) (e.g., 33% of retail chicken servings sampled by CIPARS were contaminated with Salmonella)
+5. **Prevalence of Servings Contaminated with AMR Bacteria**: this represents the proportion of servings of a particular meat type that are contaminated with a particular resistant bacteria (unit = serving) (e.g., 90% probability (prevalence) of resistant Salmonella at retail in chicken (from factors) * 33% of chicken meat servings contaminated with Salmonella = 29.7% of servings of chicken meat contaminated with resistant Salmonella)
+6. **Consumption Rate**: this represents the proportion of people consuming a particular type of meat in a one-week period (unit = persons)
+7. **Exposure**: this represents the number of persons consuming a particular meat type who are at risk of ingesting antimicrobial-resistant bacteria from this meat in a one-week period (unit = persons)
 
 As a result of the variety of units used in the iAM modelling framework, this assumption applies across the model. 
 
+Other Assumptions
+~~~~~~~~~~~~~~~~~
+
+1. It is assumed that each CIPARS retail meat sample used to determine the bacterial recovery rate at retail is the same size as an average-sized serving of meat
+2. It is assumed that everyone who consumes a particular type of meat consumes at least one average-sized serving in a one-week period
 
 Model Structure and Inputs
 --------------------------
