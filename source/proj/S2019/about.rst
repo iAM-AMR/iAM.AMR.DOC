@@ -1,8 +1,8 @@
 
 
-=================
-Literature Search
-=================
+=====
+About
+=====
 Several comprehensive literature searches have been conducted to inform the IAM.AMR models. The first search was conducted in May of 2015, and was subsequently updated in June of 2016. A qualitative description of the included studies is available (see below).
 
 As of May of 2019, the search is being repeated with a modified search string, designed to include addtional food-animal species and commodities, and additional bacterial species. Additionally, this search excludes human-related factors influencing resistance; human-related factors (e.g. AMU, immune status) will be identified in a seperate search at a later date.
@@ -56,5 +56,40 @@ To Be Updated.
 Search string
 ~~~~~~~~~~~~~
 To Be Updated.
+
+
+
+Scope
+~~~~~
+To reduce the scope of the project to a manageable size, the three most common food-animal species and the three most commonly isolated enteric bacteria from those species were selected as the core areas of focus. These include chicken, cattle, and swine, and E. coli, Salmonella Spp. and Campylobacter Spp. for host species and bacterial species respectively. While the primary human exposure route is assumed to be consumption of the corresponding agri-food products (chicken, beef, and pork), additional focus has been placed on environmental exposure routes (e.g. through the consumption of leafy greens or root vegetables, grown in manure-amended soils).
+
+Additional food-animal and bacterial species of interest include turkeys and Enterococcus Spp., which may be explored later as the project progresses. 
+
+
+
+Scope
+-----
+The iAM.AMR project focuses on four [food-animal species | commodities]: 
+
+- broiler chicken | chicken
+- swine | pork
+- dairy cattle or beef cattle | beef
+- turkey | turkey
+
+The iAM.AMR project focuses on four microbes:
+
+- E.coli
+- Salmonella Spp.
+- Campylobacter Spp.
+- Enterococcus Spp.
+
+The iAM.AMR project focuses on resistance to drugs of human importance, including:
+
+- macrolides
+- tetracyclines
+- fluoroquinolones
+- third-generation cephalosporins
+
+
 
 

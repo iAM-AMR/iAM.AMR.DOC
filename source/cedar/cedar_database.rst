@@ -1,10 +1,12 @@
 
 
-
-About
+CEDAR
 =====
 
-The *Collection of Epidemiologically Derived Associations with Resistance* or *CEDAR* database is the central repository of epidemiological data for the iAM.AMR project.
+The *Collection of Epidemiologically Derived Associations with Resistance (CEDAR)* database stores 
+
+
+is the central repository of epidemiological data for the iAM.AMR project.
 
 Introduction
 ------------
@@ -87,106 +89,3 @@ Generally, databases are separated into two parts: a **front-end** and a **back-
 
 This configuration allows multiple users to simultaneously access and work with the same, always up-to-date set of information. There is no explcit requirement for these parts to be seperate, however combining the files reduces multi-user capability.
 
-
-Access CEDAR
-------------
-
-Locate CEDAR
-~~~~~~~~~~~~
-CEDAR consists of two files:
-
-- the back-end file: *CEDAR_forest.accdb*
-- the front-end file: *CEDAR.accdb*
-
-You will need both to access CEDAR.
-
-Locate the back-end file *CEDAR_forest.accdb*
-+++++++++++++++++++++++++++++++++++++++++++++
-If you are accessing CEDAR from the GoC network, locate *CEDAR_forest.accdb* in the CEDAR sub-folder of the iAM.AMR project. 
-
-If you are accessing CEDAR from outside the GoC network, you will need a local of *CEDAR_forest.accdb*. 
-
-Locate the front-end file *CEDAR.accdb*
-+++++++++++++++++++++++++++++++++++++++
-You can access the front-end file *CEDAR.accdb* from the `private CEDAR GitHub Repository <https://github.com/chapb/CEDAR>`_. You can request access to the repository by contacting `@chapb <https://github.com/chapb>`_. If you have been granted access, you can accept the invite `here <https://github.com/chapb/CEDAR/invitations>`_.
-
-
-Open CEDAR
-~~~~~~~~~~
-Always access CEDAR by opening the front-end file *CEDAR.accdb*. When you open *CEDAR.accdb*, you will be presented with with a mostly blank screen:
-
-.. figure:: /assets/figures/cedar_launch.png
-   :align: center
-   :alt: Image of CEDAR launch screen through Microsoft Access.
-
-   The launch screen of *CEDAR.accdb*.
-
-On the left-hand side, the database objects are organized by type (tables, queries, forms) in the Navigation Pane. 
-
-What do I do if I get a security warning?
-+++++++++++++++++++++++++++++++++++++++++
-
-Upon opening *CEDAR.accdb*, you may see a security warning prompt like one of those shown below.
-You may also see a security prompt if you are re-linking or using a new version of the *CEDAR.accdb* file.
-
-.. figure:: /assets/figures/sec_warn_01.png
-   :align: center
-   :alt: Image of example security warning.
-
-   Example security warning
-
-.. figure:: /assets/figures/sec_warn_02.png
-   :align: center
-   :alt: Image of another example security warning.
-
-   Another example security warning
-
-In all cases, you can simply select *Enable Content* or *Accept/Trust* as necessary.
-
-Re-link *CEDAR.accdb* and *CEDAR_forest.accdb*
-++++++++++++++++++++++++++++++++++++++++++++++
-The first time you open *CEDAR.accdb* (or an updated version of *CEDAR.accdb*), you must **re-link** the front-end and back-end databases. If you forget to re-link the databases, opening a database object like a query or form will result in an error message, similar to the one below:
-
-.. figure:: /assets/figures/cedar_unlink_error.png
-   :align: center
-   :alt: Image of example error message if you forget to re-link the front-end and back-end of the database.
-
-   An example of the error message recieved when opening a database object from an unlinked front-end.
-
-To re-link the files:
-
-#. Locate the *External Data* tab in the ribbon (the top, red menu bar), and select *Linked Table Manager*.
-#. On the right-hand side of the *Linked Table Manager*, use *Select All* to select all tables.
-#. On the right-hand side of the *Linked Table Manager*, select *Relink*, and navigate to *CEDAR_forest.accdb*.
-
-In Access 365, an additional confirmation dialogue is presented:
-
-.. figure:: /assets/figures/cedar_relink_name_confirm.png
-   :align: center
-   :alt: Image of Microsoft Access message asking if you would like to relink the selected tables with a different name.
-
-   The name confirmation dialogue box is only displayed in the latest versions of Access.
-
-Select **No**. If you select *Yes*, you will have to confirm each table name manually (by clicking accept through the subsequent dialogues).
-
-.. tip:: Don't forget that you will need to re-link the database each time the front-end *CEDAR.accdb* is updated, or the files are moved.
-
-
-Read CEDAR
-----------
-There are two primary ways to interact with CEDAR: to read reference-level information, and to read factor-level information. Both of these tasks are accomplished via forms, accessible via the Navigation Pane on the left-hand side of the window. 
-
-To access reference-level information, use the *Add or Edit a Reference* form. To access factor-level information, use the *Add or Edit a Factor* form.
-
-Navigating CEDAR
-----------------
-
-Most navigation in CEDAR is accomplished through the *Navigation Pane*, where you can select tables, queries, or forms, and the *Record Navigation Bar*, at the bottom of the screen:
-
-.. figure:: /assets/figures/cedar_navigation.png
-   :align: center
-   :alt: Image showing CEDAR open to Add or Edit a Reference form with the Record Navigation Bar highlighted in red at the bottom of the screen.
-   
-   The Record Navigation Bar is highlighted in red at the bottom of the screen.
-
-You can use the left and right arrows to navigate between records (generally between references), or the right arrow with yellow star to create a new record (generally a new reference). This bar also contains a search feature to quickly find records.

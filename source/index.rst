@@ -7,87 +7,32 @@
 The iAM.AMR Project Documentation
 =================================
 
-Background
-----------
-Antimicrobial resistance (AMR) refers to the ability of microorganisms to withstand the effects of antimicrobials (to which they were formerly susceptible). In short, AMR reduces (or eliminates) our ability to treat certain types of infections. 
-
-While the primary driver (cause) of AMR is human *antimicrobial use* (AMU), we're also concerned with animal AMU in the agri-food production system; AMU may increase AMR in zoonotic pathogens, and Canadians may be exposed to these pathogens through the consumption of microbially-contaminated foods.
-
-
-Project
+Welcome
 -------
-The goal of the iAM.AMR project is to quantify the relative contribution of each *bug-drug-commodity* combination to Canadians’ overall exposure to resistant pathogens arising from the agri-food production system.
+Welcome to the iAM.AMR project's public documentation, hosted by `Read the Docs <https://readthedocs.org/>`_.
 
-To that end, we searched the literature to identify factors affecting resistance, and used these factors in an integrated assessment model (IAM) framework to characterize the prevalence of AMR along the farm-to-fork continuum. Ultimately, we describe the number of servings at risk for each bug-drug-commodity combination.
-
-This framework allows us to acheive a secondary objective: to understand how broad changes (e.g. encouraging a practice, or withdrawing an antimicrobial) can influence the entire agri-food system.
+For more information, internal documentation, and project downloads, see the `iAM.AMR project's GitHub Organization <https://github.com/iAM-AMR>`_.
 
 
-Scope
------
-The iAM.AMR project focuses on four [food-animal species | commodities]: 
+Introduction
+------------
+The goal of the iAM.AMR project is to use an *Integrated Assessment Modelling* approach to understand how *factors* (e.g., on-farm practices, regulatory actions)  influence the relative occurrence of antimicrobial resistance (AMR) in specific *microbe-commodity* combinations, and subsequently the effect of these factors on Canadians’ relative exposure to resistant pathogens arising from the agri-food production system.
 
-- broiler chicken | chicken
-- swine | pork
-- dairy cattle or beef cattle | beef
-- turkey | turkey
+In short, the iAM.AMR models track the prevalence of antimicrobial resistance patterns(s) in *antimicrobial-microbe-commodity* combinations (e.g., the prevalence of third-generation cephalosporin resistant *Salmonella* spp. in broiler chickens), from the earliest point of data availablility in the production continuum, to retail. Along the way, the prevalence is adjusted by factors (whose effect is quantified/extracted from the scientific literature) at discreet stages along the continuum. 
 
-The iAM.AMR project focuses on four microbes:
-
-- E.coli
-- Salmonella Spp.
-- Campylobacter Spp.
-- Enterococcus Spp.
-
-The iAM.AMR project focuses on resistance to drugs of human importance, including:
-
-- macrolides
-- tetracyclines
-- fluoroquinolones
-- third-generation cephalosporins
+Using demographic data and consumption patterns, we represent our results as the relative change in the number of consumption events of the commodity contaminated with the antimicrobial-microbe combination. 
 
 
-See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for an up-to-date list of models and locations.
+
 
 
 .. toctree::
    :caption: Welcome
    :maxdepth: 1
 
-   /00_main/get_started
-   /00_main/background
-   /00_main/prostructure
+   /main/background
+   /main/prostructure
 
-.. toctree::
-   :caption: CEDAR Database
-   :maxdepth: 2
-   :numbered:
-
-   /cedar_database/cedar_database
-   /cedar_database/getting_started
-   /cedar_database/form_reference
-   /cedar_database/form_factor
-
-.. toctree::
-   :caption: Data
-   :maxdepth: 2
-   :numbered:
-
-   /data_extraction/search
-   /data_extraction/primary_screening
-   /data_extraction/data_extract_rules
-   /data_extraction/tips_and_tricks
-   /data_extraction/data_extract_notes
-
-.. toctree::
-   :caption: Model Building
-   :maxdepth: 2
-   :numbered:
-
-   /model_building/selecting_factors
-   /model_building/meta_analysis_guidelines
-   /model_building/sawmill
-   /model_building/processing_cedar_queries
 
 
 .. toctree::
@@ -96,10 +41,28 @@ See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for
    :numbered:
 
    /models/ana_get_started.rst
-   
    /models/mod.rst
    /models/architecture.rst
    /models/hub.rst
+   /cedar/cedar_database
+   /models/selecting_factors
+   /models/meta_analysis_guidelines
+   /models/sawmill
+   /models/processing_cedar_queries
+
+
+.. toctree::
+   :caption: iAM Search 2019
+   :maxdepth: 2
+   :numbered:
+
+   /proj/S2019/about
+   /proj/S2019/primary_screening
+   /proj/S2019/data_extract_rules
+   /proj/S2019/tips_and_tricks
+   /proj/S2019/data_extract_notes
+
+
 
 .. toctree::
    :caption: Technology
