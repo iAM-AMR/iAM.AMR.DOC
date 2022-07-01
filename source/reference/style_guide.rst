@@ -32,6 +32,38 @@ The names of specific objects should always be capitalized and italicized. The t
 
 - e.g. 'the *Interface* index'; 'the *Frequency* node'
 
+
+Node Colour
+~~~~~~~~~~~
+Colour is used to indicate the function and contents of each node. The use of colour in the model should conform to the general scheme:
+
+Light Grey
+   Non user-modifiable node that performs intermediate calculations, or which is otherwise exposed to the user via a separate user interface
+Dark Grey
+   A node containing a list of factors
+Orange
+   An objective node, containing intermediate or final results of calculations
+Purple
+   A user interface node
+Blue
+   A factor node, or a node which contains epidemiological data
+
+Note, the following colour designations are liable to change, as the models are further standardized:
+
+Pink
+   A node in which the factor is informed by meta-analysis
+Peach
+   A node which contains information for multiple bacterial species
+Gold
+   A node which contains information for multiple bacterial species, informed by meta-analyses
+
+
+
+
+
+
+
+
 Common Definitions
 ------------------
 

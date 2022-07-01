@@ -27,6 +27,7 @@ Using demographic data and consumption patterns, we represent our results as the
 
 
 .. toctree::
+   :hidden:
    :caption: Welcome
    :maxdepth: 1
 
@@ -36,14 +37,15 @@ Using demographic data and consumption patterns, we represent our results as the
 
 
 .. toctree::
+   :hidden:
    :caption: Models
    :maxdepth: 2
    :numbered:
 
-   /models/ana_get_started.rst
-   /models/mod.rst
-   /models/architecture.rst
+   /models/get_started.rst
+   /models/analytica.rst
    /models/hub.rst
+   /models/architecture.rst
    /cedar/cedar_database
    /models/selecting_factors
    /models/meta_analysis_guidelines
@@ -52,6 +54,7 @@ Using demographic data and consumption patterns, we represent our results as the
 
 
 .. toctree::
+   :hidden:
    :caption: iAM Search 2019
    :maxdepth: 2
    :numbered:
@@ -65,6 +68,7 @@ Using demographic data and consumption patterns, we represent our results as the
 
 
 .. toctree::
+   :hidden:
    :caption: Technology
    :maxdepth: 2
    :numbered:
@@ -75,6 +79,7 @@ Using demographic data and consumption patterns, we represent our results as the
    /technology/add_page
 
 .. toctree::
+   :hidden:
    :caption: Reference
    :maxdepth: 2
    :numbered:

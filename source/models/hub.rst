@@ -1,49 +1,9 @@
 
-
-===========
-iAM.AMR.HUB
-===========
-
-Recall that the iAM.AMR models are organized into stories – collections of different drug-bug-commodity combinations – that together describe an important facet of resistance in the agri-food production system in Canada.
-
-Despite this variability, there are a number of functions and parameters common to all models. To ensure these parameters are consistently available, uniformly implemented, and easily updatable, they are included in a separate filed module, the **iAM.AMR.HUB**.
-
-.. hint:: The Hub module is so named for its hub-and-spoke implementation; each story model (spoke) connects back to the central hub, like spokes on a wheel.
-
-Note, because the Hub module is a filed module  (i.e. is stored in a separate module file), **you must have a copy of both the Hub module AND the story model, to run the story models**.
-
-.. important:: You can download the iAM.AMR.HUB `here <https://github.com/iAM-AMR/iAM.AMR.HUB>`_.
-
-Module Contents
----------------
-The Hub module contains the following functions:
-
--	Get Data (getData)
-   A function used to select the data to import from the Hub module into a story model
--	Counts to Prevalence (countPrevalence)  
-   A function to calculate a prevalence, represented by a Beta() distribution, from count data in a countTotal table
--	Interleave Tables (Interleave)
-   A function to merge two similarly indexed tables, overwriting the data in the target table with matched data where available.
-
-
-The Hub module supplies the following data:
-
--	CIPARS-derived baseline probabilities of resistance (see: Baseline)
--	CIPARS-derived retail microbial recovery rate (see: Recovery Rate)
--	commodity consumption rates (see: Consumption Rate)
--	population size by region (see: Population)
-
-
-The Hub Module also contains the OR Matrix Library.
+The Hub Module
+==============
 
 
 
-
-
-
-
-Hub Data
---------
 
 countTable Data Format
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -91,8 +51,23 @@ To Do.
 
 
 
-Hub Functions
--------------
+Included Functions
+------------------
+
+
+Model Documentation
+-------------------
+
+The HUB is equipped with an Analytica library called Model Documentation.
+This library provides a way to export all descriptions and definitions for objects in your model to an Excel spreadsheet.
+
+.. figure:: /assets/figures/model_documentation_hub.jpg
+    :align: center
+
+    The iAM.AMR.HUB model, with the model documentation library highlighted
+
+Detailed instructions for using this library can be found by clicking on the Model Documentation node (highlighted in the above figure) within the iAM.AMR.HUB itself.
+
 
 Each function is described within its own Description attribute. Where necessary, further information is provided here.
 
@@ -127,31 +102,6 @@ Depreciated Functions
 To Do.
 
 
-HUB vs. HUB.GM
---------------
-
-To ensure end-users do not accidently overwrite or change values in the Hub module (and subsequently propagate these changes to all story models), we maintain two different copies of the Hub module: the Gold Master [GM] (iAM.AMR.HUB.GM) and the production copy (iAM.AMR.HUB). 
-
-The Gold Master (a term borrowed from audio and software engineering) is  -- as the name suggests -- the master copy of the Hub module. The GM is where all development (additions, deletions, changes) occurs. The production module is a *protected and encrypted* copy of the mutable (editable) GM module, connected to each of the story models. 
-
-See more details in the `iAM.AMR.HUB repo <https://goto.iam.amr.pub/repo-hub>`_.
-
-iAM.AMR.HUB
-   
- - iAM.AMR.HUB is the main, working-copy of the Hub module. 
- - iAM.AMR.HUB is an encrypted, browse-only (non-editable) copy of iAM.AMR.HUB.GM.
- - Download and use iAM.AMR.HUB in your models, or **select this module** if prompted to locate the Hub module by Analytica.
- 
-iAM.AMR.HUB.GM
-
- - iAM.AMR.HUB.GM is the secondary, developer copy of the Hub module.
- - iAM.AMR.HUB.GM is an unencrypted, editable copy of iAM.AMR.HUB.
- - Download and edit iAM.AMR.HUB.GM to add new features to the module; **do not select this module** if prompted to locate the Hub module by Analytica.
-
-iAM.AMR.HUB.EX
-
- - An example model demonstrating the use of the Hub module.
-
 
 .. important:: The iAM.AMR.HUB module is the module to which the story models are linked. Do not link your story model to the iAM.AMR.HUB.GM module.
 
@@ -159,16 +109,4 @@ What does this mean in practice? To make changes to our Hub module, we first mak
 
 You can think of making changes to the Hub module like making changes to a manuscript. All changes are made in Microsoft Word, before creating a PDF to submit to the journal.
 
-Model Documentation
--------------------
-
-The HUB is equipped with an Analytica library called Model Documentation.
-This library provides a way to export all descriptions and definitions for objects in your model to an Excel spreadsheet.
-
-.. figure:: /assets/figures/model_documentation_hub.jpg
-    :align: center
-
-    The iAM.AMR.HUB model, with the model documentation library highlighted
-
-Detailed instructions for using this library can be found by clicking on the Model Documentation node (highlighted in the above figure) within the iAM.AMR.HUB itself.
 
