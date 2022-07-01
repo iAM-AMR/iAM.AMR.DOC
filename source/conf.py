@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'iAM.AMR'
-copyright = '2020, iAM.AMR Team'
+copyright = '2022, iAM.AMR Team'
 author = 'iAM.AMR Team'
 
 
@@ -80,6 +80,8 @@ html_js_files = [
 rst_prolog = """
 .. |pm| replace:: Brennan Chapman
 .. |smod| replace:: story model
+.. |anavcur| replace:: 6.1.0
+.. |anavsup| replace:: 5.0.0
 .. |br| raw:: html
 
     <br>

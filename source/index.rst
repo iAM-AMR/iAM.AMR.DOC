@@ -96,7 +96,7 @@ See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for
    :numbered:
 
    /models/ana_get_started.rst
-   /models/analytica.rst
+   
    /models/mod.rst
    /models/architecture.rst
    /models/hub.rst
@@ -106,20 +106,21 @@ See the `Model Directory repository <https://goto.iam.amr.pub/repo-models>`_ for
    :maxdepth: 2
    :numbered:
 
-   /09_technology/software.rst
-   /09_technology/git
-   /09_technology/add_page
+   /technology/analytica.rst
+   /technology/software.rst
+   /technology/git
+   /technology/add_page
 
 .. toctree::
    :caption: Reference
    :maxdepth: 2
    :numbered:
 
-   /10_reference/style_guide
-   /10_reference/documentation
-   /10_reference/data_harmonization
-   /10_reference/iam_modelling_methods
-   /10_reference/math_stats
+   /reference/style_guide
+   /reference/documentation
+   /reference/data_harmonization
+   /reference/iam_modelling_methods
+   /reference/math_stats
 
 
 

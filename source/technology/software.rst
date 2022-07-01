@@ -59,12 +59,19 @@ Domain Name
 ~~~~~~~~~~~
 * The grdi-amr.com domain is managed -- and has been graciously donated by -- Brennan Chapman.
 
+.. _extract and run:
 
-Installation on GoC computers
------------------------------
-The installation of software on Government of Canada (GoC) computers is managed remotely by Shared Services Canada (SSC) and the National Service Desk (NSD). The GoC’s *Acceptable Use Policy* clearly states that users should not install unapproved software on GoC machines. Proceed at your own risk.
+Install software using "extract-and-run"
+----------------------------------------
+Sometimes, installation of software may fail (e.g., due to lack of administrative rights). As an alternative to using the installer, many programs can be run "portably" via "extract-and-run".
 
-.. tip:: The following instructions use C:/myprograms as an example installation directory. You can install these programs in any writable directory.
+"Extract-and-run" involves the use of an unarchiver (e.g., 7-Zip) to extract the program files from the installer to a location of your choice. The program is not installed in the traditional sense (it won;t appear in your start menu), but a shortcut can be created on your desktop directly to the program's .exe.
+
+The following instructions use the ``C:/myprograms`` directory, but you can use any local writiable directory (e.g., ``C:/Users/My Username/My Desktop``). 
+
+.. warning:: The Government of Canada's *Acceptable Use Policy* states that the installation of unapproved software on a government device is prohibited. Proceed at your own risk.
+
+
 
 Mendeley
 ~~~~~~~~

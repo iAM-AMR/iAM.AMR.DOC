@@ -1,7 +1,8 @@
 
 
-The CEDAR Database
-==================
+
+About
+=====
 
 The *Collection of Epidemiologically Derived Associations with Resistance* or *CEDAR* database is the central repository of epidemiological data for the iAM.AMR project.
 
