@@ -96,3 +96,14 @@ Firefox
 +++++++
 
 Right-click in the bookmarks bar, and create a bookmark. The location should be set to `https://www.google.com/search?q=site%3Aanalytica.com+-cambridge+%s`, and the keyword should be set to your desired search shortcut.
+
+
+Tips and tricks
+---------------
+
+Text size
+~~~~~~~~~
+
+To increase text size, navigate to the *Edit* > *Preferences* dialog, and ensure "Large text in attributes & tables" is selected.
+
+Press F12 to open the `Typescript <https://wiki.analytica.com/index.php?title=Typescript>`_ window. Then, type the command: **AttributeFontSize:15**, where 15 is desired font size.
