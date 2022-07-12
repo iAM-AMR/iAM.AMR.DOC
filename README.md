@@ -10,7 +10,13 @@ For more details, see the [*Documentation* section](https://docs.iam.amr.pub/en/
 
 ## Citation
 
-The recommended citation is:
+The recommended fields are:
+
+Author(s): The iAM.AMR Team.  
+Date: 2022  
+Title: The iAM.AMR Project Documentation.  
+URL: https://docs.iam.amr.pub  
+DOI: (see below).  
 
 
 ### DOI
