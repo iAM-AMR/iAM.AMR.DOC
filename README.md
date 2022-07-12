@@ -1,7 +1,8 @@
 
 
-[![Documentation Status](https://readthedocs.org/projects/grdi-amr-iamamrdoc/badge/?version=latest)](https://docs.iam.amr.pub/en/latest/?badge=latest)
-[![DOI](https://zenodo.org/badge/236518739.svg)](https://zenodo.org/badge/latestdoi/236518739)
+[![Documentation Status](https://readthedocs.org/projects/grdi-amr-iamamrdoc/badge/?version=latest)](https://docs.iam.amr.pub/en/latest/?badge=latest)  
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.6823214.svg)](https://doi.org/10.5281/zenodo.6823214)  (*all versions*)  
+[![DOI](https://zenodo.org/badge/236518739.svg)](https://zenodo.org/badge/latestdoi/236518739) (*latest*)  
 
 # iAM.AMR Project Documentation
 
