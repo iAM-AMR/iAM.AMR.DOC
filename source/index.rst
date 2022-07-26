@@ -74,9 +74,10 @@ Using demographic data and consumption patterns, we represent our results as the
    :numbered:
 
    /technology/analytica.rst
+   /technology/git.rst
    /technology/software.rst
-   /technology/git
-   /technology/add_page
+
+
 
 .. toctree::
    :hidden:

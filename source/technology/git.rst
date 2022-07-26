@@ -1,7 +1,8 @@
 
 
-Git et al.
-==========
+==============
+Git and GitHub
+==============
 
 Version Control
 ---------------

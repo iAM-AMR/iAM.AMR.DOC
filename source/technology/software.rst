@@ -124,3 +124,32 @@ If you have multiple versions of R installed and you would like to choose a diff
 .. Other Software commented out
 .. ~~~~~~~~~~~~~~
 .. For software such as :ref:`Analytica <technology/analytica:Analytica>` and :ref:`GitHub Desktop <technology/git:Git et al.>`, refer to their respective main pages (coming soon!).
+
+
+Zotero
+------
+
+Fix Zotero plugin missing from Microsoft Word ribbon
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Zotero ribbon will not appear by default on GoC PCs, because of the `software\policies\microsoft\office\14.0\common\toolbars\word\noextensibilitycustomizationfromdocument` GPO. To replace the toolbar manually, follow the steps in Word below:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/WUxZXAJ0dZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+1. Left click on the File tab.  
+2. Left click on Options.  
+3. Left click on "Customize Ribbon"  
+4. Right click on "References"  
+5. Left click on "Add New Group"  
+6. Right click on "New Group (Custom)"  
+7. Left click on "Rename", and rename the group "Zotero"  
+8. Left click on "Choose commands from:"  
+9. Left click on "Macros"  
+10. Left click on "Project.Zotero.ZoteroAddNote" (the first item in the list)  
+11. Double left click on "Add" button repeatedly, until all Zotero macros are in the new Zotero group  
+12. Left click on "OK (Button)"  
+13. 

@@ -17,6 +17,8 @@ The following should always be hyphenated or (not hyphenated) as follows:
 - Farm-to-fork pathway
 - Agri-food chain
 
+
+
 Conventions for Analytica Terms
 -------------------------------
 

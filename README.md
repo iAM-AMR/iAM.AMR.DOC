@@ -38,3 +38,29 @@ Zenodo provides a static DOI for the project (a *concept* DOI), and a *version* 
 [![DOI](https://zenodo.org/badge/236518739.svg)](https://zenodo.org/badge/latestdoi/236518739)
 
 
+## Development
+
+### Build
+
+- To check if a virtual environment exists: `python -m pipenv --venv`
+- To create or activate a new virtual environment: `python -m pipenv shell`
+- To build: `.\make.bat html`
+
+### Empty Cache
+
+If recent changes have been made to the documentation, they may not be reflected in browser, or may be incorrectly displayed due to cached elements (like the navigation side-bar).
+
+We can clear the cache specifically for the documentation site.
+
+#### Chrome / Edge
+
+1. Open Chrome/Edge, and copy `chrome://settings/siteData` into the omnibox (the address bar).
+2. Locate the documentation site, either in full `docs.iam.amr.pub`, or as the base domain `amr.pub`.
+3. Use the garbage can icon to delete the cached data.
+
+#### Firefox
+
+1. Open Firefox, and copy `about:preferences#privacy` into the address bar.
+2. Scroll down to *Cookies and Site Data* and click on the “Manage Data…” button.
+3. Locate the documentation site by searching for the base domain `amr.pub`.
+4. Use the *Remove Selected* button to delete the cached data.
